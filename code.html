@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BravoDesign | The Glitch Constructivist</title>
+<meta content="Portafolio de Tomás Bravo - The Glitch Constructivist Variant" name="description"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+          tailwind.config = {
+            darkMode: "class",
+            theme: {
+              extend: {
+                "colors": {
+                        "primary": "#56589a",
+                        "primary-container": "#9a9ce4",
+                        "secondary": "#ff4f00",
+                        "tertiary": "#fce588",
+                        "background": "#fcf9f8",
+                        "on-surface": "#1c1b1b",
+                        "surface-container-highest": "#e5e2e1"
+                },
+                "spacing": {
+                        "shadow-offset": "12px",
+                        "md": "24px",
+                        "lg": "48px",
+                        "xl": "80px",
+                        "base": "8px"
+                },
+                "fontFamily": {
+                        "display": ["system-ui", "sans-serif"],
+                        "body-md": ["system-ui", "sans-serif"]
+                }
+              }
+            }
+          }
+    </script>
+<style>
+        @keyframes drift {
+            0% { transform: translate(0, 0) rotate(var(--base-rotation, 0deg)); }
+            33% { transform: translate(10px, -15px) rotate(calc(var(--base-rotation, 0deg) + 2deg)); }
+            66% { transform: translate(-5px, 10px) rotate(calc(var(--base-rotation, 0deg) - 1deg)); }
+            100% { transform: translate(0, 0) rotate(var(--base-rotation, 0deg)); }
+        }
+
+        .floating {
+            animation: drift 8s ease-in-out infinite;
+        }
+
+        .glitch-shadow {
+            box-shadow: 12px 12px 0px 0px #000;
+        }
+
+        .glitch-shadow-alt {
+            box-shadow: -15px 15px 0px 0px #56589a;
+        }
+
+        .glitch-shadow-warm {
+            box-shadow: 18px -10px 0px 0px #ff4f00;
+        }
+
+        .bg-dots {
+            background-image: radial-gradient(#000 1.5px, transparent 0);
+            background-size: 24px 24px;
+        }
+
+        .bg-grid-giant {
+            background-image: linear-gradient(to right, #e5e2e1 2px, transparent 2px),
+                              linear-gradient(to bottom, #e5e2e1 2px, transparent 2px);
+            background-size: 100px 100px;
+        }
+
+        .text-huge {
+            font-size: clamp(150px, 25vw, 400px);
+            line-height: 0.8;
+            letter-spacing: -0.05em;
+            font-weight: 900;
+        }
+
+        .tilt-left { --base-rotation: -3deg; transform: rotate(-3deg); }
+        .tilt-right { --base-rotation: 2deg; transform: rotate(2deg); }
+        .tilt-extreme { --base-rotation: -7deg; transform: rotate(-7deg); }
+
+        .z-negative { z-index: -1; }
+
+        .clip-slant {
+            clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+        }
+
+        .overlap-up { margin-top: -50px; }
+        .overlap-down { margin-bottom: -50px; }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-secondary selection:text-white overflow-x-hidden">
+<!-- Floating Huge Background Text -->
+<div class="fixed inset-0 pointer-events-none z-negative overflow-hidden opacity-10 select-none">
+<div class="text-huge absolute top-0 -left-20 font-display uppercase leading-none">Bravo</div>
+<div class="text-huge absolute bottom-0 -right-20 font-display uppercase leading-none text-primary">Design</div>
+</div>
+<!-- Header -->
+<header class="w-full border-b-8 border-on-surface bg-background sticky top-0 z-[100] glitch-shadow">
+<div class="flex justify-between items-center px-md py-4 max-w-full mx-auto">
+<a class="font-display text-4xl uppercase tracking-tighter text-on-surface hover:text-secondary transition-colors duration-200 tilt-left inline-block" href="#">Bravo!</a>
+<nav class="hidden md:flex gap-lg items-center font-black italic">
+<a class="hover:bg-tertiary px-2 border-4 border-transparent hover:border-on-surface" href="#work">TRABAJO</a>
+<a class="hover:bg-primary-container px-2 border-4 border-transparent hover:border-on-surface" href="#thoughts">IDEAS</a>
+<a class="hover:bg-secondary px-2 hover:text-white border-4 border-transparent hover:border-on-surface" href="#contact">HOLA</a>
+</nav>
+<button class="bg-secondary text-white font-black uppercase px-6 py-3 border-4 border-on-surface glitch-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all">
+            CONTRÁTAME
+        </button>
+</div>
+</header>
+<main class="relative">
+<!-- Hero Section: The Constructivist Chaos -->
+<section class="relative min-h-screen flex items-center bg-grid-giant overflow-visible py-20 px-4">
+<div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-10 relative">
+<!-- Floating Decorative Shapes -->
+<div class="absolute -top-20 -left-10 w-48 h-48 bg-tertiary border-8 border-on-surface rounded-full floating tilt-right glitch-shadow-alt z-0"></div>
+<div class="absolute top-1/2 -right-20 w-64 h-32 bg-primary-container border-8 border-on-surface floating tilt-extreme glitch-shadow-warm z-0 bg-dots"></div>
+<div class="lg:col-span-10 lg:col-start-2 relative z-10">
+<div class="bg-on-surface text-background p-10 tilt-right glitch-shadow-alt floating mb-12">
+<h1 class="font-display text-6xl md:text-8xl lg:text-9xl uppercase leading-none tracking-tighter">
+                        DISEÑO <span class="text-secondary italic">RADICAL</span><br/>
+                        PARA EL <span class="bg-tertiary text-on-surface px-4 tilt-left inline-block">BIEN</span>
+</h1>
+</div>
+<div class="flex flex-col md:flex-row gap-8 items-start">
+<p class="text-2xl md:text-3xl font-bold bg-background border-8 border-on-surface p-8 glitch-shadow-warm tilt-left max-w-xl floating" style="animation-delay: -2s;">
+                        Santiago de Chile. 2024. Construyendo interfaces que rompen la norma y respetan al usuario.
+                    </p>
+<a class="mt-8 bg-primary-container text-on-surface text-3xl font-black uppercase p-8 border-8 border-on-surface glitch-shadow hover:shadow-none hover:translate-x-2 hover:translate-y-2 transition-all tilt-right group floating" href="#work" style="animation-delay: -4s;">
+                        EXPLORAR CAOS
+                        <span class="material-symbols-outlined text-4xl align-middle group-hover:translate-y-2 transition-transform">south</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Mid-Section Branding: The Glitch Bar -->
+<section class="relative py-20 bg-secondary border-y-8 border-on-surface overflow-hidden tilt-right overlap-up overlap-down z-20">
+<div class="flex whitespace-nowrap overflow-hidden py-4">
+<div class="flex animate-marquee font-display text-8xl uppercase text-white font-black opacity-30 select-none">
+                BRAVODESIGN BRAVODESIGN BRAVODESIGN BRAVODESIGN BRAVODESIGN 
+            </div>
+<div class="flex animate-marquee font-display text-8xl uppercase text-white font-black opacity-30 select-none">
+                BRAVODESIGN BRAVODESIGN BRAVODESIGN BRAVODESIGN BRAVODESIGN 
+            </div>
+</div>
+<style>
+            @keyframes marquee {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(-50%); }
+            }
+            .animate-marquee {
+                animation: marquee 20s linear infinite;
+            }
+        </style>
+</section>
+<!-- Case Studies Section -->
+<section class="py-xl bg-dots bg-surface-container-highest relative z-10 pt-40" id="work">
+<div class="max-w-7xl mx-auto px-md">
+<div class="bg-tertiary border-8 border-on-surface p-6 inline-block tilt-left glitch-shadow mb-20 floating">
+<h2 class="font-display text-5xl md:text-7xl uppercase font-black">PROYECTOS SELECCIONADOS</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+<!-- Project 1 -->
+<article class="relative group tilt-right floating" style="animation-delay: -1s;">
+<div class="bg-on-surface absolute inset-0 translate-x-6 translate-y-6"></div>
+<div class="bg-background border-8 border-on-surface p-8 relative hover:-translate-x-2 hover:-translate-y-2 transition-transform duration-300">
+<div class="h-64 bg-primary-container mb-6 border-4 border-on-surface overflow-hidden relative">
+<div class="absolute inset-0 bg-dots opacity-20"></div>
+<svg class="w-full h-full p-12 text-on-surface opacity-80" viewbox="0 0 100 100">
+<rect fill="currentColor" height="40" width="40" x="30" y="30"></rect>
+<circle cx="80" cy="20" fill="#fce588" r="15" stroke="black" stroke-width="4"></circle>
+</svg>
+</div>
+<span class="bg-secondary text-white px-4 py-1 text-sm font-black uppercase tilt-left inline-block mb-4">FINANZAS / ACCESIBILIDAD</span>
+<h3 class="text-4xl font-black mb-4 uppercase">Fintech Para Todos</h3>
+<p class="text-xl mb-6">Rompiendo el molde de las apps bancarias aburridas con contraste puro y legibilidad radical.</p>
+<a class="inline-block border-b-4 border-secondary text-2xl font-black hover:text-secondary transition-colors" href="#">VER CASO →</a>
+</div>
+</article>
+<!-- Project 2 -->
+<article class="relative group tilt-left floating" style="animation-delay: -3s; margin-top: 40px;">
+<div class="bg-primary-container absolute inset-0 -translate-x-6 translate-y-6"></div>
+<div class="bg-background border-8 border-on-surface p-8 relative hover:translate-x-2 hover:-translate-y-2 transition-transform duration-300">
+<div class="h-64 bg-tertiary mb-6 border-4 border-on-surface flex items-center justify-center relative">
+<div class="absolute inset-0 bg-grid-giant opacity-30" style="background-size: 20px 20px;"></div>
+<svg class="w-32 h-32 text-secondary" viewbox="0 0 100 100">
+<path d="M50 10L90 90H10L50 10Z" fill="currentColor" stroke="black" stroke-width="4"></path>
+</svg>
+</div>
+<span class="bg-on-surface text-background px-4 py-1 text-sm font-black uppercase tilt-right inline-block mb-4">GOBIERNO / SEMÁNTICA</span>
+<h3 class="text-4xl font-black mb-4 uppercase">Plataforma Cívica</h3>
+<p class="text-xl mb-6">Arquitectura sin adornos. HTML puro para ciudadanos que necesitan respuestas, no gradientes.</p>
+<a class="inline-block border-b-4 border-secondary text-2xl font-black hover:text-secondary transition-colors" href="#">VER CASO →</a>
+</div>
+</article>
+<!-- Project 3 -->
+<article class="relative group tilt-right floating md:col-span-2 lg:w-2/3 lg:mx-auto" style="animation-delay: -5s; margin-top: 40px;">
+<div class="bg-secondary absolute inset-0 translate-x-8 -translate-y-8"></div>
+<div class="bg-background border-8 border-on-surface p-12 relative hover:-translate-x-2 hover:translate-y-2 transition-transform duration-300">
+<div class="flex flex-col md:flex-row gap-10 items-center">
+<div class="w-full md:w-1/2 h-64 bg-on-surface flex items-center justify-center">
+<svg class="w-32 h-32 text-tertiary floating" viewbox="0 0 100 100">
+<circle cx="50" cy="50" fill="none" r="40" stroke="currentColor" stroke-dasharray="10 10" stroke-width="8"></circle>
+<rect fill="currentColor" height="20" width="20" x="40" y="40"></rect>
+</svg>
+</div>
+<div class="w-full md:w-1/2">
+<span class="bg-primary-container text-on-surface px-4 py-1 text-sm font-black uppercase tilt-left inline-block mb-4">DATOS / SOSTENIBILIDAD</span>
+<h3 class="text-4xl font-black mb-4 uppercase">Índice Climático</h3>
+<p class="text-xl mb-6">Visualización de datos de bajo consumo energético. Estética brutalista al servicio del planeta.</p>
+<a class="inline-block border-b-4 border-secondary text-2xl font-black hover:text-secondary transition-colors" href="#">VER CASO →</a>
+</div>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="relative py-20 bg-on-surface text-background overflow-hidden mt-40">
+<div class="absolute inset-0 bg-dots opacity-10"></div>
+<div class="max-w-7xl mx-auto px-md relative z-10 flex flex-col items-center text-center">
+<div class="bg-secondary text-white p-8 border-4 border-white glitch-shadow-alt tilt-left mb-12 floating">
+<h2 class="text-6xl font-display uppercase leading-none">HABLEMOS DEL<br/>FUTURO</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-4xl font-black uppercase italic text-xl">
+<a class="p-6 border-4 border-white hover:bg-white hover:text-on-surface transition-all tilt-right" href="#">ACCESIBILIDAD</a>
+<a class="p-6 border-4 border-white hover:bg-white hover:text-on-surface transition-all tilt-left" href="#">RENDIMIENTO</a>
+<a class="p-6 border-4 border-white hover:bg-white hover:text-on-surface transition-all tilt-right" href="#">SOSTENIBILIDAD</a>
+</div>
+<div class="mt-20 flex flex-col md:flex-row justify-between items-center w-full opacity-60 font-mono text-sm gap-4">
+<p>© 2024 BRAVODESIGN — THE GLITCH CONSTRUCTIVIST</p>
+<p>CONSTRUIDO PARA LA VANGUARDIA ÉTICA</p>
+</div>
+</div>
+</footer>
+</body></html>
