@@ -30,7 +30,7 @@ Luego abre tu navegador en [http://localhost:8000](http://localhost:8000).
 2. Crea un repositorio en GitHub y conéctalo:
    ```bash
    git branch -M main
-   git remote add origin https://github.com/<tu-usuario>/<nombre-repo>.git
+   git remote add origin https://github.com/Tbravop/bravodesign.git
    git push -u origin main
    ```
 3. En la configuración de tu repositorio en GitHub (**Settings > Pages**), selecciona la rama `main` y la carpeta `/ (root)` para publicar tu sitio web gratis.
