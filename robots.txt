@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tbravop.github.io/bravodesign/sitemap.xml
