@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html class="light scroll-smooth" lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ====================================================================
+       SEO PRIMARIO & INDEXABILIDAD
+       ==================================================================== -->
+  <title>{{PROJECT_TITLE}} — Caso de Estudio UX/UI & Asesoría Digital | Tomás Bravo</title>
+  <meta name="description" content="{{PROJECT_META_DESCRIPTION}}" />
+  <meta name="author" content="Tomás Bravo" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://tbravop.github.io/bravodesign/proyectos/{{PROJECT_SLUG}}.html" />
+
+  <!-- ====================================================================
+       OPEN GRAPH / FACEBOOK / LINKEDIN
+       ==================================================================== -->
+  <meta property="og:locale" content="es_CL" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="{{PROJECT_TITLE}} — Caso de Estudio UX/UI | BravoDesign" />
+  <meta property="og:description" content="{{PROJECT_META_DESCRIPTION}}" />
+  <meta property="og:url" content="https://tbravop.github.io/bravodesign/proyectos/{{PROJECT_SLUG}}.html" />
+  <meta property="og:site_name" content="Tomás Bravo — BravoDesign" />
+  <meta property="og:image" content="https://tbravop.github.io/bravodesign/assets/projects/{{PROJECT_HERO_IMAGE}}" />
+  <meta property="og:image:alt" content="Mockup y presentación visual de {{PROJECT_TITLE}}" />
+  <meta property="article:published_time" content="{{PROJECT_DATE_ISO}}" />
+  <meta property="article:author" content="https://tbravop.github.io/bravodesign/#person" />
+  <meta property="article:section" content="Diseño UX/UI y Desarrollo Web" />
+
+  <!-- ====================================================================
+       TWITTER CARDS
+       ==================================================================== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{PROJECT_TITLE}} — Caso de Estudio UX/UI" />
+  <meta name="twitter:description" content="{{PROJECT_META_DESCRIPTION}}" />
+  <meta name="twitter:image" content="https://tbravop.github.io/bravodesign/assets/projects/{{PROJECT_HERO_IMAGE}}" />
+  <meta name="twitter:creator" content="@tbravopino" />
+
+  <!-- ====================================================================
+       DATOS ESTRUCTURADOS SCHEMA.ORG (JSON-LD)
+       BreadcrumbList + TechArticle / CreativeWork
+       ==================================================================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://tbravop.github.io/bravodesign/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Proyectos",
+            "item": "https://tbravop.github.io/bravodesign/#work"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "{{PROJECT_TITLE}}",
+            "item": "https://tbravop.github.io/bravodesign/proyectos/{{PROJECT_SLUG}}.html"
+          }
+        ]
+      },
+      {
+        "@type": "TechArticle",
+        "@id": "https://tbravop.github.io/bravodesign/proyectos/{{PROJECT_SLUG}}.html#article",
+        "headline": "{{PROJECT_TITLE}} — Caso de Estudio UX/UI & Optimización Digital",
+        "description": "{{PROJECT_META_DESCRIPTION}}",
+        "inLanguage": "es",
+        "url": "https://tbravop.github.io/bravodesign/proyectos/{{PROJECT_SLUG}}.html",
+        "datePublished": "{{PROJECT_DATE_ISO}}",
+        "dateModified": "2026-11-03",
+        "image": "https://tbravop.github.io/bravodesign/assets/projects/{{PROJECT_HERO_IMAGE}}",
+        "author": {
+          "@type": "Person",
+          "name": "Tomás Bravo",
+          "url": "https://tbravop.github.io/bravodesign/",
+          "jobTitle": "Diseñador UX/UI & Asesor Digital"
+        },
+        "publisher": {
+          "@type": "Person",
+          "name": "Tomás Bravo",
+          "url": "https://tbravop.github.io/bravodesign/"
+        },
+        "about": [
+          "Diseño UX/UI",
+          "Accesibilidad Web WCAG",
+          "Optimización de Conversión",
+          "Diseño Responsive",
+          "SEO Técnico"
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- ====================================================================
+       OPTIMIZACIÓN DE FUENTES & RENDIMIENTO (CORE WEB VITALS)
+       ==================================================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <!-- Configuración de Tailwind Coherente con BravoDesign -->
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#56589a",
+            "primary-container": "#9a9ce4",
+            "secondary": "#ff4f00",
+            "tertiary": "#fce588",
+            "background": "#fcf9f8",
+            "on-surface": "#1c1b1b",
+            "on-surface-variant": "#464650",
+            "surface": "#fcf9f8",
+            "surface-dim": "#dcd9d9",
+            "surface-container": "#f0eded",
+            "surface-container-high": "#eae7e7",
+            "surface-container-highest": "#e5e2e1"
+          },
+          fontFamily: {
+            "display": ["system-ui", "sans-serif"],
+            "body-md": ["system-ui", "sans-serif"],
+            "label-mono": ["ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "monospace"]
+          },
+          borderWidth: {
+            "3": "3px",
+            "5": "5px"
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Estilos Neo-Brutalistas / Neo-Memphis Éticos -->
+  <style>
+    .bg-dots {
+      background-image: radial-gradient(#1c1b1b 1.5px, transparent 0);
+      background-size: 24px 24px;
+    }
+    .bg-grid {
+      background-size: 40px 40px;
+      background-image: linear-gradient(to right, #e5e2e1 1.5px, transparent 1.5px),
+                        linear-gradient(to bottom, #e5e2e1 1.5px, transparent 1.5px);
+    }
+    .neo-shadow {
+      box-shadow: 6px 6px 0px 0px #1c1b1b;
+    }
+    .neo-shadow-sm {
+      box-shadow: 4px 4px 0px 0px #1c1b1b;
+    }
+    .neo-shadow-lg {
+      box-shadow: 10px 10px 0px 0px #1c1b1b;
+    }
+    .neo-shadow-secondary {
+      box-shadow: 8px 8px 0px 0px #ff4f00;
+    }
+    .neo-shadow-tertiary {
+      box-shadow: 8px 8px 0px 0px #fce588;
+    }
+    .neo-hover {
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .neo-hover:hover {
+      transform: translate(-3px, -3px);
+      box-shadow: 9px 9px 0px 0px #1c1b1b;
+    }
+    .neo-hover:active {
+      transform: translate(2px, 2px);
+      box-shadow: 2px 2px 0px 0px #1c1b1b;
+    }
+    .tilt-left { transform: rotate(-1.5deg); }
+    .tilt-right { transform: rotate(1.5deg); }
+    :focus-visible {
+      outline: 4px solid #ff4f00 !important;
+      outline-offset: 3px !important;
+    }
+  </style>
+</head>
+
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-secondary selection:text-white min-h-screen flex flex-col bg-grid">
+
+  <!-- ====================================================================
+       ACCESIBILIDAD: SKIP TO CONTENT
+       ==================================================================== -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[150] focus:px-6 focus:py-3 focus:bg-secondary focus:text-white focus:border-4 focus:border-on-surface focus:font-label-mono focus:font-bold neo-shadow">
+    Saltar directamente al contenido principal
+  </a>
+
+  <!-- ====================================================================
+       TOP APP BAR / ENCABEZADO DE NAVEGACIÓN
+       ==================================================================== -->
+  <header class="sticky top-0 w-full z-50 bg-background/95 backdrop-blur-sm border-b-4 border-on-surface neo-shadow-sm">
+    <div class="flex justify-between items-center h-20 px-4 md:px-8 max-w-7xl mx-auto">
+      
+      <!-- Marca / Volver a inicio -->
+      <a href="../index.html" class="flex items-center gap-2 group" title="Volver a la página principal de BravoDesign">
+        <span class="font-display text-3xl font-black uppercase tracking-tighter text-on-surface group-hover:text-secondary transition-colors">
+          Bravo<span class="text-secondary">!</span>
+        </span>
+        <span class="font-label-mono text-xs uppercase px-2 py-0.5 bg-tertiary border-2 border-on-surface font-bold hidden sm:inline-block">
+          Portfolio
+        </span>
+      </a>
+
+      <!-- Botón de Retorno Rápido al Portafolio -->
+      <nav class="flex items-center gap-3 sm:gap-6" aria-label="Navegación principal">
+        <a href="../index.html#work" class="flex items-center gap-1.5 font-label-mono text-xs sm:text-sm font-bold uppercase py-2 px-3 sm:px-4 bg-surface border-3 border-on-surface neo-shadow-sm neo-hover" title="Explorar todos los proyectos">
+          <span class="material-symbols-outlined text-base">arrow_back</span>
+          <span>Proyectos</span>
+        </a>
+        <a href="../index.html#contact" class="hidden md:inline-block font-label-mono text-xs sm:text-sm font-bold uppercase py-2 px-4 hover:bg-tertiary transition-colors border-3 border-transparent hover:border-on-surface">
+          Contacto
+        </a>
+        <a href="../index.html#contact" class="bg-secondary text-white font-label-mono text-xs sm:text-sm font-black uppercase px-4 sm:px-6 py-2.5 border-3 border-on-surface neo-shadow-sm neo-hover inline-flex items-center justify-center min-h-[44px]">
+          Contrátame
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ====================================================================
+       MIGAS DE PAN SEMÁNTICAS (BREADCRUMBS)
+       ==================================================================== -->
+  <nav aria-label="Migas de pan" class="bg-surface-container border-b-3 border-on-surface py-2.5 px-4 md:px-8">
+    <div class="max-w-7xl mx-auto flex items-center flex-wrap gap-2 font-label-mono text-xs">
+      <a href="../index.html" class="font-semibold text-on-surface hover:text-secondary transition-colors inline-flex items-center gap-1 min-h-[36px] py-1">
+        <span class="material-symbols-outlined text-sm">home</span> Inicio
+      </a>
+      <span class="text-on-surface/50 font-bold" aria-hidden="true">/</span>
+      <a href="../index.html#work" class="font-semibold text-on-surface hover:text-secondary transition-colors min-h-[36px] py-1 inline-flex items-center">
+        Proyectos
+      </a>
+      <span class="text-on-surface/50 font-bold" aria-hidden="true">/</span>
+      <span class="font-bold text-secondary truncate max-w-[200px] sm:max-w-md" aria-current="page">
+        {{PROJECT_TITLE}}
+      </span>
+    </div>
+  </nav>
+
+  <!-- ====================================================================
+       CONTENIDO PRINCIPAL
+       ==================================================================== -->
+  <main id="main-content" class="flex-grow">
+
+    <!-- HERO SECTION: TÍTULO H1, INTRODUCCIÓN & MOCKUP PRINCIPAL -->
+    <section class="max-w-7xl mx-auto px-4 md:px-8 py-10 md:py-16" aria-labelledby="project-hero-title">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-8 md:mb-12">
+        
+        <div class="lg:col-span-8">
+          <!-- Tag de Categoría -->
+          <div class="inline-flex items-center gap-2 mb-4">
+            <span class="bg-secondary text-white font-label-mono text-xs sm:text-sm font-black uppercase px-3 py-1 border-3 border-on-surface neo-shadow-sm">
+              {{PROJECT_CATEGORY_BADGE}}
+            </span>
+            <span class="bg-tertiary text-on-surface font-label-mono text-xs sm:text-sm font-bold uppercase px-3 py-1 border-3 border-on-surface neo-shadow-sm">
+              {{PROJECT_YEAR}}
+            </span>
+          </div>
+
+          <!-- TÍTULO H1: ÚNICO Y OPTIMIZADO PARA SEO -->
+          <h1 id="project-hero-title" class="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tight text-on-surface leading-[1.1] mb-6">
+            {{PROJECT_TITLE}}
+          </h1>
+
+          <!-- Resumen Destacado de Valor / Subtítulo Semántico -->
+          <p class="font-body-md text-base sm:text-lg md:text-xl text-on-surface/95 max-w-3xl bg-surface border-4 border-on-surface p-5 sm:p-6 neo-shadow-sm leading-relaxed">
+            {{PROJECT_HERO_SUBTITLE}}
+          </p>
+        </div>
+
+        <!-- Acceso directo / Enlace en vivo si aplica -->
+        <div class="lg:col-span-4 flex flex-col gap-3 justify-end items-start lg:items-end">
+          <a href="{{PROJECT_EXTERNAL_URL}}" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-primary-container text-on-surface font-label-mono text-sm font-bold uppercase px-6 py-3.5 border-4 border-on-surface neo-shadow neo-hover min-h-[48px]">
+            <span>{{PROJECT_EXTERNAL_CTA_LABEL}}</span>
+            <span class="material-symbols-outlined text-lg">open_in_new</span>
+          </a>
+          <span class="font-label-mono text-xs text-on-surface/70">
+            * Se abre en pestaña externa
+          </span>
+        </div>
+
+      </div>
+
+      <!-- Imagen / Mockup Hero (LCP Optimizado con fetchpriority="high") -->
+      <figure class="border-4 md:border-6 border-on-surface neo-shadow-lg bg-surface overflow-hidden aspect-[16/9] w-full relative">
+        <img 
+          src="{{PROJECT_HERO_IMAGE_SRC}}" 
+          alt="{{PROJECT_HERO_IMAGE_ALT}}" 
+          class="w-full h-full object-cover" 
+          width="1280" 
+          height="720"
+          fetchpriority="high"
+          loading="eager"
+          decoding="async" 
+        />
+        <figcaption class="sr-only">{{PROJECT_HERO_IMAGE_ALT}}</figcaption>
+      </figure>
+    </section>
+
+    <!-- ====================================================================
+         SECCIÓN 01 / FICHA TÉCNICA Y METADATOS DEL PROYECTO
+         ==================================================================== -->
+    <section class="max-w-7xl mx-auto px-4 md:px-8 mb-16 md:mb-24" aria-labelledby="project-metadata-title">
+      <div class="border-4 border-on-surface bg-surface neo-shadow">
+        
+        <div class="bg-on-surface text-white px-5 py-3 border-b-4 border-on-surface flex items-center justify-between">
+          <h2 id="project-metadata-title" class="font-label-mono text-xs sm:text-sm font-black uppercase tracking-wider flex items-center gap-2">
+            <span class="material-symbols-outlined text-base text-tertiary">info</span>
+            01 / Ficha Técnica del Proyecto
+          </h2>
+          <span class="font-label-mono text-xs text-white/70">Metadata &amp; Scope</span>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 divide-y-4 md:divide-y-0 md:divide-x-4 divide-on-surface bg-primary-container/30">
+          <div class="p-4 sm:p-6 bg-surface">
+            <span class="font-label-mono text-xs font-bold block mb-1 text-on-surface-variant uppercase">Rol Desempeñado</span>
+            <span class="font-display text-lg sm:text-xl font-black block text-on-surface">{{PROJECT_META_ROLE}}</span>
+          </div>
+
+          <div class="p-4 sm:p-6 bg-surface">
+            <span class="font-label-mono text-xs font-bold block mb-1 text-on-surface-variant uppercase">Cliente / Marca</span>
+            <span class="font-display text-lg sm:text-xl font-black block text-on-surface">{{PROJECT_META_CLIENT}}</span>
+          </div>
+
+          <div class="p-4 sm:p-6 bg-surface">
+            <span class="font-label-mono text-xs font-bold block mb-1 text-on-surface-variant uppercase">Período / Año</span>
+            <span class="font-display text-lg sm:text-xl font-black block text-on-surface">{{PROJECT_YEAR}}</span>
+          </div>
+
+          <div class="p-4 sm:p-6 bg-surface">
+            <span class="font-label-mono text-xs font-bold block mb-1 text-on-surface-variant uppercase">Disciplinas &amp; Servicios</span>
+            <span class="font-label-mono text-xs sm:text-sm font-bold block text-on-surface leading-tight">{{PROJECT_META_SERVICES}}</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECCIÓN 02 / EL DESAFÍO: EL PROBLEMA A RESOLVER
+         ==================================================================== -->
+    <section class="max-w-7xl mx-auto px-4 md:px-8 mb-16 md:mb-24" aria-labelledby="challenge-section-title">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        
+        <!-- Tarjeta de Título con Icono -->
+        <div class="lg:col-span-4">
+          <div class="border-4 border-on-surface bg-tertiary p-6 sm:p-8 neo-shadow h-full flex flex-col justify-between tilt-left">
+            <div>
+              <span class="font-label-mono text-xs font-black uppercase tracking-wider block mb-2 text-on-surface/80">
+                02 / Contexto &amp; Diagnóstico
+              </span>
+              <h2 id="challenge-section-title" class="font-display text-3xl sm:text-4xl lg:text-5xl font-black uppercase leading-tight text-on-surface">
+                El Desafío
+              </h2>
+            </div>
+            <div class="mt-8 pt-6 border-t-3 border-on-surface flex items-center justify-between">
+              <span class="font-label-mono text-xs font-bold">Problema Detectado</span>
+              <span class="material-symbols-outlined text-4xl text-on-surface" aria-hidden="true">warning</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bloque de Contenido Narrativo -->
+        <div class="lg:col-span-8">
+          <div class="border-4 border-on-surface bg-surface p-6 sm:p-10 neo-shadow h-full flex flex-col justify-center">
+            <h3 class="font-display text-xl sm:text-2xl font-black uppercase mb-4 text-on-surface">
+              {{PROJECT_CHALLENGE_SUBTITLE}}
+            </h3>
+            <div class="space-y-4 font-body-md text-base sm:text-lg text-on-surface/90 leading-relaxed">
+              {{PROJECT_CHALLENGE_PARAGRAPHS}}
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECCIÓN 03 / LA SOLUCIÓN: ARQUITECTURA, SISTEMA & ENFOQUE UX
+         ==================================================================== -->
+    <section class="max-w-7xl mx-auto px-4 md:px-8 mb-16 md:mb-24" aria-labelledby="solution-section-title">
+      
+      <div class="flex items-center gap-4 mb-8">
+        <div class="bg-primary-container border-4 border-on-surface p-3 sm:p-4 neo-shadow-sm tilt-right">
+          <span class="material-symbols-outlined text-2xl sm:text-3xl text-on-surface" aria-hidden="true">design_services</span>
+        </div>
+        <div>
+          <span class="font-label-mono text-xs font-black uppercase text-secondary tracking-wider block">03 / Metodología &amp; Ejecución</span>
+          <h2 id="solution-section-title" class="font-display text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-on-surface">
+            La Solución Desarrollada
+          </h2>
+        </div>
+      </div>
+
+      <!-- Bento Grid de Pilares de Solución -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+        
+        <!-- Pilar 1: Pilar Principal (8 cols) -->
+        <div class="md:col-span-8 border-4 border-on-surface bg-surface neo-shadow p-6 sm:p-8 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3 mb-4">
+              <span class="material-symbols-outlined text-3xl bg-secondary text-white p-2 border-3 border-on-surface neo-shadow-sm" aria-hidden="true">accessibility_new</span>
+              <span class="font-label-mono text-xs font-bold uppercase text-on-surface-variant">Pilar 01 · Inclusión</span>
+            </div>
+            <h3 class="font-display text-2xl sm:text-3xl font-black uppercase mb-3 text-on-surface">
+              {{PROJECT_PILLAR_1_TITLE}}
+            </h3>
+            <p class="font-body-md text-base sm:text-lg text-on-surface/90 leading-relaxed">
+              {{PROJECT_PILLAR_1_DESC}}
+            </p>
+          </div>
+
+          <div class="mt-6 pt-4 border-t-3 border-on-surface/20 flex flex-wrap gap-2">
+            <span class="bg-surface-container border-2 border-on-surface font-label-mono text-xs px-2.5 py-1 font-bold">WCAG 2.1 AA/AAA</span>
+            <span class="bg-surface-container border-2 border-on-surface font-label-mono text-xs px-2.5 py-1 font-bold">Contrastes OKLCH</span>
+            <span class="bg-surface-container border-2 border-on-surface font-label-mono text-xs px-2.5 py-1 font-bold">Hitbox &gt;44px</span>
+          </div>
+        </div>
+
+        <!-- Pilar 2: Sistema de Diseño (4 cols) -->
+        <div class="md:col-span-4 border-4 border-on-surface bg-surface-container-highest neo-shadow flex flex-col">
+          <div class="p-4 border-b-4 border-on-surface bg-primary-container font-label-mono text-xs font-black uppercase flex items-center justify-between">
+            <span>Pilar 02 · Diseño</span>
+            <span class="material-symbols-outlined text-base">palette</span>
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <h3 class="font-display text-xl sm:text-2xl font-black uppercase mb-3 text-on-surface">
+                {{PROJECT_PILLAR_2_TITLE}}
+              </h3>
+              <ul class="space-y-2.5 font-body-md text-sm sm:text-base text-on-surface/90">
+                {{PROJECT_PILLAR_2_LIST}}
+              </ul>
+            </div>
+            <div class="mt-4 font-label-mono text-xs font-bold text-secondary">
+              ✓ Estructura sin ambigüedades
+            </div>
+          </div>
+        </div>
+
+        <!-- Pilar 3: Rendimiento & SEO (6 cols) -->
+        <div class="md:col-span-6 border-4 border-on-surface bg-surface p-6 neo-shadow flex items-start gap-4">
+          <div class="w-14 h-14 border-3 border-on-surface bg-tertiary flex items-center justify-center shrink-0 neo-shadow-sm">
+            <span class="material-symbols-outlined text-2xl text-on-surface" aria-hidden="true">speed</span>
+          </div>
+          <div>
+            <span class="font-label-mono text-xs font-black uppercase text-secondary block mb-1">Pilar 03 · Core Web Vitals</span>
+            <h3 class="font-display text-lg sm:text-xl font-black uppercase mb-2 text-on-surface">
+              {{PROJECT_PILLAR_3_TITLE}}
+            </h3>
+            <p class="font-body-md text-sm sm:text-base text-on-surface/90">
+              {{PROJECT_PILLAR_3_DESC}}
+            </p>
+          </div>
+        </div>
+
+        <!-- Pilar 4: Transparencia & Conversión (6 cols) -->
+        <div class="md:col-span-6 border-4 border-on-surface bg-surface p-6 neo-shadow flex items-start gap-4">
+          <div class="w-14 h-14 border-3 border-on-surface bg-primary-container flex items-center justify-center shrink-0 neo-shadow-sm">
+            <span class="material-symbols-outlined text-2xl text-on-surface" aria-hidden="true">visibility</span>
+          </div>
+          <div>
+            <span class="font-label-mono text-xs font-black uppercase text-primary block mb-1">Pilar 04 · Experiencia de Usuario</span>
+            <h3 class="font-display text-lg sm:text-xl font-black uppercase mb-2 text-on-surface">
+              {{PROJECT_PILLAR_4_TITLE}}
+            </h3>
+            <p class="font-body-md text-sm sm:text-base text-on-surface/90">
+              {{PROJECT_PILLAR_4_DESC}}
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECCIÓN 04 / RESULTADOS MEDIBLES & MÉTRICAS CLAVE
+         ==================================================================== -->
+    <section class="max-w-7xl mx-auto px-4 md:px-8 mb-16 md:mb-24" aria-labelledby="results-section-title">
+      <div class="bg-on-surface text-background p-6 sm:p-8 border-4 border-on-surface neo-shadow-secondary mb-8">
+        <span class="font-label-mono text-xs font-black uppercase text-tertiary tracking-wider block mb-2">
+          04 / Impacto de Negocio &amp; Métricas
+        </span>
+        <h2 id="results-section-title" class="font-display text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-white">
+          Resultados Demostrables
+        </h2>
+        <p class="font-body-md text-sm sm:text-base text-white/80 max-w-2xl mt-2">
+          El diseño UX efectivo no es ornamental: se valida a través de métricas de retención, accesibilidad y eficiencia de conversión.
+        </p>
+      </div>
+
+      <!-- Tarjetas de Métricas -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="border-4 border-on-surface bg-primary-container p-6 sm:p-8 neo-shadow text-center group hover:-translate-y-1 transition-transform">
+          <div class="font-display text-5xl sm:text-6xl font-black tracking-tight text-on-surface mb-3 group-hover:scale-105 transition-transform">
+            {{PROJECT_METRIC_1_VAL}}
+          </div>
+          <h3 class="font-label-mono text-xs sm:text-sm font-black uppercase border-t-3 border-on-surface pt-3 text-on-surface">
+            {{PROJECT_METRIC_1_LABEL}}
+          </h3>
+          <p class="font-body-md text-xs sm:text-sm text-on-surface/80 mt-2">
+            {{PROJECT_METRIC_1_SUB}}
+          </p>
+        </div>
+
+        <div class="border-4 border-on-surface bg-tertiary p-6 sm:p-8 neo-shadow text-center group hover:-translate-y-1 transition-transform">
+          <div class="font-display text-5xl sm:text-6xl font-black tracking-tight text-on-surface mb-3 group-hover:scale-105 transition-transform">
+            {{PROJECT_METRIC_2_VAL}}
+          </div>
+          <h3 class="font-label-mono text-xs sm:text-sm font-black uppercase border-t-3 border-on-surface pt-3 text-on-surface">
+            {{PROJECT_METRIC_2_LABEL}}
+          </h3>
+          <p class="font-body-md text-xs sm:text-sm text-on-surface/80 mt-2">
+            {{PROJECT_METRIC_2_SUB}}
+          </p>
+        </div>
+
+        <div class="border-4 border-on-surface bg-surface p-6 sm:p-8 neo-shadow text-center group hover:-translate-y-1 transition-transform">
+          <div class="font-display text-5xl sm:text-6xl font-black tracking-tight text-secondary mb-3 group-hover:scale-105 transition-transform">
+            {{PROJECT_METRIC_3_VAL}}
+          </div>
+          <h3 class="font-label-mono text-xs sm:text-sm font-black uppercase border-t-3 border-on-surface pt-3 text-on-surface">
+            {{PROJECT_METRIC_3_LABEL}}
+          </h3>
+          <p class="font-body-md text-xs sm:text-sm text-on-surface/80 mt-2">
+            {{PROJECT_METRIC_3_SUB}}
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECCIÓN 05 / DETALLES VISUALES & MOCKUPS DE EXPERIENCIA
+         ==================================================================== -->
+    <section class="max-w-7xl mx-auto px-4 md:px-8 mb-16 md:mb-24" aria-labelledby="gallery-section-title">
+      <div class="flex items-center justify-between mb-8 flex-wrap gap-4">
+        <div>
+          <span class="font-label-mono text-xs font-black uppercase text-secondary tracking-wider block">05 / Entregables</span>
+          <h2 id="gallery-section-title" class="font-display text-3xl sm:text-4xl font-black uppercase text-on-surface">
+            Vistas del Proyecto &amp; Prototipado
+          </h2>
+        </div>
+        <a href="{{PROJECT_EXTERNAL_URL}}" target="_blank" rel="noopener noreferrer" class="font-label-mono text-xs sm:text-sm font-bold uppercase underline hover:text-secondary inline-flex items-center gap-1">
+          <span>Ver caso extendido en Behance</span>
+          <span class="material-symbols-outlined text-sm">open_in_new</span>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        
+        <!-- Vista Desktop / Flow Principal -->
+        <div class="lg:col-span-8 border-4 border-on-surface bg-surface neo-shadow p-4 sm:p-6">
+          <h3 class="font-display text-lg sm:text-xl font-black uppercase mb-3 text-on-surface flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary">devices</span>
+            Arquitectura Visual de Pantalla Completa
+          </h3>
+          <figure class="border-3 border-on-surface bg-surface-container overflow-hidden">
+            <img 
+              src="{{PROJECT_HERO_IMAGE_SRC}}" 
+              alt="Vista detallada de la arquitectura de la interfaz y elementos interactivos" 
+              class="w-full h-auto object-cover" 
+              loading="lazy" 
+              decoding="async" 
+              width="900" 
+              height="500" 
+            />
+            <figcaption class="p-3 bg-surface border-t-3 border-on-surface font-label-mono text-xs text-on-surface-variant">
+              Figura 1: Composición de módulos, componentes de interfaz y jerarquía tipográfica adaptativa.
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- Vista Enfoque Responsivo / Metodología -->
+        <div class="lg:col-span-4 border-4 border-on-surface bg-surface-container-highest neo-shadow p-4 sm:p-6 flex flex-col justify-between">
+          <div>
+            <h3 class="font-display text-lg sm:text-xl font-black uppercase mb-3 text-on-surface flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary">smartphone</span>
+              Adaptación Mobile-First
+            </h3>
+            <p class="font-body-md text-sm text-on-surface/90 mb-4 leading-relaxed">
+              {{PROJECT_RESPONSIVE_NOTE}}
+            </p>
+            <div class="space-y-3 font-label-mono text-xs border-y-3 border-on-surface py-4 my-4">
+              <div class="flex items-center justify-between">
+                <span class="font-bold">Breakpoints Fluidos:</span>
+                <span>320px — 1440px+</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="font-bold">Tamaño de Fuente Base:</span>
+                <span>16px / 1.6 rem</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="font-bold">Contraste Mínimo:</span>
+                <span>7:1 (AAA)</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="{{PROJECT_EXTERNAL_URL}}" target="_blank" rel="noopener noreferrer" class="w-full bg-secondary text-white font-label-mono text-xs sm:text-sm font-black uppercase py-3 px-4 border-3 border-on-surface neo-shadow-sm neo-hover text-center inline-block min-h-[44px]">
+            Explorar Proyecto Completo →
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECCIÓN 06 / SIGUIENTE PROYECTO (INTERLINKING & BAJA TASA DE REBOTE)
+         ==================================================================== -->
+    <section class="max-w-7xl mx-auto px-4 md:px-8 mb-16 md:mb-24" aria-labelledby="next-project-title">
+      <div class="border-4 border-on-surface bg-surface neo-shadow hover:bg-primary-container/20 transition-colors group">
+        <a href="{{NEXT_PROJECT_URL}}" class="block p-8 sm:p-12 text-center" title="Avanzar al siguiente caso de estudio">
+          <span id="next-project-title" class="font-label-mono text-xs sm:text-sm font-black uppercase tracking-wider block mb-3 text-secondary">
+            Siguiente Caso de Estudio
+          </span>
+          <span class="font-display text-2xl sm:text-4xl md:text-5xl font-black uppercase tracking-tight text-on-surface flex items-center justify-center gap-3 group-hover:gap-5 transition-all">
+            <span>{{NEXT_PROJECT_TITLE}}</span>
+            <span class="material-symbols-outlined text-3xl sm:text-4xl group-hover:translate-x-2 transition-transform" aria-hidden="true">arrow_forward</span>
+          </span>
+          <span class="font-label-mono text-xs text-on-surface-variant block mt-3 uppercase">
+            {{NEXT_PROJECT_CATEGORY}}
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECCIÓN CTA: CONVERSIÓN DIRECTA
+         ==================================================================== -->
+    <section class="max-w-7xl mx-auto px-4 md:px-8 mb-16" aria-labelledby="cta-section-title">
+      <div class="bg-secondary text-white border-4 border-on-surface neo-shadow-lg p-8 sm:p-12 tilt-left">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-8">
+            <span class="font-label-mono text-xs font-black uppercase tracking-wider block mb-2 text-tertiary">¿Buscas resultados similares para tu negocio?</span>
+            <h2 id="cta-section-title" class="font-display text-3xl sm:text-4xl md:text-5xl font-black uppercase leading-tight mb-4 text-white">
+              Diseñemos un producto digital con alto impacto real
+            </h2>
+            <p class="font-body-md text-base sm:text-lg text-white/95 max-w-2xl">
+              Combino arquitectura de información, accesibilidad y optimización para motores de búsqueda para crear experiencias que convierten.
+            </p>
+          </div>
+          <div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-4">
+            <a href="mailto:tbravopino@gmail.com" class="w-full bg-white text-on-surface font-label-mono text-sm font-black uppercase px-6 py-4 border-3 border-on-surface neo-shadow-sm neo-hover text-center min-h-[48px] flex items-center justify-center">
+              Enviar Correo Directo
+            </a>
+            <a href="https://wa.me/56961389870" target="_blank" rel="noopener noreferrer" class="w-full bg-tertiary text-on-surface font-label-mono text-sm font-black uppercase px-6 py-4 border-3 border-on-surface neo-shadow-sm neo-hover text-center min-h-[48px] flex items-center justify-center">
+              Escribir por WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====================================================================
+       FOOTER COHERENTE CON BRAVODESIGN & ENLACES DE CONTACTO
+       ==================================================================== -->
+  <footer class="w-full border-t-4 border-on-surface bg-on-surface text-background mt-auto" id="contact" role="contentinfo">
+    <div class="max-w-7xl mx-auto px-4 md:px-8 py-12 md:py-16">
+      
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-10 pb-10 border-b-2 border-white/20">
+        
+        <div class="md:col-span-6">
+          <div class="font-display text-3xl font-black uppercase tracking-tight text-white mb-2">
+            Tomás Bravo — BravoDesign
+          </div>
+          <p class="font-body-md text-sm sm:text-base text-white/80 max-w-md">
+            Diseñador UX/UI &amp; Asesor Digital enfocado en usabilidad, rendimiento y crecimiento orgánico. Santiago de Chile.
+          </p>
+        </div>
+
+        <div class="md:col-span-6 flex flex-wrap gap-4 md:justify-end items-center font-label-mono text-xs sm:text-sm font-bold">
+          <a href="https://www.linkedin.com/in/tomasbravopino/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 border-2 border-white text-white hover:bg-white hover:text-on-surface transition-colors min-h-[44px] inline-flex items-center">
+            LinkedIn
+          </a>
+          <a href="mailto:tbravopino@gmail.com" class="px-4 py-2 border-2 border-white text-white hover:bg-white hover:text-on-surface transition-colors min-h-[44px] inline-flex items-center">
+            Email
+          </a>
+          <a href="https://wa.me/56961389870" target="_blank" rel="noopener noreferrer" class="px-4 py-2 border-2 border-white text-white hover:bg-white hover:text-on-surface transition-colors min-h-[44px] inline-flex items-center">
+            WhatsApp
+          </a>
+          <a href="https://www.behance.net/tbravopino" target="_blank" rel="noopener noreferrer" class="px-4 py-2 border-2 border-white text-white hover:bg-white hover:text-on-surface transition-colors min-h-[44px] inline-flex items-center">
+            Behance
+          </a>
+        </div>
+
+      </div>
+
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4 font-label-mono text-xs text-white/60">
+        <p>© 2026 Tomás Bravo — Todos los derechos reservados.</p>
+        <p>Construido con Estándares Éticos de Rendimiento, Accesibilidad y SEO.</p>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
