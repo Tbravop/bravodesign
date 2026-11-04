@@ -17,7 +17,6 @@ Luego abre tu navegador en [http://localhost:8000](http://localhost:8000).
 - `index.html`: Página principal del portafolio con enlaces directos a los casos de estudio.
 - `proyecto-template.html`: **Plantilla maestra reutilizable** para publicar nuevos casos de estudio y proyectos con SEO técnico y diseño responsive.
 - `proyectos/`: Directorio de publicaciones de proyectos individuales:
-  - `fintech-para-todos.html`: Caso de estudio del Dashboard Financiero Inclusivo (WCAG AAA).
   - `signia-seo-web-design.html`: Caso de estudio de rediseño web y posicionamiento orgánico.
   - `nam-landing-page.html`: Caso de estudio de landing page de alta conversión (CRO).
   - `gocards-marketplace-tcg.html`: Caso de estudio del marketplace e-commerce con filtros avanzados.
