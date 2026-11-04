@@ -7,8 +7,8 @@
   <!-- ====================================================================
        SEO PRIMARIO & INDEXABILIDAD
        ==================================================================== -->
-  <title>GoCards — Marketplace TCG: Caso de Estudio UX/UI | BravoDesign</title>
-  <meta name="description" content="Caso de estudio de UX Research y diseño UI para GoCards, plataforma e-commerce de cartas coleccionables con filtros avanzados y checkout en 2 pasos." />
+  <title>GoCards — Marketplace TCG: Caso de Estudio UX/UI &amp; E-Commerce | BravoDesign</title>
+  <meta name="description" content="Caso de estudio de UX Research y diseño UI para GoCards: investigación en comunidad Yu-Gi-Oh!, benchmark competitivo, User Persona, UI Kit y flujo de compra segura." />
   <meta name="author" content="Tomás Bravo" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <link rel="canonical" href="https://tbravop.github.io/bravodesign/proyectos/gocards-marketplace-tcg.html" />
@@ -19,12 +19,13 @@
   <meta property="og:locale" content="es_CL" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="GoCards — Marketplace TCG: Caso de Estudio UX/UI | BravoDesign" />
-  <meta property="og:description" content="Investigación de usuarios, arquitectura de filtros y diseño e-commerce para cartas coleccionables." />
+  <meta property="og:description" content="Investigación de usuarios, arquitectura de comunidad y diseño de compra segura para cartas coleccionables." />
   <meta property="og:url" content="https://tbravop.github.io/bravodesign/proyectos/gocards-marketplace-tcg.html" />
   <meta property="og:site_name" content="Tomás Bravo — BravoDesign" />
-  <meta property="og:image" content="https://tbravop.github.io/bravodesign/assets/projects/gocards-marketplace-tcg.png" />
-  <meta property="og:image:alt" content="Mockup y presentación de la plataforma GoCards Marketplace" />
+  <meta property="og:image" content="https://tbravop.github.io/bravodesign/assets/projects/gocards/07-propuesta-de-valor-hero-mobile.png" />
+  <meta property="og:image:alt" content="Mockup y presentación de la plataforma GoCards Marketplace TCG" />
   <meta property="article:published_time" content="2023-06-10T11:00:00-03:00" />
+  <meta property="article:modified_time" content="2026-11-03T22:30:00-03:00" />
   <meta property="article:author" content="https://tbravop.github.io/bravodesign/#person" />
   <meta property="article:section" content="UX Research y E-Commerce Design" />
 
@@ -34,7 +35,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="GoCards — Marketplace TCG: Caso de Estudio UX" />
   <meta name="twitter:description" content="Investigación de usuarios y diseño de interfaz para el marketplace de cartas coleccionables más fluido." />
-  <meta name="twitter:image" content="https://tbravop.github.io/bravodesign/assets/projects/gocards-marketplace-tcg.png" />
+  <meta name="twitter:image" content="https://tbravop.github.io/bravodesign/assets/projects/gocards/07-propuesta-de-valor-hero-mobile.png" />
   <meta name="twitter:creator" content="@tbravopino" />
 
   <!-- ====================================================================
@@ -70,13 +71,13 @@
       {
         "@type": "TechArticle",
         "@id": "https://tbravop.github.io/bravodesign/proyectos/gocards-marketplace-tcg.html#article",
-        "headline": "GoCards — Marketplace TCG: Catálogo Avanzado & Experiencia E-Commerce",
-        "description": "Caso de estudio de UX Research y arquitectura transaccional para GoCards Marketplace.",
+        "headline": "GoCards — Marketplace TCG: UX Research, Comunidad & Compra Segura",
+        "description": "Investigación con jugadores de Yu-Gi-Oh!, benchmark competitivo (YGOPRODeck, Cardmarket), User Persona, UI Kit y diseño de checkout transaccional para cartas coleccionables.",
         "inLanguage": "es",
         "url": "https://tbravop.github.io/bravodesign/proyectos/gocards-marketplace-tcg.html",
         "datePublished": "2023-06-10T11:00:00-03:00",
         "dateModified": "2026-11-03",
-        "image": "https://tbravop.github.io/bravodesign/assets/projects/gocards-marketplace-tcg.png",
+        "image": "https://tbravop.github.io/bravodesign/assets/projects/gocards/07-propuesta-de-valor-hero-mobile.png",
         "author": {
           "@type": "Person",
           "name": "Tomás Bravo",
@@ -92,7 +93,8 @@
           "UX Research y Entrevistas a Usuarios",
           "Diseño de Marketplaces E-Commerce",
           "Sistemas de Filtros Complejos",
-          "Flujo de Checkout y Conversión"
+          "Flujo de Checkout y Conversión",
+          "Mobile-First UI Design"
         ]
       }
     ]
@@ -122,7 +124,10 @@
             "surface-dim": "#dcd9d9",
             "surface-container": "#f0eded",
             "surface-container-high": "#eae7e7",
-            "surface-container-highest": "#e5e2e1"
+            "surface-container-highest": "#e5e2e1",
+            "brand-navy": "#082A5C",
+            "brand-indigo": "#312783",
+            "brand-blue": "#4B98E0"
           },
           fontFamily: {
             "display": ["system-ui", "sans-serif"],
@@ -228,26 +233,31 @@
 
   <main id="main-content" class="flex-grow">
 
-    <!-- HERO SECTION: H1 -->
+    <!-- HERO SECTION: H1 & INTRODUCCIÓN -->
     <section class="max-w-7xl mx-auto px-4 md:px-8 py-10 md:py-16" aria-labelledby="project-hero-title">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-8 md:mb-12">
         <div class="lg:col-span-8">
-          <div class="inline-flex items-center gap-2 mb-4">
+          <div class="inline-flex items-center gap-2 mb-4 flex-wrap">
             <span class="bg-secondary text-white font-label-mono text-xs sm:text-sm font-black uppercase px-3 py-1 border-3 border-on-surface neo-shadow-sm">
               MARKETPLACE / UX RESEARCH
             </span>
             <span class="bg-tertiary text-on-surface font-label-mono text-xs sm:text-sm font-bold uppercase px-3 py-1 border-3 border-on-surface neo-shadow-sm">
-              2023 - 2024
+              MOBILE-FIRST E-COMMERCE
             </span>
           </div>
 
           <h1 id="project-hero-title" class="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tight text-on-surface leading-[1.1] mb-6">
-            GoCards: Marketplace TCG &amp; Experiencia E-Commerce
+            GoCards: Marketplace de Cartas Coleccionables &amp; Comunidad
           </h1>
 
-          <p class="font-body-md text-base sm:text-lg md:text-xl text-on-surface/95 max-w-3xl bg-surface border-4 border-on-surface p-5 sm:p-6 neo-shadow-sm leading-relaxed">
-            Plataforma e-commerce especializada en cartas coleccionables y juegos de mesa. Sistema de filtros multicapa en tiempo real, catálogo estructurado y flujo simplificado de compra-venta segura.
-          </p>
+          <div class="bg-surface border-4 border-on-surface p-5 sm:p-6 neo-shadow-sm leading-relaxed max-w-3xl">
+            <h2 class="font-label-mono text-xs font-black uppercase text-secondary mb-2 tracking-wider">
+              Resumen del Caso de Estudio
+            </h2>
+            <p class="font-body-md text-base sm:text-lg text-on-surface/95">
+              GoCards es una plataforma e-commerce orientada a móvil diseñada para resolver la fragmentación en la compra y venta de cartas coleccionables (TCG). Nacido de una investigación con jugadores activos de <strong>Yu-Gi-Oh!</strong>, el proyecto unifica la búsqueda rápida de cartas específicas, la garantía de transacciones seguras entre usuarios y un espacio de aprendizaje y socialización comunitaria.
+            </p>
+          </div>
         </div>
 
         <div class="lg:col-span-4 flex flex-col gap-3 justify-end items-start lg:items-end">
@@ -261,13 +271,14 @@
         </div>
       </div>
 
+      <!-- Imagen Mockup Principal -->
       <figure class="border-4 md:border-6 border-on-surface neo-shadow-lg bg-surface overflow-hidden aspect-[16/9] w-full relative">
         <img 
-          src="../assets/projects/gocards-marketplace-tcg.png" 
-          alt="Vista del catálogo interactivo y checkout de GoCards Marketplace TCG" 
+          src="../assets/projects/gocards/07-propuesta-de-valor-hero-mobile.png" 
+          alt="Vista de la propuesta de valor y catálogo de GoCards Marketplace TCG" 
           class="w-full h-full object-cover" 
-          width="1280" 
-          height="720"
+          width="1400" 
+          height="1323"
           fetchpriority="high"
           loading="eager"
           decoding="async" 
@@ -284,291 +295,537 @@
             <span class="material-symbols-outlined text-base text-tertiary">info</span>
             01 / Ficha Técnica del Proyecto
           </h2>
-          <span class="font-label-mono text-xs text-white/70">E-Commerce Architecture</span>
+          <span class="font-label-mono text-xs text-white/70">E-Commerce &amp; Community Architecture</span>
         </div>
 
         <div class="grid grid-cols-2 md:grid-cols-4 divide-y-4 md:divide-y-0 md:divide-x-4 divide-on-surface bg-primary-container/30">
           <div class="p-4 sm:p-6 bg-surface">
             <span class="font-label-mono text-xs font-bold block mb-1 text-on-surface-variant uppercase">Rol</span>
             <span class="font-display text-lg sm:text-xl font-black block text-on-surface">UX Researcher &amp; UI</span>
+            <span class="font-label-mono text-xs text-on-surface-variant">Diseño End-to-End</span>
           </div>
           <div class="p-4 sm:p-6 bg-surface">
-            <span class="font-label-mono text-xs font-bold block mb-1 text-on-surface-variant uppercase">Cliente</span>
+            <span class="font-label-mono text-xs font-bold block mb-1 text-on-surface-variant uppercase">Producto</span>
             <span class="font-display text-lg sm:text-xl font-black block text-on-surface">GoCards</span>
+            <span class="font-label-mono text-xs text-on-surface-variant">Marketplace TCG</span>
           </div>
           <div class="p-4 sm:p-6 bg-surface">
-            <span class="font-label-mono text-xs font-bold block mb-1 text-on-surface-variant uppercase">Año</span>
-            <span class="font-display text-lg sm:text-xl font-black block text-on-surface">2023 - 2024</span>
+            <span class="font-label-mono text-xs font-bold block mb-1 text-on-surface-variant uppercase">Metodología</span>
+            <span class="font-display text-lg sm:text-xl font-black block text-on-surface">Mobile-First</span>
+            <span class="font-label-mono text-xs text-on-surface-variant">Benchmark + Persona</span>
           </div>
           <div class="p-4 sm:p-6 bg-surface">
             <span class="font-label-mono text-xs font-bold block mb-1 text-on-surface-variant uppercase">Servicios</span>
-            <span class="font-label-mono text-xs sm:text-sm font-bold block text-on-surface leading-tight">UX Research, Arquitectura de Filtros, Checkout Transaccional</span>
+            <span class="font-label-mono text-xs sm:text-sm font-bold block text-on-surface leading-tight">
+              Investigación, UI Kit, Guía de Estilos, Arquitectura de Compra Segura
+            </span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 02 / EL DESAFÍO -->
-    <section class="max-w-7xl mx-auto px-4 md:px-8 mb-16 md:mb-24" aria-labelledby="challenge-section-title">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-        <div class="lg:col-span-4">
-          <div class="border-4 border-on-surface bg-tertiary p-6 sm:p-8 neo-shadow h-full flex flex-col justify-between tilt-left">
-            <div>
-              <span class="font-label-mono text-xs font-black uppercase tracking-wider block mb-2 text-on-surface/80">
-                02 / Investigación Previa
-              </span>
-              <h2 id="challenge-section-title" class="font-display text-3xl sm:text-4xl lg:text-5xl font-black uppercase leading-tight text-on-surface">
-                El Desafío
-              </h2>
-            </div>
-            <div class="mt-8 pt-6 border-t-3 border-on-surface flex items-center justify-between">
-              <span class="font-label-mono text-xs font-bold">Sobrecarga de Catálogo</span>
-              <span class="material-symbols-outlined text-4xl text-on-surface" aria-hidden="true">layers_clear</span>
-            </div>
-          </div>
+    <!-- FASE 01: EL GRAN PROBLEMA -->
+    <section class="max-w-7xl mx-auto px-4 md:px-8 mb-16 md:mb-24" aria-labelledby="phase-01-title">
+      <div class="border-4 border-on-surface bg-surface neo-shadow p-6 sm:p-10 mb-8">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="bg-secondary text-white font-label-mono text-xs font-black uppercase px-3 py-1 border-2 border-on-surface">
+            FASE 01 · INVESTIGACIÓN INICIAL
+          </span>
         </div>
-
-        <div class="lg:col-span-8">
-          <div class="border-4 border-on-surface bg-surface p-6 sm:p-10 neo-shadow h-full flex flex-col justify-center">
-            <h3 class="font-display text-xl sm:text-2xl font-black uppercase mb-4 text-on-surface">
-              Navegar entre más de 40.000 referencias sin fatiga de decisión
-            </h3>
-            <div class="space-y-4 font-body-md text-base sm:text-lg text-on-surface/90 leading-relaxed">
-              <p>
-                Los coleccionistas y jugadores de cartas intercambiables (TCG) necesitan filtrar por edición, rareza, estado de conservación (Near Mint, Played), idioma y rango de precio en milisegundos.
-              </p>
-              <p>
-                Los marketplaces tradicionales de nicho presentaban interfaces anticuadas tipo hoja de cálculo con altas tasas de abandono en el checkout y falta de confianza en la autenticidad del producto.
-              </p>
-            </div>
+        <h2 id="phase-01-title" class="font-display text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-on-surface mb-6">
+          El Gran Problema de la Comunidad TCG
+        </h2>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-6 space-y-4 font-body-md text-base sm:text-lg text-on-surface/90 leading-relaxed">
+            <p class="font-bold text-xl text-brand-navy">
+              ¿Sabes lo difícil que es como jugador de cartas entrar en un nuevo juego y mantenerte en él?
+            </p>
+            <p>
+              Muchas comunidades de juegos de cartas tienen un problema central: <strong>la escasa comunicación y soporte que existe fuera del entorno físico de juego</strong>, limitándose a los típicos grupos informales de WhatsApp o Facebook.
+            </p>
+            <ul class="space-y-3 font-body-md text-sm sm:text-base border-t-3 border-on-surface pt-4">
+              <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-secondary text-xl shrink-0">cancel</span>
+                <span><strong>Barrera de entrada para principiantes:</strong> Desconocen el metajuego, qué cartas comprar o cómo armar un deck viable sin gastar de más.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-secondary text-xl shrink-0">cancel</span>
+                <span><strong>Comercio informal riesgoso:</strong> Las ventas en grupos de Facebook no ofrecen protección de pago, trazabilidad ni garantías del estado real de la carta.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="material-symbols-outlined text-secondary text-xl shrink-0">cancel</span>
+                <span><strong>Comunidades fragmentadas:</strong> Las discusiones estratégicas se pierden entre miles de mensajes sin organizar.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="lg:col-span-6">
+            <figure class="border-4 border-on-surface bg-surface-container neo-shadow-sm overflow-hidden">
+              <img 
+                src="../assets/projects/gocards/01-el-gran-problema-comunidad-tcg.png" 
+                alt="El Gran Problema de la comunidad de cartas coleccionables identificado en la investigación inicial" 
+                class="w-full h-auto object-cover" 
+                loading="lazy" 
+                decoding="async" 
+                width="1400" 
+                height="972" 
+              />
+              <figcaption class="p-3 bg-surface border-t-3 border-on-surface font-label-mono text-xs text-on-surface-variant">
+                Figura 1: Planteamiento del problema central en el ecosistema de cartas coleccionables.
+              </figcaption>
+            </figure>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 03 / LA SOLUCIÓN -->
-    <section class="max-w-7xl mx-auto px-4 md:px-8 mb-16 md:mb-24" aria-labelledby="solution-section-title">
-      <div class="flex items-center gap-4 mb-8">
-        <div class="bg-primary-container border-4 border-on-surface p-3 sm:p-4 neo-shadow-sm tilt-right">
-          <span class="material-symbols-outlined text-2xl sm:text-3xl text-on-surface" aria-hidden="true">storefront</span>
+    <!-- FASE 02: BENCHMARK COMPETITIVO -->
+    <section class="max-w-7xl mx-auto px-4 md:px-8 mb-16 md:mb-24" aria-labelledby="phase-02-title">
+      <div class="border-4 border-on-surface bg-surface neo-shadow p-6 sm:p-10 mb-8">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="bg-tertiary text-on-surface font-label-mono text-xs font-black uppercase px-3 py-1 border-2 border-on-surface">
+            FASE 02 · BENCHMARK &amp; ANÁLISIS
+          </span>
         </div>
-        <div>
-          <span class="font-label-mono text-xs font-black uppercase text-secondary tracking-wider block">03 / Solución de Interfaz</span>
-          <h2 id="solution-section-title" class="font-display text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-on-surface">
-            La Solución Desarrollada
-          </h2>
-        </div>
-      </div>
+        <h2 id="phase-02-title" class="font-display text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-on-surface mb-6">
+          Benchmark de Competidores &amp; Conclusiones
+        </h2>
+        <p class="font-body-md text-base sm:text-lg text-on-surface/90 leading-relaxed max-w-4xl mb-8">
+          Se analizaron en profundidad 3 referentes del mercado: <strong>YGOPRODeck</strong>, <strong>Cardmarket</strong> y grupos comunitarios en redes sociales. Se evaluaron factores críticos de tipografía, gráfica, socialización, experiencia responsive y usabilidad.
+        </p>
 
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
-        
-        <div class="md:col-span-8 border-4 border-on-surface bg-surface neo-shadow p-6 sm:p-8 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center gap-3 mb-4">
-              <span class="material-symbols-outlined text-3xl bg-secondary text-white p-2 border-3 border-on-surface neo-shadow-sm" aria-hidden="true">tune</span>
-              <span class="font-label-mono text-xs font-bold uppercase text-on-surface-variant">Pilar 01 · Faceted Search</span>
-            </div>
-            <h3 class="font-display text-2xl sm:text-3xl font-black uppercase mb-3 text-on-surface">
-              Sistema de Filtros Instantáneos
-            </h3>
-            <p class="font-body-md text-base sm:text-lg text-on-surface/90 leading-relaxed">
-              Búsqueda facetada con actualización reactiva en pantalla sin recargas de página. Los coleccionistas pueden filtrar simultáneamente por estado de carta, edición foil y rango de precio en un solo panel colapsable.
+        <figure class="border-4 border-on-surface bg-surface-container neo-shadow-sm overflow-hidden mb-8">
+          <img 
+            src="../assets/projects/gocards/02-benchmark-competidores-e-investigacion.png" 
+            alt="Análisis comparativo de YGOPRODeck, Cardmarket y grupos de redes sociales" 
+            class="w-full h-auto object-cover" 
+            loading="lazy" 
+            decoding="async" 
+            width="1400" 
+            height="1815" 
+          />
+          <figcaption class="p-3 bg-surface border-t-3 border-on-surface font-label-mono text-xs text-on-surface-variant">
+            Figura 2: Auditoría comparativa de plataformas existentes y hallazgos clave de mercado.
+          </figcaption>
+        </figure>
+
+        <!-- Conclusiones estructuradas en tarjetas -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="border-3 border-on-surface bg-primary-container/20 p-5 neo-shadow-sm">
+            <span class="font-label-mono text-xs font-black uppercase text-brand-indigo block mb-2">Hallazgo 01</span>
+            <h3 class="font-display text-lg font-black uppercase mb-2">Foco Exclusivo en Ventas Frías</h3>
+            <p class="font-body-md text-sm text-on-surface/90">
+              Las páginas comerciales se centran únicamente en vender cartas mediante tablas numéricas áridas. No existe espacio para la interacción de los jugadores fuera de las tiendas físicas.
             </p>
           </div>
-          <div class="mt-6 pt-4 border-t-3 border-on-surface/20 flex flex-wrap gap-2">
-            <span class="bg-surface-container border-2 border-on-surface font-label-mono text-xs px-2.5 py-1 font-bold">Faceted Navigation</span>
-            <span class="bg-surface-container border-2 border-on-surface font-label-mono text-xs px-2.5 py-1 font-bold">Live Search &lt;100ms</span>
-            <span class="bg-surface-container border-2 border-on-surface font-label-mono text-xs px-2.5 py-1 font-bold">Filtro de Rareza</span>
+          <div class="border-3 border-on-surface bg-tertiary/30 p-5 neo-shadow-sm">
+            <span class="font-label-mono text-xs font-black uppercase text-secondary block mb-2">Hallazgo 02</span>
+            <h3 class="font-display text-lg font-black uppercase mb-2">Ventas Desprotegidas en WhatsApp</h3>
+            <p class="font-body-md text-sm text-on-surface/90">
+              La comunidad recurre a grupos de chat para socializar, pero terminan comprando y vendiendo sin intermediario de confianza ni cálculo de envíos, sufriendo pérdidas frecuentes.
+            </p>
+          </div>
+          <div class="border-3 border-on-surface bg-secondary/15 p-5 neo-shadow-sm">
+            <span class="font-label-mono text-xs font-black uppercase text-primary block mb-2">Hallazgo 03</span>
+            <h3 class="font-display text-lg font-black uppercase mb-2">Los Blogs Tradicionales no Socializan</h3>
+            <p class="font-body-md text-sm text-on-surface/90">
+              Los sitios con artículos aportan información estática pero son unidireccionales; no generan sentido de pertenencia ni facilitan conseguir la carta mencionada en la guía.
+            </p>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="md:col-span-4 border-4 border-on-surface bg-surface-container-highest neo-shadow flex flex-col">
-          <div class="p-4 border-b-4 border-on-surface bg-primary-container font-label-mono text-xs font-black uppercase flex items-center justify-between">
-            <span>Pilar 02 · Checkout</span>
-            <span class="material-symbols-outlined text-base">shopping_cart_checkout</span>
+    <!-- FASE 03: NUESTRA SOLUCIÓN -->
+    <section class="max-w-7xl mx-auto px-4 md:px-8 mb-16 md:mb-24" aria-labelledby="phase-03-title">
+      <div class="border-4 border-on-surface bg-surface neo-shadow p-6 sm:p-10 mb-8">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="bg-primary-container text-on-surface font-label-mono text-xs font-black uppercase px-3 py-1 border-2 border-on-surface">
+            FASE 03 · PROPUESTA DE VALOR
+          </span>
+        </div>
+        <h2 id="phase-03-title" class="font-display text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-on-surface mb-6">
+          Nuestra Solución: Los 3 Pilares de GoCards
+        </h2>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-8">
+          <div class="lg:col-span-6 space-y-4 font-body-md text-base sm:text-lg text-on-surface/90 leading-relaxed">
+            <p>
+              La solución nace directamente de la <strong>investigación con la comunidad de jugadores de cartas coleccionables (Yu-Gi-Oh!)</strong> por medio de encuestas estructuradas y entrevistas a jugadores de tienda.
+            </p>
+            <p>
+              A partir de los datos recolectados, se definieron 3 soluciones prioritarias integradas en una experiencia web orientada a dispositivos móviles (Mobile-First):
+            </p>
+            <div class="space-y-4 border-l-4 border-secondary pl-4 py-2">
+              <div>
+                <h3 class="font-display text-base sm:text-lg font-black uppercase text-on-surface">1. Compra y Venta Segura</h3>
+                <p class="text-sm text-on-surface/80">Protección mutua entre usuarios, calificación verificada de vendedores y transparencia de costos de envío.</p>
+              </div>
+              <div>
+                <h3 class="font-display text-base sm:text-lg font-black uppercase text-on-surface">2. Búsqueda Completa y Eficiente</h3>
+                <p class="text-sm text-on-surface/80">Filtro multicapa por nombre, edición, rareza, estado de conservación y comparador instantáneo de versiones.</p>
+              </div>
+              <div>
+                <h3 class="font-display text-base sm:text-lg font-black uppercase text-on-surface">3. Fomentar el Contenido Comunitario</h3>
+                <p class="text-sm text-on-surface/80">Artículos de estrategia de metajuego, guías competitivas y enlaces directos para adquirir las cartas recomendadas.</p>
+              </div>
+            </div>
           </div>
-          <div class="p-6 flex-grow flex flex-col justify-between">
-            <div>
-              <h3 class="font-display text-xl sm:text-2xl font-black uppercase mb-3 text-on-surface">
-                Checkout en 2 Pasos
+          <div class="lg:col-span-6">
+            <figure class="border-4 border-on-surface bg-surface-container neo-shadow-sm overflow-hidden">
+              <img 
+                src="../assets/projects/gocards/03-nuestra-solucion-pilares-comunidad-y-ventas.png" 
+                alt="Pilares de la solución de GoCards: compra segura, búsqueda eficiente y contenido comunitario" 
+                class="w-full h-auto object-cover" 
+                loading="lazy" 
+                decoding="async" 
+                width="1400" 
+                height="1674" 
+              />
+              <figcaption class="p-3 bg-surface border-t-3 border-on-surface font-label-mono text-xs text-on-surface-variant">
+                Figura 3: Pilares estratégicos validados con encuestas a la comunidad de jugadores.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FASE 04: USER PERSONA -->
+    <section class="max-w-7xl mx-auto px-4 md:px-8 mb-16 md:mb-24" aria-labelledby="phase-04-title">
+      <div class="border-4 border-on-surface bg-surface neo-shadow p-6 sm:p-10 mb-8">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="bg-secondary text-white font-label-mono text-xs font-black uppercase px-3 py-1 border-2 border-on-surface">
+            FASE 04 · ARQUETIPOS DE USUARIO
+          </span>
+        </div>
+        <h2 id="phase-04-title" class="font-display text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-on-surface mb-6">
+          User Persona: El Jugador Competitivo
+        </h2>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7">
+            <figure class="border-4 border-on-surface bg-surface-container neo-shadow-sm overflow-hidden">
+              <img 
+                src="../assets/projects/gocards/04-user-persona-jugador-competitivo.png" 
+                alt="Ficha de User Persona del jugador competitivo con actitudes, habilidades y metas" 
+                class="w-full h-auto object-cover" 
+                loading="lazy" 
+                decoding="async" 
+                width="1400" 
+                height="2016" 
+              />
+              <figcaption class="p-3 bg-surface border-t-3 border-on-surface font-label-mono text-xs text-on-surface-variant">
+                Figura 4: Perfil psicográfico y conductual del usuario objetivo de GoCards.
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="lg:col-span-5 space-y-6">
+            <div class="border-3 border-on-surface bg-tertiary/20 p-5 neo-shadow-sm">
+              <h3 class="font-display text-lg font-black uppercase text-on-surface mb-2 flex items-center gap-2">
+                <span class="material-symbols-outlined text-secondary">psychology</span>
+                Actitudes &amp; Comportamiento
               </h3>
-              <ul class="space-y-2.5 font-body-md text-sm sm:text-base text-on-surface/90">
-                <li class="flex items-start gap-2">
-                  <span class="font-bold text-secondary">▪</span>
-                  <span>Opción de compra como invitado</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="font-bold text-secondary">▪</span>
-                  <span>Cálculo automático de envíos combinados</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="font-bold text-secondary">▪</span>
-                  <span>Protección de fondos al comprador</span>
-                </li>
+              <ul class="space-y-1.5 font-body-md text-sm text-on-surface/90">
+                <li>• Necesidad constante de mejorar su nivel de juego competitivo.</li>
+                <li>• Investiga exhaustivamente listas de decks, combos y tendencias del meta.</li>
+                <li>• Valora el cuidado y condición de sus cartas coleccionables.</li>
+                <li>• Busca maximizar la diversión logrando victorias consistentes.</li>
               </ul>
             </div>
-            <div class="mt-4 font-label-mono text-xs font-bold text-secondary">
-              ✓ Menos carritos abandonados
+
+            <div class="border-3 border-on-surface bg-primary-container/20 p-5 neo-shadow-sm">
+              <h3 class="font-display text-lg font-black uppercase text-on-surface mb-2 flex items-center gap-2">
+                <span class="material-symbols-outlined text-brand-indigo">verified_user</span>
+                Skills &amp; Rasgos
+              </h3>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-surface border-2 border-on-surface px-2.5 py-1 font-label-mono text-xs font-bold">Paciente</span>
+                <span class="bg-surface border-2 border-on-surface px-2.5 py-1 font-label-mono text-xs font-bold">Competitivo</span>
+                <span class="bg-surface border-2 border-on-surface px-2.5 py-1 font-label-mono text-xs font-bold">Colaborador</span>
+                <span class="bg-surface border-2 border-on-surface px-2.5 py-1 font-label-mono text-xs font-bold">Pragmático</span>
+              </div>
+            </div>
+
+            <div class="border-3 border-on-surface bg-surface-container p-5 neo-shadow-sm">
+              <h3 class="font-display text-lg font-black uppercase text-on-surface mb-2 flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary">flag</span>
+                Metas &amp; Motivaciones
+              </h3>
+              <p class="font-body-md text-sm text-on-surface/90 leading-relaxed">
+                Lograr colocarse en el <strong>Top de torneos presenciales</strong>, conseguir mejores cartas para su baraja sin arriesgarse a fraudes y equilibrar su tiempo de estudio o trabajo con su afición favorita.
+              </p>
             </div>
           </div>
         </div>
-
-        <div class="md:col-span-6 border-4 border-on-surface bg-surface p-6 neo-shadow flex items-start gap-4">
-          <div class="w-14 h-14 border-3 border-on-surface bg-tertiary flex items-center justify-center shrink-0 neo-shadow-sm">
-            <span class="material-symbols-outlined text-2xl text-on-surface" aria-hidden="true">verified</span>
-          </div>
-          <div>
-            <span class="font-label-mono text-xs font-black uppercase text-secondary block mb-1">Pilar 03 · Autenticidad</span>
-            <h3 class="font-display text-lg sm:text-xl font-black uppercase mb-2 text-on-surface">
-              Fichas de Carta con Graduación Visual
-            </h3>
-            <p class="font-body-md text-sm sm:text-base text-on-surface/90">
-              Guías fotográficas de alta resolución para verificar el centrado y bordes de las cartas antes de realizar cualquier oferta.
-            </p>
-          </div>
-        </div>
-
-        <div class="md:col-span-6 border-4 border-on-surface bg-surface p-6 neo-shadow flex items-start gap-4">
-          <div class="w-14 h-14 border-3 border-on-surface bg-primary-container flex items-center justify-center shrink-0 neo-shadow-sm">
-            <span class="material-symbols-outlined text-2xl text-on-surface" aria-hidden="true">sync_alt</span>
-          </div>
-          <div>
-            <span class="font-label-mono text-xs font-black uppercase text-primary block mb-1">Pilar 04 · Doble Flujo</span>
-            <h3 class="font-display text-lg sm:text-xl font-black uppercase mb-2 text-on-surface">
-              Experiencia Dual Comprador / Vendedor
-            </h3>
-            <p class="font-body-md text-sm sm:text-base text-on-surface/90">
-              Panel integrado para publicar lotes masivos con escáner de códigos de barra o buscar piezas faltantes para colecciones.
-            </p>
-          </div>
-        </div>
-
       </div>
     </section>
 
-    <!-- 04 / RESULTADOS -->
-    <section class="max-w-7xl mx-auto px-4 md:px-8 mb-16 md:mb-24" aria-labelledby="results-section-title">
-      <div class="bg-on-surface text-background p-6 sm:p-8 border-4 border-on-surface neo-shadow-secondary mb-8">
-        <span class="font-label-mono text-xs font-black uppercase text-tertiary tracking-wider block mb-2">
-          04 / Impacto de Negocio &amp; Métricas
-        </span>
-        <h2 id="results-section-title" class="font-display text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-white">
-          Resultados Demostrables
+    <!-- FASE 05: GUÍA DE ESTILOS & TOKENS -->
+    <section class="max-w-7xl mx-auto px-4 md:px-8 mb-16 md:mb-24" aria-labelledby="phase-05-title">
+      <div class="border-4 border-on-surface bg-surface neo-shadow p-6 sm:p-10 mb-8">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="bg-on-surface text-background font-label-mono text-xs font-black uppercase px-3 py-1 border-2 border-on-surface">
+            FASE 05 · DESIGN SYSTEM
+          </span>
+        </div>
+        <h2 id="phase-05-title" class="font-display text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-on-surface mb-6">
+          Guía de Estilos: Colores &amp; Tipografía
         </h2>
-        <p class="font-body-md text-sm sm:text-base text-white/80 max-w-2xl mt-2">
-          Métricas auditadas con más de 12.000 transacciones mensuales procesadas en la plataforma.
-        </p>
-      </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="border-4 border-on-surface bg-primary-container p-6 sm:p-8 neo-shadow text-center group hover:-translate-y-1 transition-transform">
-          <div class="font-display text-5xl sm:text-6xl font-black tracking-tight text-on-surface mb-3 group-hover:scale-105 transition-transform">
-            +55%
-          </div>
-          <h3 class="font-label-mono text-xs sm:text-sm font-black uppercase border-t-3 border-on-surface pt-3 text-on-surface">
-            Retención Recurrente Mensual
-          </h3>
-          <p class="font-body-md text-xs sm:text-sm text-on-surface/80 mt-2">
-            Compradores que vuelven a realizar pedidos gracias al sistema de listas de deseos.
-          </p>
-        </div>
+        <figure class="border-4 border-on-surface bg-surface-container neo-shadow-sm overflow-hidden mb-8">
+          <img 
+            src="../assets/projects/gocards/05-guia-de-estilos-colores-y-tipografia.png" 
+            alt="Guía de estilos con paleta de colores hexadecimales y tipografía Roboto y Montserrat" 
+            class="w-full h-auto object-cover" 
+            loading="lazy" 
+            decoding="async" 
+            width="1400" 
+            height="1657" 
+          />
+          <figcaption class="p-3 bg-surface border-t-3 border-on-surface font-label-mono text-xs text-on-surface-variant">
+            Figura 5: Especificación de paleta cromática de alta fidelidad y jerarquía tipográfica.
+          </figcaption>
+        </figure>
 
-        <div class="border-4 border-on-surface bg-tertiary p-6 sm:p-8 neo-shadow text-center group hover:-translate-y-1 transition-transform">
-          <div class="font-display text-5xl sm:text-6xl font-black tracking-tight text-on-surface mb-3 group-hover:scale-105 transition-transform">
-            +35%
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-4 text-center">
+          <div class="border-3 border-on-surface p-4 bg-[#082A5C] text-white neo-shadow-sm">
+            <span class="font-label-mono text-xs font-bold block">#082A5C</span>
+            <span class="font-display text-xs uppercase font-black">Navy Brand</span>
           </div>
-          <h3 class="font-label-mono text-xs sm:text-sm font-black uppercase border-t-3 border-on-surface pt-3 text-on-surface">
-            Ticket Promedio de Compra
-          </h3>
-          <p class="font-body-md text-xs sm:text-sm text-on-surface/80 mt-2">
-            Ventas cruzadas sugeridas de protectores y cartas complementarias en carrito.
-          </p>
-        </div>
-
-        <div class="border-4 border-on-surface bg-surface p-6 sm:p-8 neo-shadow text-center group hover:-translate-y-1 transition-transform">
-          <div class="font-display text-5xl sm:text-6xl font-black tracking-tight text-secondary mb-3 group-hover:scale-105 transition-transform">
-            4.8/5
+          <div class="border-3 border-on-surface p-4 bg-[#312783] text-white neo-shadow-sm">
+            <span class="font-label-mono text-xs font-bold block">#312783</span>
+            <span class="font-display text-xs uppercase font-black">Indigo Night</span>
           </div>
-          <h3 class="font-label-mono text-xs sm:text-sm font-black uppercase border-t-3 border-on-surface pt-3 text-on-surface">
-            Puntuación SUS de Usabilidad
-          </h3>
-          <p class="font-body-md text-xs sm:text-sm text-on-surface/80 mt-2">
-            Evaluación destacada en pruebas con usuarios respecto a facilidad de checkout.
-          </p>
+          <div class="border-3 border-on-surface p-4 bg-[#4B98E0] text-on-surface neo-shadow-sm">
+            <span class="font-label-mono text-xs font-bold block">#4B98E0</span>
+            <span class="font-display text-xs uppercase font-black">Electric Blue</span>
+          </div>
+          <div class="border-3 border-on-surface p-4 bg-[#FFFFFF] text-on-surface neo-shadow-sm">
+            <span class="font-label-mono text-xs font-bold block">#FFFFFF</span>
+            <span class="font-display text-xs uppercase font-black">Pure White</span>
+          </div>
+          <div class="border-3 border-on-surface p-4 bg-[#C4C4C4] text-on-surface neo-shadow-sm">
+            <span class="font-label-mono text-xs font-bold block">#C4C4C4</span>
+            <span class="font-display text-xs uppercase font-black">Border Gray</span>
+          </div>
+          <div class="border-3 border-on-surface p-4 bg-[#838383] text-white neo-shadow-sm">
+            <span class="font-label-mono text-xs font-bold block">#838383</span>
+            <span class="font-display text-xs uppercase font-black">Muted Gray</span>
+          </div>
+          <div class="border-3 border-on-surface p-4 bg-[#131313] text-white neo-shadow-sm">
+            <span class="font-label-mono text-xs font-bold block">#131313</span>
+            <span class="font-display text-xs uppercase font-black">Dark Slate</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- 05 / DETALLES VISUALES -->
-    <section class="max-w-7xl mx-auto px-4 md:px-8 mb-16 md:mb-24" aria-labelledby="gallery-section-title">
-      <div class="flex items-center justify-between mb-8 flex-wrap gap-4">
-        <div>
-          <span class="font-label-mono text-xs font-black uppercase text-secondary tracking-wider block">05 / Entregables</span>
-          <h2 id="gallery-section-title" class="font-display text-3xl sm:text-4xl font-black uppercase text-on-surface">
-            Vistas del Proyecto &amp; Prototipado
-          </h2>
+    <!-- FASE 06: UI KIT & SISTEMA DE COMPONENTES -->
+    <section class="max-w-7xl mx-auto px-4 md:px-8 mb-16 md:mb-24" aria-labelledby="phase-06-title">
+      <div class="border-4 border-on-surface bg-surface neo-shadow p-6 sm:p-10 mb-8">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="bg-tertiary text-on-surface font-label-mono text-xs font-black uppercase px-3 py-1 border-2 border-on-surface">
+            FASE 06 · COMPONENTES MODULARES
+          </span>
         </div>
-        <a href="https://www.behance.net/gallery/143308471/GoCards-Marketplace-TCG" target="_blank" rel="noopener noreferrer" class="font-label-mono text-xs sm:text-sm font-bold uppercase underline hover:text-secondary inline-flex items-center gap-1">
-          <span>Ver caso completo en Behance</span>
-          <span class="material-symbols-outlined text-sm">open_in_new</span>
-        </a>
+        <h2 id="phase-06-title" class="font-display text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-on-surface mb-6">
+          UI Kit: Sistema de Navegación &amp; Elementos Móviles
+        </h2>
+        <p class="font-body-md text-base sm:text-lg text-on-surface/90 leading-relaxed max-w-4xl mb-8">
+          Diseño atómico de componentes UI optimizados para pantallas táctiles: barra de navegación superior con buscador persistente, menú hamburguesa categorizado, tarjetas de contenido de comunidad, badges promocionales y estados vacíos.
+        </p>
+
+        <figure class="border-4 border-on-surface bg-surface-container neo-shadow-sm overflow-hidden mb-8">
+          <img 
+            src="../assets/projects/gocards/06-ui-kit-componentes-y-navegacion.png" 
+            alt="UI Kit de GoCards con Navbar, buscador, menú hamburguesa y botones" 
+            class="w-full h-auto object-cover" 
+            loading="lazy" 
+            decoding="async" 
+            width="1400" 
+            height="1137" 
+          />
+          <figcaption class="p-3 bg-surface border-t-3 border-on-surface font-label-mono text-xs text-on-surface-variant">
+            Figura 6: Kit de componentes móviles para navegación y consumo de artículos comunitarios.
+          </figcaption>
+        </figure>
       </div>
+    </section>
 
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-        <div class="lg:col-span-8 border-4 border-on-surface bg-surface neo-shadow p-4 sm:p-6">
-          <h3 class="font-display text-lg sm:text-xl font-black uppercase mb-3 text-on-surface flex items-center gap-2">
-            <span class="material-symbols-outlined text-primary">devices</span>
-            Arquitectura de Búsqueda y Catálogo
-          </h3>
-          <figure class="border-3 border-on-surface bg-surface-container overflow-hidden">
-            <img 
-              src="../assets/projects/gocards-marketplace-tcg.png" 
-              alt="Detalle de la arquitectura del marketplace GoCards con filtros y catálogo" 
-              class="w-full h-auto object-cover" 
-              loading="lazy" 
-              decoding="async" 
-              width="900" 
-              height="500" 
-            />
-            <figcaption class="p-3 bg-surface border-t-3 border-on-surface font-label-mono text-xs text-on-surface-variant">
-              Figura 1: Módulos de filtrado facetado y tarjetas de producto con indicador de stock y condición.
-            </figcaption>
-          </figure>
+    <!-- FASE 07 & 08: PROPUESTA DE VALOR & COMUNIDAD -->
+    <section class="max-w-7xl mx-auto px-4 md:px-8 mb-16 md:mb-24" aria-labelledby="phase-07-title">
+      <div class="border-4 border-on-surface bg-surface neo-shadow p-6 sm:p-10 mb-8">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="bg-secondary text-white font-label-mono text-xs font-black uppercase px-3 py-1 border-2 border-on-surface">
+            FASE 07 · EXPERIENCIA INTEGRADA
+          </span>
         </div>
+        <h2 id="phase-07-title" class="font-display text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-on-surface mb-6">
+          Propuesta de Valor &amp; Contenido Comunitario
+        </h2>
 
-        <div class="lg:col-span-4 border-4 border-on-surface bg-surface-container-highest neo-shadow p-4 sm:p-6 flex flex-col justify-between">
-          <div>
-            <h3 class="font-display text-lg sm:text-xl font-black uppercase mb-3 text-on-surface flex items-center gap-2">
-              <span class="material-symbols-outlined text-secondary">smartphone</span>
-              Adaptación Responsive Móvil
-            </h3>
-            <p class="font-body-md text-sm text-on-surface/90 mb-4 leading-relaxed">
-              El 70% de las consultas de precios durante torneos presenciales se realizan vía celular. Se creó una vista compacta con carga en caché offline para consultas inmediatas.
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-8">
+          <div class="lg:col-span-6 space-y-4 font-body-md text-base sm:text-lg text-on-surface/90 leading-relaxed">
+            <p class="font-bold text-xl text-brand-indigo">
+              "Marketplace para juego de cartas coleccionables reforzando la comunidad y asegurando sus ventas"
             </p>
-            <div class="space-y-3 font-label-mono text-xs border-y-3 border-on-surface py-4 my-4">
-              <div class="flex items-center justify-between">
-                <span class="font-bold">Breakpoints Fluidos:</span>
-                <span>320px — 1440px+</span>
-              </div>
-              <div class="flex items-center justify-between">
-                <span class="font-bold">Respuesta de Filtros:</span>
-                <span>&lt;80ms en móvil</span>
-              </div>
-              <div class="flex items-center justify-between">
-                <span class="font-bold">Diseño de Botones:</span>
-                <span>Hitbox &gt;48px</span>
-              </div>
+            <p>
+              A diferencia de las plataformas tradicionales que solo listan inventario, la pantalla de inicio de GoCards saluda al usuario con artículos de estrategia escrita por miembros destacados de la comunidad (*"Tribrigade Competitivo: De principiante a experto en 1 día"*).
+            </p>
+            <p>
+              Esto genera retención orgánica, fidelización de usuarios y elimina el sesgo transaccional frío de los marketplaces convencionales.
+            </p>
+          </div>
+          <div class="lg:col-span-6">
+            <figure class="border-4 border-on-surface bg-surface-container neo-shadow-sm overflow-hidden">
+              <img 
+                src="../assets/projects/gocards/08-experiencia-comunidad-articulos.png" 
+                alt="Pantalla mobile de inicio con carrusel de comunidad y sección lo más vendido" 
+                class="w-full h-auto object-cover" 
+                loading="lazy" 
+                decoding="async" 
+                width="1400" 
+                height="1323" 
+              />
+              <figcaption class="p-3 bg-surface border-t-3 border-on-surface font-label-mono text-xs text-on-surface-variant">
+                Figura 7: Integración fluida entre artículos educativos del meta y catálogo transaccional.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FASE 09: FLUJO TRANSACCIONAL DE COMPRA SEGURA -->
+    <section class="max-w-7xl mx-auto px-4 md:px-8 mb-16 md:mb-24" aria-labelledby="phase-09-title">
+      <div class="border-4 border-on-surface bg-surface neo-shadow p-6 sm:p-10 mb-8">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="bg-primary-container text-on-surface font-label-mono text-xs font-black uppercase px-3 py-1 border-2 border-on-surface">
+            FASE 08 · COMPRA SEGURA END-TO-END
+          </span>
+        </div>
+        <h2 id="phase-09-title" class="font-display text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-on-surface mb-6">
+          Flujo Transaccional: Catálogo, Ficha &amp; Checkout en 3 Pasos
+        </h2>
+        <p class="font-body-md text-base sm:text-lg text-on-surface/90 leading-relaxed max-w-4xl mb-8">
+          Una compra segura y correcta entre jugadores. Cada etapa del embudo de conversión fue refinada para entregar máxima certeza sobre el estado de la carta, reputación del vendedor y costos finales.
+        </p>
+
+        <figure class="border-4 border-on-surface bg-surface-container neo-shadow-sm overflow-hidden mb-8">
+          <img 
+            src="../assets/projects/gocards/09-flujo-compra-segura-catalogo-detalle-checkout.png" 
+            alt="Flujo completo de compra segura en 3 pantallas: Catálogo, Detalle de producto y Carrito de checkout" 
+            class="w-full h-auto object-cover" 
+            loading="lazy" 
+            decoding="async" 
+            width="1400" 
+            height="1367" 
+          />
+          <figcaption class="p-3 bg-surface border-t-3 border-on-surface font-label-mono text-xs text-on-surface-variant">
+            Figura 8: Pantalla 1 (Catálogo y más vendido), Pantalla 2 (Ficha de carta con calificación), Pantalla 3 (Checkout guiado con cross-selling).
+          </figcaption>
+        </figure>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="border-3 border-on-surface bg-surface p-5 neo-shadow-sm">
+            <span class="font-label-mono text-xs font-black uppercase text-secondary block mb-2">Paso 1 · Catálogo</span>
+            <h3 class="font-display text-lg font-black uppercase mb-2">Sección Lo Más Vendido</h3>
+            <p class="font-body-md text-sm text-on-surface/90 leading-relaxed">
+              Muestra cartas clave en tendencia competitiva (<em>AA-ZEUS, Ice Dragon's Prison</em>) con badges de <em>Vendedor destacado</em>, <em>5 estrellas</em> y precio claro en pesos chilenos (CLP).
+            </p>
+          </div>
+          <div class="border-3 border-on-surface bg-surface p-5 neo-shadow-sm">
+            <span class="font-label-mono text-xs font-black uppercase text-brand-indigo block mb-2">Paso 2 · Ficha de Carta</span>
+            <h3 class="font-display text-lg font-black uppercase mb-2">Comparador de Vendedores</h3>
+            <p class="font-body-md text-sm text-on-surface/90 leading-relaxed">
+              Ficha para <em>Beetrooper Scout Buggy (Secret Rare)</em> que indica vendedor (Mauricio Ulato ★★★★★ 5/5), condición <em>Near Mint</em> y botones para <em>"Buscar otro vendedor"</em> o <em>"Buscar otra versión"</em>.
+            </p>
+          </div>
+          <div class="border-3 border-on-surface bg-surface p-5 neo-shadow-sm">
+            <span class="font-label-mono text-xs font-black uppercase text-primary block mb-2">Paso 3 · Checkout en 3 Pasos</span>
+            <h3 class="font-display text-lg font-black uppercase mb-2">Carro, Entrega &amp; Pago</h3>
+            <p class="font-body-md text-sm text-on-surface/90 leading-relaxed">
+              Progreso visual sin distracciones, control numérico de unidades y recomendación inteligente de cartas complementarias (<em>Joker's Knight, Lightning Storm, True Light</em>).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FASE 10: PROTOTIPADO INTERACTIVO FIGMA & BEHANCE -->
+    <section class="max-w-7xl mx-auto px-4 md:px-8 mb-16 md:mb-24" aria-labelledby="phase-10-title">
+      <div class="border-4 border-on-surface bg-surface neo-shadow p-6 sm:p-10 mb-8">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="bg-tertiary text-on-surface font-label-mono text-xs font-black uppercase px-3 py-1 border-2 border-on-surface">
+            FASE 09 · PROTOTIPO INTERACTIVO
+          </span>
+        </div>
+        <h2 id="phase-10-title" class="font-display text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-on-surface mb-6">
+          Validación &amp; Prototipo Interactivo
+        </h2>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-8">
+          <div class="lg:col-span-6 space-y-4 font-body-md text-base sm:text-lg text-on-surface/90 leading-relaxed">
+            <p class="font-bold text-xl text-brand-navy">
+              Sé el primero en interactuar con lo que puede llegar a ser GoCards
+            </p>
+            <p>
+              El flujo de compra completo fue prototipado y validado en <strong>Figma</strong> con usuarios reales de tiendas de cartas coleccionables, contemplando la interacción desde la pantalla de inicio hasta el carrito de compras y la navegación del menú hamburguesa.
+            </p>
+            <div class="pt-4 flex flex-wrap gap-4">
+              <a href="https://www.behance.net/gallery/143308471/GoCards-Marketplace-TCG" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-secondary text-white font-label-mono text-sm font-black uppercase px-6 py-3.5 border-4 border-on-surface neo-shadow neo-hover min-h-[48px]">
+                <span>Explorar Caso en Behance ↗</span>
+              </a>
             </div>
           </div>
+          <div class="lg:col-span-6">
+            <figure class="border-4 border-on-surface bg-surface-container neo-shadow-sm overflow-hidden">
+              <img 
+                src="../assets/projects/gocards/10-prototipo-interactivo-figma-compras.png" 
+                alt="Pantalla de invitación a interactuar con el prototipo navegable de GoCards" 
+                class="w-full h-auto object-cover" 
+                loading="lazy" 
+                decoding="async" 
+                width="1400" 
+                height="1564" 
+              />
+              <figcaption class="p-3 bg-surface border-t-3 border-on-surface font-label-mono text-xs text-on-surface-variant">
+                Figura 9: Prototipo navegable y validación con usuarios en Figma.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
 
-          <a href="https://www.behance.net/gallery/143308471/GoCards-Marketplace-TCG" target="_blank" rel="noopener noreferrer" class="w-full bg-secondary text-white font-label-mono text-xs sm:text-sm font-black uppercase py-3 px-4 border-3 border-on-surface neo-shadow-sm neo-hover text-center inline-block min-h-[44px]">
-            Explorar en Behance →
-          </a>
+        <!-- Embed Interactivo de Behance -->
+        <div class="mt-12 border-t-4 border-on-surface pt-8">
+          <div class="flex items-center justify-between mb-4 flex-wrap gap-2">
+            <h3 class="font-display text-xl sm:text-2xl font-black uppercase text-on-surface flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary">preview</span>
+              Publicación Original en Behance
+            </h3>
+            <span class="font-label-mono text-xs font-bold text-on-surface-variant">ID: 143308471</span>
+          </div>
+          <div class="border-4 border-on-surface bg-black neo-shadow overflow-hidden flex justify-center items-center">
+            <iframe 
+              src="https://www.behance.net/embed/project/143308471?ilo0=1" 
+              width="100%" 
+              height="350" 
+              style="border:0; max-width:800px; display:block;" 
+              scrolling="no" 
+              loading="lazy" 
+              frameborder="0" 
+              allowfullscreen 
+              allow="clipboard-write" 
+              referrerpolicy="strict-origin-when-cross-origin" 
+              title="Behance Project: GoCards Marketplace TCG">
+            </iframe>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- 06 / SIGUIENTE PROYECTO -->
+    <!-- 06 / SIGUIENTE CASO DE ESTUDIO (BUCLE REAL A SIGNIA) -->
     <section class="max-w-7xl mx-auto px-4 md:px-8 mb-16 md:mb-24" aria-labelledby="next-project-title">
       <div class="border-4 border-on-surface bg-surface neo-shadow hover:bg-primary-container/20 transition-colors group">
         <a href="signia-seo-web-design.html" class="block p-8 sm:p-12 text-center" title="Avanzar al siguiente caso de estudio">
@@ -591,20 +848,20 @@
       <div class="bg-secondary text-white border-4 border-on-surface neo-shadow-lg p-8 sm:p-12 tilt-left">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div class="lg:col-span-8">
-            <span class="font-label-mono text-xs font-black uppercase tracking-wider block mb-2 text-tertiary">¿Planeas construir o rediseñar un e-commerce complejo?</span>
+            <span class="font-label-mono text-xs font-black uppercase tracking-wider block mb-2 text-tertiary">¿Planeas construir o rediseñar un marketplace o e-commerce de nicho?</span>
             <h2 id="cta-section-title" class="font-display text-3xl sm:text-4xl md:text-5xl font-black uppercase leading-tight mb-4 text-white">
-              Creemos una experiencia de compra fluida que maximice tu ticket promedio
+              Diseñemos una experiencia centrada en tus usuarios
             </h2>
-            <p class="font-body-md text-base sm:text-lg text-white/95 max-w-2xl">
-              Investigación de usuarios, arquitectura de catálogo y optimización de carritos para acelerar tus ventas online.
+            <p class="font-body-md text-base sm:text-lg text-white/95 max-w-2xl leading-relaxed">
+              Combino investigación cualitativa profunda, sistemas de diseño atómicos y arquitectura transaccional para maximizar la confianza y la conversión de tu producto digital.
             </p>
           </div>
-          <div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-4">
-            <a href="mailto:tbravopino@gmail.com" class="w-full bg-white text-on-surface font-label-mono text-sm font-black uppercase px-6 py-4 border-3 border-on-surface neo-shadow-sm neo-hover text-center min-h-[48px] flex items-center justify-center">
-              Cotizar Proyecto E-Commerce
+          <div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-4 justify-center items-stretch lg:items-end">
+            <a href="mailto:tbravopino@gmail.com" class="bg-tertiary text-on-surface font-label-mono text-sm font-black uppercase px-6 py-4 border-4 border-on-surface neo-shadow-sm neo-hover text-center inline-block">
+              Iniciar Conversación →
             </a>
-            <a href="https://wa.me/56961389870" target="_blank" rel="noopener noreferrer" class="w-full bg-tertiary text-on-surface font-label-mono text-sm font-black uppercase px-6 py-4 border-3 border-on-surface neo-shadow-sm neo-hover text-center min-h-[48px] flex items-center justify-center">
-              Hablemos por WhatsApp
+            <a href="https://wa.me/56961389870" target="_blank" rel="noopener noreferrer" class="bg-surface text-on-surface font-label-mono text-sm font-bold uppercase px-6 py-3.5 border-4 border-on-surface neo-shadow-sm neo-hover text-center inline-block">
+              WhatsApp Directo
             </a>
           </div>
         </div>
@@ -613,37 +870,23 @@
 
   </main>
 
-  <footer class="w-full border-t-4 border-on-surface bg-on-surface text-background mt-auto" id="contact" role="contentinfo">
-    <div class="max-w-7xl mx-auto px-4 md:px-8 py-12 md:py-16">
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-10 pb-10 border-b-2 border-white/20">
-        <div class="md:col-span-6">
-          <div class="font-display text-3xl font-black uppercase tracking-tight text-white mb-2">
-            Tomás Bravo — BravoDesign
-          </div>
-          <p class="font-body-md text-sm sm:text-base text-white/80 max-w-md">
-            Diseñador UX/UI &amp; Asesor Digital enfocado en usabilidad, rendimiento y crecimiento orgánico. Santiago de Chile.
-          </p>
-        </div>
-
-        <div class="md:col-span-6 flex flex-wrap gap-4 md:justify-end items-center font-label-mono text-xs sm:text-sm font-bold">
-          <a href="https://www.linkedin.com/in/tomasbravopino/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 border-2 border-white text-white hover:bg-white hover:text-on-surface transition-colors min-h-[44px] inline-flex items-center">
-            LinkedIn
-          </a>
-          <a href="mailto:tbravopino@gmail.com" class="px-4 py-2 border-2 border-white text-white hover:bg-white hover:text-on-surface transition-colors min-h-[44px] inline-flex items-center">
-            Email
-          </a>
-          <a href="https://wa.me/56961389870" target="_blank" rel="noopener noreferrer" class="px-4 py-2 border-2 border-white text-white hover:bg-white hover:text-on-surface transition-colors min-h-[44px] inline-flex items-center">
-            WhatsApp
-          </a>
-          <a href="https://www.behance.net/tbravopino" target="_blank" rel="noopener noreferrer" class="px-4 py-2 border-2 border-white text-white hover:bg-white hover:text-on-surface transition-colors min-h-[44px] inline-flex items-center">
-            Behance
-          </a>
-        </div>
+  <!-- FOOTER -->
+  <footer class="bg-on-surface text-surface py-12 border-t-6 border-on-surface">
+    <div class="max-w-7xl mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="flex items-center gap-3">
+        <a href="../index.html" class="font-display text-2xl font-black uppercase tracking-tighter text-surface hover:text-secondary transition-colors">
+          Bravo<span class="text-secondary">!</span>
+        </a>
+        <span class="font-label-mono text-xs text-surface/60">
+          © 2026 Tomás Bravo · Diseñador UX/UI &amp; Asesor Digital
+        </span>
       </div>
 
-      <div class="flex flex-col sm:flex-row justify-between items-center gap-4 font-label-mono text-xs text-white/60">
-        <p>© 2026 Tomás Bravo — Todos los derechos reservados.</p>
-        <p>Construido con Estándares Éticos de Rendimiento, Accesibilidad y SEO.</p>
+      <div class="flex items-center gap-6 font-label-mono text-xs uppercase font-bold text-surface/80">
+        <a href="../index.html#work" class="hover:text-secondary transition-colors">Proyectos</a>
+        <a href="../index.html#skills" class="hover:text-secondary transition-colors">Habilidades</a>
+        <a href="../index.html#contact" class="hover:text-secondary transition-colors">Contacto</a>
+        <a href="https://www.linkedin.com/in/tomasbravopino/" target="_blank" rel="noopener noreferrer" class="hover:text-secondary transition-colors">LinkedIn ↗</a>
       </div>
     </div>
   </footer>
