@@ -3,9 +3,9 @@
 <html class="scroll-smooth" lang="es"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Diseñador UX/UI &amp; Consultor SEO en Chile | Tomás Bravo</title>
-<meta content="Portafolio de Tomás Bravo, Diseñador UX/UI y Consultor Digital en Chile. Diseño de interfaces, productos digitales, usabilidad, dashboards y estrategia SEO." name="description"/>
-<meta content="Diseñador UX/UI, Contratar Diseñador UX/UI, Asesoramiento Digital, Consultoría UX, Diseño de Dashboards, Estrategia Web, Usabilidad, Figma, Optimización Web, Portafolio UX/UI, SEO Chile, Tomás Bravo" name="keywords"/>
+<title>Diseño UX/UI, Asesoría Digital y Estrategia Web en Chile</title>
+<meta content="Servicios de diseño UX/UI, asesoría digital y estrategia de productos digitales en Chile. Interfaces centradas en el usuario, usabilidad y conversión CRO." name="description"/>
+<meta content="Diseñador UX/UI Chile, Asesor Digital, Asesoría Digital, Estrategia de Productos Digitales, Diseño de Interfaces UI, Optimización de Conversión CRO, Arquitectura de Información, Diseño Web" name="keywords"/>
 <meta content="Tomás Bravo" name="author"/>
 <meta content="Tomás Bravo — BravoDesign" name="publisher"/>
 <meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots"/>
@@ -22,16 +22,16 @@
 <meta content="website" property="og:type"/>
 <meta content="es_CL" property="og:locale"/>
 <meta content="https://www.bravodesign.cl/" property="og:url"/>
-<meta content="Diseñador UX/UI &amp; Asesoramiento Digital" property="og:title"/>
-<meta content="Diseñador UX/UI y consultor en asesoramiento digital en Santiago de Chile. Enfoque en resolución de problemas, entendimiento del mercado y diseño centrado en el usuario: dashboards, productos digitales, usabilidad y optimización web." property="og:description"/>
+<meta content="Diseño UX/UI, Asesoría Digital y Estrategia Web en Chile" property="og:title"/>
+<meta content="Servicios de diseño UX/UI, asesoría digital y estrategia de productos digitales en Chile. Interfaces centradas en el usuario, usabilidad y conversión CRO." property="og:description"/>
 <meta content="https://www.bravodesign.cl/screen.png" property="og:image"/>
-<meta content="Portafolio BravoDesign - Diseñador UX/UI y Asesoramiento Digital" property="og:image:alt"/>
+<meta content="Diseño UX/UI y Asesoría Digital: Interfaces centradas en el usuario, optimización web y estrategia de productos digitales" property="og:image:alt"/>
 <meta content="BravoDesign" property="og:site_name"/>
 
 <!-- Twitter Cards -->
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="Diseñador UX/UI &amp; Asesoramiento Digital" name="twitter:title"/>
-<meta content="Diseñador UX/UI y consultor en asesoramiento digital en Santiago de Chile. Enfoque en resolución de problemas, entendimiento del mercado y diseño centrado en el usuario: dashboards, productos digitales, usabilidad y optimización web." name="twitter:description"/>
+<meta content="Diseño UX/UI, Asesoría Digital y Estrategia Web en Chile" name="twitter:title"/>
+<meta content="Servicios de diseño UX/UI, asesoría digital y estrategia de productos digitales en Chile. Interfaces centradas en el usuario, usabilidad y conversión CRO." property="og:description"/>
 <meta content="https://www.bravodesign.cl/screen.png" name="twitter:image"/>
 
 <!-- Datos Estructurados JSON-LD (Schema.org) para Google -->
@@ -141,6 +141,7 @@
                         "secondary": "#ff4f00",
                         "tertiary": "#fce588",
                         "background": "#fcf9f8",
+                        "surface": "#fcf9f8",
                         "on-surface": "#1c1b1b",
                         "surface-container-highest": "#e5e2e1"
                 },
@@ -153,7 +154,12 @@
                 },
                 "fontFamily": {
                         "display": ["system-ui", "sans-serif"],
-                        "body-md": ["system-ui", "sans-serif"]
+                        "body-md": ["system-ui", "sans-serif"],
+                        "label-mono": ["ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "monospace"]
+                },
+                "borderWidth": {
+                        "3": "3px",
+                        "5": "5px"
                 }
               }
             }
@@ -181,6 +187,33 @@
 
         .glitch-shadow-warm {
             box-shadow: 18px -10px 0px 0px #ff4f00;
+        }
+
+        .neo-shadow {
+            box-shadow: 6px 6px 0px 0px #1c1b1b;
+        }
+
+        .neo-shadow-sm {
+            box-shadow: 4px 4px 0px 0px #1c1b1b;
+        }
+
+        .neo-hover {
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .neo-hover:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 9px 9px 0px 0px #1c1b1b;
+        }
+
+        .neo-hover:active {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0px 0px #1c1b1b;
+        }
+
+        :focus-visible {
+            outline: 4px solid #ff4f00 !important;
+            outline-offset: 3px !important;
         }
 
         .bg-dots {
@@ -216,33 +249,43 @@
     </style>
 </head>
 <body class="bg-background text-on-surface font-body-md antialiased selection:bg-secondary selection:text-white overflow-x-hidden">
+<!-- ACCESIBILIDAD: SALTAR AL CONTENIDO -->
+<a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[150] focus:px-6 focus:py-3 focus:bg-secondary focus:text-white focus:border-4 focus:border-on-surface focus:font-label-mono focus:font-bold neo-shadow">
+  Saltar directamente al contenido principal
+</a>
+
 <!-- Floating Huge Background Text -->
 <div class="fixed inset-0 pointer-events-none z-negative overflow-hidden opacity-10 select-none">
 <div class="text-huge absolute top-0 -left-20 font-display uppercase leading-none">Bravo</div>
 <div class="text-huge absolute bottom-0 -right-20 font-display uppercase leading-none text-primary">Design</div>
 </div>
-<!-- Header -->
-<header class="w-full border-b-8 border-on-surface bg-background sticky top-0 z-[100] glitch-shadow">
-<div class="flex justify-between items-center px-md py-4 max-w-full mx-auto">
-<a class="flex items-center gap-2 group" href="#" title="Inicio de BravoDesign">
-<span class="font-display text-3xl sm:text-4xl font-black uppercase tracking-tighter text-on-surface group-hover:text-secondary transition-colors">
-Bravo<span class="text-secondary">!</span>
-</span>
-<span class="font-mono text-xs uppercase px-2 py-0.5 bg-tertiary text-on-surface border-2 border-on-surface font-bold hidden sm:inline-block">
-Portfolio
-</span>
-</a>
-<nav class="hidden md:flex gap-lg items-center font-black italic">
-<a class="hover:bg-tertiary px-2 border-4 border-transparent hover:border-on-surface" href="#work">TRABAJO</a>
-<a class="hover:bg-primary-container px-2 border-4 border-transparent hover:border-on-surface" href="#skills">HABILIDADES</a>
-<a class="hover:bg-secondary px-2 hover:text-white border-4 border-transparent hover:border-on-surface" href="proyectos/">PROYECTOS</a>
-</nav>
-<a class="bg-secondary text-white font-black uppercase px-6 py-3 border-4 border-on-surface glitch-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all inline-block" href="#contact">
-            CONTRÁTAME
-</a>
-</div>
+
+<!-- Header (Top App Bar Refinado: Proximidad visual, Accesibilidad WCAG y Soporte Móvil) -->
+<header class="sticky top-0 w-full z-[100] bg-background/95 backdrop-blur-sm border-b-4 border-on-surface neo-shadow-sm">
+  <div class="flex justify-between items-center h-20 px-4 md:px-8 max-w-full mx-auto">
+    <a class="flex items-center gap-2 group" href="#" title="Inicio de BravoDesign">
+      <span class="font-display text-3xl font-black uppercase tracking-tighter text-on-surface group-hover:text-secondary transition-colors">
+        Bravo<span class="text-secondary">!</span>
+      </span>
+    </a>
+
+    <nav class="flex items-center gap-3 sm:gap-4" aria-label="Navegación principal">
+      <a class="hidden md:inline-flex items-center justify-center font-label-mono text-xs sm:text-sm font-bold uppercase py-2 px-3 sm:px-4 bg-white text-on-surface border-3 border-on-surface neo-shadow-sm neo-hover min-h-[44px]" href="#work" title="Ir a la sección de casos de estudio seleccionados">
+        Casos de Estudio
+      </a>
+      <a class="hidden md:inline-flex items-center justify-center font-label-mono text-xs sm:text-sm font-bold uppercase py-2 px-3 sm:px-4 bg-white text-on-surface border-3 border-on-surface neo-shadow-sm neo-hover min-h-[44px]" href="#skills">
+        Habilidades
+      </a>
+      <a class="inline-flex items-center justify-center gap-1.5 font-label-mono text-xs sm:text-sm font-bold uppercase py-2 px-3 sm:px-4 bg-white text-on-surface border-3 border-on-surface neo-shadow-sm neo-hover min-h-[44px]" href="proyectos/" title="Explorar portafolio completo de proyectos">
+        <span>Proyectos</span>
+      </a>
+      <a class="bg-secondary text-white font-label-mono text-xs sm:text-sm font-black uppercase px-4 sm:px-6 py-2.5 border-3 border-on-surface neo-shadow-sm neo-hover inline-flex items-center justify-center min-h-[44px]" href="#contact">
+        Contrátame
+      </a>
+    </nav>
+  </div>
 </header>
-<main class="relative">
+<main id="main-content" class="relative">
 <!-- Hero Section: The Constructivist Chaos -->
 <section class="relative min-h-screen flex items-center bg-grid-giant overflow-visible py-20 px-4">
 <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-10 relative">
@@ -258,8 +301,8 @@ Portfolio
 <div class="flex flex-col md:flex-row gap-8 items-start">
 <div class="bg-background border-8 border-on-surface p-8 glitch-shadow-warm tilt-left max-w-xl floating" style="animation-delay: -2s;">
     <div class="border-b-4 border-on-surface pb-3 mb-4">
-        <h2 class="text-3xl md:text-4xl font-black uppercase tracking-tight text-on-surface">Tomás Bravo</h2>
-        <p class="text-xl md:text-2xl font-bold text-secondary uppercase mt-1">Diseñador UX/UI &amp; Asesor Digital</p>
+        <p class="text-3xl md:text-4xl font-black uppercase tracking-tight text-on-surface">Tomás Bravo</p>
+        <h2 class="text-xl md:text-2xl font-bold text-secondary uppercase mt-1">Diseñador UX/UI &amp; Asesor Digital</h2>
     </div>
     <p class="text-lg md:text-xl font-medium text-center opacity-90 leading-relaxed">
         Santiago de Chile · Enfoque en resolución de problemas, entendiendo el mercado y diseñando para el usuario.
@@ -274,13 +317,13 @@ Portfolio
 </div>
 </section>
 <!-- Mid-Section Branding: The Glitch Bar -->
-<section class="relative py-20 bg-secondary border-y-8 border-on-surface overflow-hidden tilt-right overlap-up overlap-down z-20">
-<div class="flex whitespace-nowrap overflow-hidden py-4">
-<div class="flex animate-marquee font-display text-8xl uppercase text-white font-black opacity-30 select-none">
-                BRAVODESIGN BRAVODESIGN BRAVODESIGN BRAVODESIGN BRAVODESIGN 
+<section class="relative w-[106%] -left-[3%] py-4 sm:py-6 bg-secondary border-y-4 sm:border-y-8 border-on-surface overflow-hidden tilt-right -my-6 z-20 shadow-[0_8px_0_0_#1c1b1b]" aria-hidden="true">
+<div class="flex whitespace-nowrap overflow-hidden py-1">
+<div class="flex animate-marquee font-display text-3xl sm:text-5xl md:text-6xl uppercase text-white font-black opacity-35 select-none leading-none">
+                BRAVODESIGN BRAVODESIGN BRAVODESIGN BRAVODESIGN BRAVODESIGN&nbsp;
             </div>
-<div class="flex animate-marquee font-display text-8xl uppercase text-white font-black opacity-30 select-none">
-                BRAVODESIGN BRAVODESIGN BRAVODESIGN BRAVODESIGN BRAVODESIGN 
+<div class="flex animate-marquee font-display text-3xl sm:text-5xl md:text-6xl uppercase text-white font-black opacity-35 select-none leading-none">
+                BRAVODESIGN BRAVODESIGN BRAVODESIGN BRAVODESIGN BRAVODESIGN&nbsp;
             </div>
 </div>
 <style>
@@ -294,10 +337,10 @@ Portfolio
         </style>
 </section>
 <!-- Case Studies Section -->
-<section class="py-xl bg-dots bg-surface-container-highest relative z-10 pt-40" id="work">
+<section class="py-xl bg-dots bg-surface-container-highest relative z-10 pt-24 sm:pt-28 scroll-mt-24" id="work">
 <div class="max-w-7xl mx-auto px-md">
 <div class="bg-tertiary border-8 border-on-surface p-6 inline-block tilt-left glitch-shadow mb-20 floating">
-<h2 class="font-display text-5xl md:text-7xl uppercase font-black">PROYECTOS SELECCIONADOS</h2>
+<h2 class="font-display text-5xl md:text-7xl uppercase font-black">CASOS DE ESTUDIO</h2>
 </div>
 <div class="flex flex-col gap-16 max-w-7xl mx-auto">
 <!-- Project 1: Signia (Embed completo a la izquierda, texto a la derecha) -->
@@ -383,7 +426,7 @@ Portfolio
 </div>
 </section>
 <!-- Skills Section: Neo-Brutalist Hybrid Showcase -->
-<section class="py-20 bg-surface-container-highest border-t-8 border-on-surface relative overflow-hidden" id="skills">
+<section class="py-20 bg-surface-container-highest border-t-8 border-on-surface relative overflow-hidden scroll-mt-20" id="skills">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
   <div class="relative bg-primary-container border-4 md:border-8 border-on-surface glitch-shadow p-6 sm:p-10 md:p-12 overflow-hidden">
     <!-- Subtle neo-brutalist dot pattern accent -->
@@ -448,11 +491,11 @@ Portfolio
 </section>
 </main>
 <!-- Footer / Contact -->
-<footer class="relative py-20 bg-on-surface text-background overflow-hidden" id="contact">
+<footer class="relative pt-24 pb-20 scroll-mt-20 bg-on-surface text-background overflow-hidden" id="contact">
 <div class="absolute inset-0 bg-dots opacity-10"></div>
 <div class="max-w-7xl mx-auto px-md relative z-10 flex flex-col items-center text-center">
 <div class="bg-secondary text-white p-8 border-4 border-white glitch-shadow-alt tilt-left mb-12 floating">
-<h2 class="text-6xl md:text-7xl font-display uppercase leading-none">HABLEMOS DEL<br/>FUTURO</h2>
+<h2 class="text-4xl sm:text-5xl md:text-6xl font-display uppercase leading-none">CONTACTO Y CONTRATACIÓN<br/>DISEÑO UX/UI &amp; ASESORÍA DIGITAL</h2>
 <p class="font-mono text-lg mt-4 text-white font-bold opacity-95">¿Tienes un proyecto en mente? Conectemos directamente.</p>
 </div>
 <!-- Contact Direct Links -->

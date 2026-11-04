@@ -5,11 +5,11 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
   <!-- ====================================================================
-       SEO PRIMARIO & INDEXABILIDAD (OPTIMIZADO PARA CONTRATACIÓN UX/UI & SEO)
+       SEO PRIMARIO & INDEXABILIDAD (OPTIMIZADO PARA CONTRATACIÓN UX/UI & ASESORÍA DIGITAL)
        ==================================================================== -->
-  <title>Portafolio Diseñador UX/UI y SEO | Proyectos — Tomás Bravo</title>
-  <meta name="description" content="Portafolio de Tomás Bravo, Diseñador UX/UI y Consultor SEO en Chile. Casos de estudio en diseño web, e-commerce y conversión (CRO). ¡Contrata tu proyecto!" />
-  <meta name="keywords" content="Contratar Diseñador UX/UI, Portafolio Diseñador UX/UI Chile, Casos de Estudio UX/UI, Consultor SEO y Diseño Web, Diseño de Interfaces UI, UX Research, Diseño E-commerce, Optimización CRO, Tomás Bravo, BravoDesign" />
+  <title>Portafolio de Diseño UX/UI, Asesoría Digital y Conversión</title>
+  <meta name="description" content="Casos de estudio en diseño de experiencias e interfaces (UX/UI), asesoría digital, estrategia de productos, desarrollo web y optimización de conversión CRO." />
+  <meta name="keywords" content="Portafolio Diseño UX/UI, Asesoría Digital, Casos de Estudio UX/UI, Estrategia de Producto Digital, Optimización de Conversión CRO, Diseño E-Commerce, Diseño de Landing Page" />
   <meta name="author" content="Tomás Bravo" />
   <meta name="publisher" content="Tomás Bravo — BravoDesign" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -28,18 +28,18 @@
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="es_CL" />
   <meta property="og:url" content="https://www.bravodesign.cl/proyectos/" />
-  <meta property="og:title" content="Portafolio Diseñador UX/UI y SEO | Proyectos — Tomás Bravo" />
-  <meta property="og:description" content="Portafolio de Tomás Bravo, Diseñador UX/UI y Consultor SEO en Chile. Casos de estudio en diseño web, e-commerce y conversión (CRO). ¡Contrata tu proyecto!" />
+  <meta property="og:title" content="Portafolio de Diseño UX/UI, Asesoría Digital y Conversión" />
+  <meta property="og:description" content="Casos de estudio en diseño de experiencias e interfaces (UX/UI), asesoría digital, estrategia de productos, desarrollo web y optimización de conversión CRO." />
   <meta property="og:image" content="https://www.bravodesign.cl/screen.png" />
-  <meta property="og:image:alt" content="Portafolio de proyectos y casos de estudio UX/UI de Tomás Bravo — BravoDesign" />
+  <meta property="og:image:alt" content="Casos de estudio de diseño UX/UI, asesoría digital, desarrollo web CMS y estrategia de conversión" />
   <meta property="og:site_name" content="BravoDesign" />
 
   <!-- ====================================================================
        TWITTER CARDS
        ==================================================================== -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Portafolio Diseñador UX/UI y SEO | Proyectos — Tomás Bravo" />
-  <meta name="twitter:description" content="Portafolio de Tomás Bravo, Diseñador UX/UI y Consultor SEO en Chile. Casos de estudio en diseño web, e-commerce y conversión (CRO). ¡Contrata tu proyecto!" />
+  <meta name="twitter:title" content="Portafolio de Diseño UX/UI, Asesoría Digital y Conversión" />
+  <meta name="twitter:description" content="Casos de estudio en diseño de experiencias e interfaces (UX/UI), asesoría digital, estrategia de productos, desarrollo web y optimización de conversión CRO." />
   <meta name="twitter:image" content="https://www.bravodesign.cl/screen.png" />
 
   <!-- ====================================================================
@@ -138,6 +138,7 @@
             "secondary": "#ff4f00",
             "tertiary": "#fce588",
             "background": "#fcf9f8",
+            "surface": "#fcf9f8",
             "on-surface": "#1c1b1b",
             "surface-container-highest": "#e5e2e1"
           },
@@ -150,7 +151,12 @@
           },
           "fontFamily": {
             "display": ["system-ui", "sans-serif"],
-            "body-md": ["system-ui", "sans-serif"]
+            "body-md": ["system-ui", "sans-serif"],
+            "label-mono": ["ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "monospace"]
+          },
+          "borderWidth": {
+            "3": "3px",
+            "5": "5px"
           }
         }
       }
@@ -184,6 +190,33 @@
       box-shadow: 18px -10px 0px 0px #ff4f00;
     }
 
+    .neo-shadow {
+      box-shadow: 6px 6px 0px 0px #1c1b1b;
+    }
+
+    .neo-shadow-sm {
+      box-shadow: 4px 4px 0px 0px #1c1b1b;
+    }
+
+    .neo-hover {
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .neo-hover:hover {
+      transform: translate(-3px, -3px);
+      box-shadow: 9px 9px 0px 0px #1c1b1b;
+    }
+
+    .neo-hover:active {
+      transform: translate(2px, 2px);
+      box-shadow: 2px 2px 0px 0px #1c1b1b;
+    }
+
+    :focus-visible {
+      outline: 4px solid #ff4f00 !important;
+      outline-offset: 3px !important;
+    }
+
     .bg-dots {
       background-image: radial-gradient(#000 1.5px, transparent 0);
       background-size: 24px 24px;
@@ -211,35 +244,48 @@
 </head>
 <body class="bg-background text-on-surface font-body-md antialiased selection:bg-secondary selection:text-white overflow-x-hidden">
 
+  <!-- ACCESIBILIDAD: SALTAR AL CONTENIDO -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[150] focus:px-6 focus:py-3 focus:bg-secondary focus:text-white focus:border-4 focus:border-on-surface focus:font-label-mono focus:font-bold neo-shadow">
+    Saltar directamente al contenido principal
+  </a>
+
   <!-- Floating Huge Background Text (Idéntico al index.html) -->
   <div class="fixed inset-0 pointer-events-none z-negative overflow-hidden opacity-10 select-none">
     <div class="text-huge absolute top-0 -left-20 font-display uppercase leading-none">Bravo</div>
     <div class="text-huge absolute bottom-0 -right-20 font-display uppercase leading-none text-primary">Design</div>
   </div>
 
-  <!-- Header (Único Nav, idéntico al de index.html con el ítem PROYECTOS) -->
-  <header class="w-full border-b-8 border-on-surface bg-background sticky top-0 z-[100] glitch-shadow">
-    <div class="flex justify-between items-center px-md py-4 max-w-full mx-auto">
+  <!-- Header (Top App Bar Refinado: Proximidad visual, Accesibilidad WCAG y Soporte Móvil) -->
+  <header class="sticky top-0 w-full z-[100] bg-background/95 backdrop-blur-sm border-b-4 border-on-surface neo-shadow-sm">
+    <div class="flex justify-between items-center h-20 px-4 md:px-8 max-w-full mx-auto">
       <a class="flex items-center gap-2 group" href="../" title="Volver al inicio de BravoDesign">
-        <span class="font-display text-3xl sm:text-4xl font-black uppercase tracking-tighter text-on-surface group-hover:text-secondary transition-colors">
+        <span class="font-display text-3xl font-black uppercase tracking-tighter text-on-surface group-hover:text-secondary transition-colors">
           Bravo<span class="text-secondary">!</span>
         </span>
-        <span class="font-mono text-xs uppercase px-2 py-0.5 bg-tertiary text-on-surface border-2 border-on-surface font-bold hidden sm:inline-block">
-          Portfolio
-        </span>
       </a>
-      <nav class="hidden md:flex gap-lg items-center font-black italic">
-        <a class="hover:bg-tertiary px-2 border-4 border-transparent hover:border-on-surface" href="../#work">TRABAJO</a>
-        <a class="hover:bg-primary-container px-2 border-4 border-transparent hover:border-on-surface" href="../#skills">HABILIDADES</a>
-        <a class="bg-secondary text-white px-2 border-4 border-on-surface" href="./" aria-current="page">PROYECTOS</a>
+
+      <nav class="flex items-center gap-3 sm:gap-4" aria-label="Navegación principal">
+        <a class="inline-flex md:hidden items-center justify-center gap-1 font-label-mono text-xs font-bold uppercase py-2 px-3 bg-white text-on-surface border-3 border-on-surface neo-shadow-sm neo-hover min-h-[44px]" href="../" title="Volver al inicio">
+          <span class="material-symbols-outlined text-base" aria-hidden="true">arrow_back</span>
+          <span>Inicio</span>
+        </a>
+        <a class="hidden md:inline-flex items-center justify-center font-label-mono text-xs sm:text-sm font-bold uppercase py-2 px-3 sm:px-4 bg-white text-on-surface border-3 border-on-surface neo-shadow-sm neo-hover min-h-[44px]" href="../#work" title="Ir a la sección de casos de estudio en el inicio">
+          Casos de Estudio
+        </a>
+        <a class="hidden md:inline-flex items-center justify-center font-label-mono text-xs sm:text-sm font-bold uppercase py-2 px-3 sm:px-4 bg-white text-on-surface border-3 border-on-surface neo-shadow-sm neo-hover min-h-[44px]" href="../#skills">
+          Habilidades
+        </a>
+        <a class="hidden md:inline-flex items-center justify-center gap-1.5 font-label-mono text-xs sm:text-sm font-bold uppercase py-2 px-3 sm:px-4 bg-tertiary text-on-surface border-3 border-on-surface neo-shadow-sm neo-hover min-h-[44px]" href="./" aria-current="page">
+          <span>Proyectos</span>
+        </a>
+        <a class="bg-secondary text-white font-label-mono text-xs sm:text-sm font-black uppercase px-4 sm:px-6 py-2.5 border-3 border-on-surface neo-shadow-sm neo-hover inline-flex items-center justify-center min-h-[44px]" href="#contact">
+          Contrátame
+        </a>
       </nav>
-      <a class="bg-secondary text-white font-black uppercase px-6 py-3 border-4 border-on-surface glitch-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all inline-block" href="#contact">
-        CONTRÁTAME
-      </a>
     </div>
   </header>
 
-  <main class="relative bg-grid-giant min-h-screen">
+  <main id="main-content" class="relative bg-grid-giant min-h-screen">
 
     <!-- ====================================================================
          FILTER HEADER SECTION (Estructura original Vista 2 + Estilo Principal + H1 SEO)
@@ -250,14 +296,14 @@
         <div class="flex flex-col items-start gap-4">
           <div class="bg-on-surface text-background border-8 border-on-surface p-6 md:p-8 glitch-shadow-alt tilt-left inline-flex items-center gap-4 flex-wrap">
             <span class="material-symbols-outlined text-tertiary text-5xl md:text-6xl font-black" style="font-variation-settings: 'FILL' 1;" aria-hidden="true">folder_open</span>
-            <!-- H1 Único con Peso Semántico SEO para Contratación de Diseñador UX/UI y Consultor SEO -->
+            <!-- H1 Único con Peso Semántico para Contratación de Diseñador UX/UI y Asesor Digital -->
             <h1 id="portfolio-h1" class="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase font-black tracking-tighter leading-none">
-              PORTAFOLIO <span class="bg-secondary text-white px-3 py-1 inline-block tilt-right text-2xl sm:text-3xl md:text-4xl align-middle ml-1">DISEÑADOR UX/UI &amp; SEO</span>
+              PORTAFOLIO <span class="bg-secondary text-white px-3 py-1 inline-block tilt-right text-2xl sm:text-3xl md:text-4xl align-middle ml-1">DISEÑO UX/UI &amp; ASESORÍA DIGITAL</span>
             </h1>
           </div>
 
           <p class="bg-background border-4 border-on-surface p-4 sm:p-5 glitch-shadow-sm text-lg md:text-xl font-bold text-on-surface max-w-3xl leading-relaxed">
-            Casos de estudio reales en diseño de experiencias e interfaces (UX/UI), investigación de usuarios, posicionamiento SEO en Google y optimización de conversión (CRO) en Chile.
+            Casos de estudio reales en diseño de experiencias e interfaces (UX/UI), asesoría digital, investigación de usuarios, estrategia de productos y optimización de conversión (CRO) en Chile.
           </p>
         </div>
 
@@ -287,7 +333,7 @@
       <div class="flex flex-wrap items-center justify-between gap-4 mb-10 pb-4 border-b-8 border-on-surface">
         <h2 id="bento-catalog-h2" class="font-display text-2xl sm:text-3xl md:text-4xl uppercase font-black tracking-tight text-on-surface flex flex-wrap items-center gap-3">
           <span class="bg-tertiary border-4 border-on-surface px-3 py-1 text-base font-mono">CASOS DE ESTUDIO</span>
-          <span>Proyectos de Diseño UX/UI, Web &amp; Posicionamiento SEO</span>
+          <span>Proyectos de Diseño UX/UI, Estrategia Web &amp; Conversión</span>
         </h2>
         <span id="filter-status" class="font-mono text-sm font-black uppercase bg-on-surface text-background px-4 py-1.5 border-2 border-on-surface" aria-live="polite">
           Mostrando 3 proyectos
@@ -305,7 +351,8 @@
             <a href="signia-seo-web-design.html" class="relative h-80 sm:h-96 overflow-hidden border-b-8 border-on-surface block bg-[#f9f1fc]" title="Ver caso de estudio: Signia — Rediseño Web UX/UI y Estrategia SEO">
               <img
                 src="../assets/projects/signia-acerca-de.png"
-                alt="Mockup de Signia (Trebol-IT): Plataforma de emisión y verificación de insignias digitales optimizada para SEO"
+                alt="Acerca de Signia: Signia es una aplicación que permite la creación, emisión, visualización y verificación de insignias digitales, las cuales pueden ser compartidas por los usuarios. Comienza a reconocer los logros de tus equipos con nuestra plataforma de insignias digitales."
+                title="Acerca de Signia — Plataforma de Insignias Digitales (in-signia.io)"
                 class="w-full h-full object-cover object-center group-hover:scale-[1.02] transition-transform duration-300"
                 width="1920"
                 height="1080"
@@ -433,7 +480,8 @@
             <a href="gocards-marketplace-tcg.html" class="relative min-h-[300px] md:min-h-[380px] border-t-8 md:border-t-0 md:border-l-8 border-on-surface bg-black block overflow-hidden" title="Ver caso de estudio: GoCards — Diseño UX/UI de Marketplace & E-Commerce TCG">
               <img
                 src="../assets/projects/gocards/07-propuesta-de-valor-hero-mobile.png"
-                alt="Pantallas móviles de GoCards Marketplace TCG con propuesta de valor y catálogo de cartas coleccionables"
+                alt="GoCARDS: Marketplace para juego de cartas coleccionables reforzando la comunidad y asegurando sus ventas. Interfaz móvil con buscador, artículo Tribrigade Competitivo y sección Lo Más Vendido."
+                title="GoCards — Marketplace para juego de cartas coleccionables"
                 class="w-full h-full object-cover object-center group-hover:scale-[1.02] transition-transform duration-300"
                 width="1400"
                 height="1323"
@@ -453,7 +501,8 @@
             <a href="nam-landing-page.html" class="relative min-h-[300px] md:min-h-[360px] border-b-8 md:border-b-0 md:border-r-8 border-on-surface bg-[#22F3E6] block overflow-hidden order-2 md:order-1" title="Ver caso de estudio: Explora NAM — Diseño UI de Landing Page y Desarrollo Web CMS">
               <img
                 src="../assets/projects/nam/01-landing-page-exploranam-hero.png"
-                alt="Mockup de escritorio de la Landing Page Explora NAM mostrando su ecosistema de juegos educativos"
+                alt="LANDING PAGE EXPLORANAM — Juegos educativos: Aprende con NAM. ¿Qué es NAM? Nam es un set de herramientas digitales y aplicaciones diseñadas para hacer que el aprendizaje sea atractivo, interactivo y divertido."
+                title="Landing Page Explora NAM — Juegos educativos: Aprende con NAM"
                 class="w-full h-full object-cover object-center group-hover:scale-[1.02] transition-transform duration-300"
                 width="1920"
                 height="1080"
@@ -530,41 +579,7 @@
             <div class="w-8 h-8 rounded-full border-4 border-on-surface bg-primary-container shrink-0" aria-hidden="true"></div>
             <!-- H2 Semántico de Proceso UX -->
             <h2 id="ux-process-h2" class="font-mono text-base sm:text-lg font-black uppercase text-on-surface">
-              Metodología de Trabajo en Diseño UX/UI y Consultoría SEO
-            </h2>
-          </div>
-
-          <ol class="space-y-4">
-            <li class="flex gap-4 items-start">
-              <span class="font-mono text-sm font-black bg-tertiary border-2 border-on-surface px-2 py-0.5 shrink-0" aria-hidden="true">01</span>
-              <div class="text-base sm:text-lg">
-                <!-- H3 de Etapa 01 con Keywords UX Research -->
-                <h3 class="font-black inline uppercase text-on-surface">Investigación UX y Benchmark:</h3>
-                <span class="font-medium text-on-surface/90"> Entender al usuario, el mercado y sus puntos de dolor reales.</span>
-              </div>
-            </li>
-            <li class="flex gap-4 items-start">
-              <span class="font-mono text-sm font-black bg-primary-container border-2 border-on-surface px-2 py-0.5 shrink-0" aria-hidden="true">02</span>
-              <div class="text-base sm:text-lg">
-                <!-- H3 de Etapa 02 con Keywords Arquitectura y SEO -->
-                <h3 class="font-black inline uppercase text-on-surface">Arquitectura de Información y SEO:</h3>
-                <span class="font-medium text-on-surface/90"> Estructura de contenidos, SEO On-Page y wireframing.</span>
-              </div>
-            </li>
-            <li class="flex gap-4 items-start">
-              <span class="font-mono text-sm font-black bg-secondary text-white border-2 border-on-surface px-2 py-0.5 shrink-0" aria-hidden="true">03</span>
-              <div class="text-base sm:text-lg">
-                <!-- H3 de Etapa 03 con Keywords Diseño UI y Conversión -->
-                <h3 class="font-black inline uppercase text-on-surface">Diseño UI, Sistemas y Conversión:</h3>
-                <span class="font-medium text-on-surface/90"> Interfaces con identidad propia, accesibles (WCAG) y orientadas a conversión.</span>
-              </div>
-            </li>
-          </ol>
-          <div class="flex items-center gap-3 pb-4 border-b-4 border-on-surface">
-            <div class="w-8 h-8 rounded-full border-4 border-on-surface bg-primary-container shrink-0" aria-hidden="true"></div>
-            <!-- H2 Semántico de Proceso UX -->
-            <h2 id="ux-process-h2" class="font-mono text-base sm:text-lg font-black uppercase text-on-surface">
-              Metodología de Trabajo en Diseño UX/UI y Consultoría SEO
+              Metodología de Trabajo en Diseño UX/UI y Asesoría Digital
             </h2>
           </div>
 
@@ -601,14 +616,14 @@
   </main>
 
   <!-- Footer / Contact (Idéntico al de index.html con H2 semántico de contacto) -->
-  <footer class="relative py-20 bg-on-surface text-background border-t-8 border-on-surface overflow-hidden" id="contact">
+  <footer class="relative pt-24 pb-20 scroll-mt-20 bg-on-surface text-background border-t-8 border-on-surface overflow-hidden" id="contact">
     <div class="absolute inset-0 bg-dots opacity-10"></div>
     <div class="max-w-7xl mx-auto px-md relative z-10 flex flex-col items-center text-center">
       <div class="bg-secondary text-white p-8 border-4 border-white glitch-shadow-alt tilt-left mb-12 floating">
         <h2 class="text-4xl sm:text-5xl md:text-6xl font-display uppercase leading-none">
-          CONTACTO Y CONTRATACIÓN<br />DISEÑADOR UX/UI
+          CONTACTO Y CONTRATACIÓN<br />DISEÑO UX/UI &amp; ASESORÍA DIGITAL
         </h2>
-        <p class="font-mono text-lg mt-4 text-white font-bold opacity-95">¿Tienes un proyecto en mente o buscas sumar un diseñador UX/UI a tu equipo? Conectemos directamente.</p>
+        <p class="font-mono text-lg mt-4 text-white font-bold opacity-95">¿Tienes un proyecto en mente o buscas sumar un diseñador UX/UI y asesor digital a tu equipo? Conectemos directamente.</p>
       </div>
       <!-- Contact Direct Links -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-6xl mb-12">

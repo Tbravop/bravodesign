@@ -204,22 +204,24 @@
        TOP APP BAR / ENCABEZADO DE NAVEGACIÓN
        ==================================================================== -->
   <header class="sticky top-0 w-full z-50 bg-background/95 backdrop-blur-sm border-b-4 border-on-surface neo-shadow-sm">
-    <div class="flex justify-between items-center h-20 px-4 md:px-8 max-w-7xl mx-auto">
+    <div class="flex justify-between items-center h-20 px-4 md:px-8 max-w-full mx-auto">
       
       <!-- Marca / Volver a inicio -->
       <a href="../" class="flex items-center gap-2 group" title="Volver a la página principal de BravoDesign">
         <span class="font-display text-3xl font-black uppercase tracking-tighter text-on-surface group-hover:text-secondary transition-colors">
           Bravo<span class="text-secondary">!</span>
         </span>
-        <span class="font-label-mono text-xs uppercase px-2 py-0.5 bg-tertiary border-2 border-on-surface font-bold hidden sm:inline-block">
-          Portfolio
-        </span>
       </a>
 
-      <!-- Botón de Retorno Rápido al Portafolio -->
-      <nav class="flex items-center gap-3 sm:gap-6" aria-label="Navegación principal">
-        <a href="./" class="flex items-center gap-1.5 font-label-mono text-xs sm:text-sm font-bold uppercase py-2 px-3 sm:px-4 bg-surface border-3 border-on-surface neo-shadow-sm neo-hover" title="Explorar todos los proyectos">
-          <span class="material-symbols-outlined text-base">arrow_back</span>
+      <!-- Navegación Global Adaptada -->
+      <nav class="flex items-center gap-3 sm:gap-4" aria-label="Navegación principal">
+        <a href="../#work" class="hidden md:inline-flex items-center justify-center font-label-mono text-xs sm:text-sm font-bold uppercase py-2 px-3 sm:px-4 bg-surface text-on-surface border-3 border-on-surface neo-shadow-sm neo-hover min-h-[44px]">
+          Trabajo
+        </a>
+        <a href="../#skills" class="hidden md:inline-flex items-center justify-center font-label-mono text-xs sm:text-sm font-bold uppercase py-2 px-3 sm:px-4 bg-surface text-on-surface border-3 border-on-surface neo-shadow-sm neo-hover min-h-[44px]">
+          Habilidades
+        </a>
+        <a href="./" class="inline-flex items-center justify-center gap-1.5 font-label-mono text-xs sm:text-sm font-bold uppercase py-2 px-3 sm:px-4 bg-tertiary text-on-surface border-3 border-on-surface neo-shadow-sm neo-hover min-h-[44px]" title="Explorar todos los proyectos">
           <span>Proyectos</span>
         </a>
         <a href="#contratame" class="bg-secondary text-white font-label-mono text-xs sm:text-sm font-black uppercase px-4 sm:px-6 py-2.5 border-3 border-on-surface neo-shadow-sm neo-hover inline-flex items-center justify-center min-h-[44px]">
@@ -233,7 +235,7 @@
        MIGAS DE PAN SEMÁNTICAS (BREADCRUMBS)
        ==================================================================== -->
   <nav aria-label="Migas de pan" class="bg-surface-container border-b-3 border-on-surface py-2.5 px-4 md:px-8">
-    <div class="max-w-7xl mx-auto flex items-center flex-wrap gap-2 font-label-mono text-xs">
+    <div class="max-w-full mx-auto flex items-center flex-wrap gap-2 font-label-mono text-xs">
       <a href="../" class="font-semibold text-on-surface hover:text-secondary transition-colors inline-flex items-center gap-1 min-h-[36px] py-1">
         <span class="material-symbols-outlined text-sm">home</span> Inicio
       </a>
