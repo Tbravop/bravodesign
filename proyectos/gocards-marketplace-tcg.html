@@ -25,7 +25,7 @@
   <meta property="og:image" content="https://tbravop.github.io/bravodesign/assets/projects/gocards/07-propuesta-de-valor-hero-mobile.png" />
   <meta property="og:image:alt" content="Mockup y presentación de la plataforma GoCards Marketplace TCG" />
   <meta property="article:published_time" content="2023-06-10T11:00:00-03:00" />
-  <meta property="article:modified_time" content="2026-11-03T22:40:00-03:00" />
+  <meta property="article:modified_time" content="2026-11-03T23:50:00-03:00" />
   <meta property="article:author" content="https://tbravop.github.io/bravodesign/#person" />
   <meta property="article:section" content="UX Research y E-Commerce Design" />
 
@@ -108,24 +108,25 @@
 
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 
+  <!-- Tailwind Configuration con la paleta de marca oficial de GoCards -->
   <script id="tailwind-config">
     tailwind.config = {
       darkMode: "class",
       theme: {
         extend: {
           colors: {
-            "primary": "#56589a",
-            "primary-container": "#9a9ce4",
-            "secondary": "#ff4f00",
-            "tertiary": "#fce588",
-            "background": "#fcf9f8",
-            "on-surface": "#1c1b1b",
-            "on-surface-variant": "#464650",
-            "surface": "#fcf9f8",
-            "surface-dim": "#dcd9d9",
-            "surface-container": "#f0eded",
-            "surface-container-high": "#eae7e7",
-            "surface-container-highest": "#e5e2e1",
+            "primary": "#312783",
+            "primary-container": "#D6DDF8",
+            "secondary": "#4B98E0",
+            "tertiary": "#B2D4F5",
+            "background": "#F0F4FA",
+            "on-surface": "#082A5C",
+            "on-surface-variant": "#204172",
+            "surface": "#FFFFFF",
+            "surface-dim": "#D8E4F2",
+            "surface-container": "#E4EDF8",
+            "surface-container-high": "#DAE6F5",
+            "surface-container-highest": "#D0E0F3",
             "brand-navy": "#082A5C",
             "brand-indigo": "#312783",
             "brand-blue": "#4B98E0"
@@ -147,86 +148,87 @@
   <style>
     .bg-grid {
       background-size: 40px 40px;
-      background-image: linear-gradient(to right, #e5e2e1 1.5px, transparent 1.5px),
-                        linear-gradient(to bottom, #e5e2e1 1.5px, transparent 1.5px);
+      background-image: linear-gradient(to right, #D0E0F3 1.5px, transparent 1.5px),
+                        linear-gradient(to bottom, #D0E0F3 1.5px, transparent 1.5px);
     }
     .neo-shadow {
-      box-shadow: 6px 6px 0px 0px #1c1b1b;
+      box-shadow: 6px 6px 0px 0px #082A5C;
     }
     .neo-shadow-sm {
-      box-shadow: 4px 4px 0px 0px #1c1b1b;
+      box-shadow: 4px 4px 0px 0px #082A5C;
     }
     .neo-shadow-lg {
-      box-shadow: 10px 10px 0px 0px #1c1b1b;
+      box-shadow: 10px 10px 0px 0px #061B3A;
     }
     .neo-shadow-secondary {
-      box-shadow: 8px 8px 0px 0px #ff4f00;
+      box-shadow: 8px 8px 0px 0px #4B98E0;
     }
     .neo-hover {
       transition: transform 0.15s ease, box-shadow 0.15s ease;
     }
     .neo-hover:hover {
       transform: translate(-3px, -3px);
-      box-shadow: 9px 9px 0px 0px #1c1b1b;
+      box-shadow: 9px 9px 0px 0px #082A5C;
     }
     .neo-hover:active {
       transform: translate(2px, 2px);
-      box-shadow: 2px 2px 0px 0px #1c1b1b;
+      box-shadow: 2px 2px 0px 0px #082A5C;
     }
     .tilt-left { transform: rotate(-1.5deg); }
     .tilt-right { transform: rotate(1.5deg); }
     :focus-visible {
-      outline: 4px solid #ff4f00 !important;
+      outline: 4px solid #4B98E0 !important;
       outline-offset: 3px !important;
     }
   </style>
 </head>
 
-<body class="bg-background text-on-surface font-body-md antialiased selection:bg-secondary selection:text-white min-h-screen flex flex-col bg-grid">
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-secondary selection:text-on-surface min-h-screen flex flex-col bg-grid">
 
-  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[150] focus:px-6 focus:py-3 focus:bg-secondary focus:text-white focus:border-4 focus:border-on-surface focus:font-label-mono focus:font-bold neo-shadow">
+  <!-- ACCESIBILIDAD: SALTAR AL CONTENIDO -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[150] focus:px-6 focus:py-3 focus:bg-secondary focus:text-on-surface focus:border-4 focus:border-on-surface focus:font-label-mono focus:font-bold neo-shadow">
     Saltar directamente al contenido principal
   </a>
 
-  <!-- TOP APP BAR -->
-  <header class="sticky top-0 w-full z-50 bg-background/95 backdrop-blur-sm border-b-4 border-on-surface neo-shadow-sm">
+  <!-- TOP APP BAR CON COLORES DE GOCARDS -->
+  <header class="sticky top-0 w-full z-50 bg-[#E4EDF8]/95 backdrop-blur-sm border-b-4 border-[#082A5C] neo-shadow-sm">
     <div class="flex justify-between items-center h-20 px-4 md:px-8 max-w-7xl mx-auto">
       <a href="../index.html" class="flex items-center gap-2 group" title="Volver al inicio de BravoDesign">
-        <span class="font-display text-3xl font-black uppercase tracking-tighter text-on-surface group-hover:text-secondary transition-colors">
-          Bravo<span class="text-secondary">!</span>
+        <span class="font-display text-3xl font-black uppercase tracking-tighter text-[#082A5C] group-hover:text-[#312783] transition-colors">
+          Bravo<span class="text-[#4B98E0]">!</span>
         </span>
-        <span class="font-label-mono text-xs uppercase px-2 py-0.5 bg-tertiary border-2 border-on-surface font-bold hidden sm:inline-block">
+        <span class="font-label-mono text-xs uppercase px-2 py-0.5 bg-[#D6DDF8] text-[#082A5C] border-2 border-[#082A5C] font-bold hidden sm:inline-block">
           Portfolio
         </span>
       </a>
 
       <nav class="flex items-center gap-3 sm:gap-6" aria-label="Navegación principal">
-        <a href="../index.html#work" class="flex items-center gap-1.5 font-label-mono text-xs sm:text-sm font-bold uppercase py-2 px-3 sm:px-4 bg-surface border-3 border-on-surface neo-shadow-sm neo-hover" title="Ver catálogo de proyectos">
+        <a href="../index.html#work" class="flex items-center gap-1.5 font-label-mono text-xs sm:text-sm font-bold uppercase py-2 px-3 sm:px-4 bg-white text-[#082A5C] border-3 border-[#082A5C] neo-shadow-sm neo-hover" title="Ver catálogo de proyectos">
           <span class="material-symbols-outlined text-base">arrow_back</span>
           <span>Proyectos</span>
         </a>
-        <a href="../index.html#contact" class="hidden md:inline-block font-label-mono text-xs sm:text-sm font-bold uppercase py-2 px-4 hover:bg-tertiary transition-colors border-3 border-transparent hover:border-on-surface">
+        <a href="../index.html#contact" class="hidden md:inline-block font-label-mono text-xs sm:text-sm font-bold uppercase py-2 px-4 text-[#082A5C] hover:bg-[#D6DDF8] transition-colors border-3 border-transparent hover:border-[#082A5C]">
           Contacto
         </a>
-        <a href="../index.html#contact" class="bg-secondary text-white font-label-mono text-xs sm:text-sm font-black uppercase px-4 sm:px-6 py-2.5 border-3 border-on-surface neo-shadow-sm neo-hover inline-flex items-center justify-center min-h-[44px]">
+        <a href="../index.html#contact" class="bg-[#4B98E0] text-[#082A5C] font-label-mono text-xs sm:text-sm font-black uppercase px-4 sm:px-6 py-2.5 border-3 border-[#082A5C] neo-shadow-sm neo-hover inline-flex items-center justify-center min-h-[44px]">
           Contrátame
         </a>
       </nav>
     </div>
   </header>
 
-  <!-- BREADCRUMBS -->
-  <nav aria-label="Migas de pan" class="bg-surface-container border-b-3 border-on-surface py-2.5 px-4 md:px-8">
+  <!-- BREADCRUMBS CON EL ÍNDIGO DE GOCARDS -->
+  <nav aria-label="Migas de pan" class="bg-[#312783] text-white border-b-3 border-[#082A5C] py-2.5 px-4 md:px-8">
     <div class="max-w-7xl mx-auto flex items-center flex-wrap gap-2 font-label-mono text-xs">
-      <a href="../index.html" class="font-semibold text-on-surface hover:text-secondary transition-colors inline-flex items-center gap-1 min-h-[36px] py-1">
+      <a href="../index.html" class="font-semibold text-white hover:text-[#B2D4F5] transition-colors inline-flex items-center gap-1 min-h-[36px] py-1">
         <span class="material-symbols-outlined text-sm">home</span> Inicio
       </a>
-      <span class="text-on-surface/50 font-bold" aria-hidden="true">/</span>
-      <a href="../index.html#work" class="font-semibold text-on-surface hover:text-secondary transition-colors min-h-[36px] py-1 inline-flex items-center">
+      <span class="text-white/60 font-bold" aria-hidden="true">/</span>
+      <a href="../index.html#work" class="font-semibold text-white hover:text-[#B2D4F5] transition-colors min-h-[36px] py-1 inline-flex items-center">
         Proyectos
       </a>
-      <span class="text-on-surface/50 font-bold" aria-hidden="true">/</span>
-      <span class="font-bold text-secondary truncate max-w-[200px] sm:max-w-md" aria-current="page">
+      <span class="text-white/60 font-bold" aria-hidden="true">/</span>
+      <span class="font-bold text-[#B2D4F5] truncate max-w-[200px] sm:max-w-md" aria-current="page">
         GoCards — Marketplace TCG
       </span>
     </div>
@@ -234,39 +236,38 @@
 
   <main id="main-content" class="flex-grow">
 
-    <!-- HERO SECTION: H1 & INTRODUCCIÓN -->
+    <!-- HERO SECTION: H1 & INTRODUCCIÓN EN CAJAS CON COLORES DE GOCARDS -->
     <section class="max-w-7xl mx-auto px-4 md:px-8 py-10 md:py-16" aria-labelledby="project-hero-title">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-8 md:mb-12">
         <div class="lg:col-span-8">
           <div class="inline-flex items-center gap-2 mb-4 flex-wrap">
-            <span class="bg-secondary text-white font-label-mono text-xs sm:text-sm font-black uppercase px-3 py-1 border-3 border-on-surface neo-shadow-sm">
+            <span class="bg-[#4B98E0] text-[#082A5C] font-label-mono text-xs sm:text-sm font-black uppercase px-3 py-1 border-3 border-[#082A5C] neo-shadow-sm">
               MARKETPLACE / UX RESEARCH
             </span>
-            <span class="bg-tertiary text-on-surface font-label-mono text-xs sm:text-sm font-bold uppercase px-3 py-1 border-3 border-on-surface neo-shadow-sm">
+            <span class="bg-[#D6DDF8] text-[#082A5C] font-label-mono text-xs sm:text-sm font-bold uppercase px-3 py-1 border-3 border-[#082A5C] neo-shadow-sm">
               MOBILE-FIRST E-COMMERCE
             </span>
           </div>
 
-          <h1 id="project-hero-title" class="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tight text-on-surface leading-[1.1] mb-6">
-            GoCards: Marketplace de Cartas Coleccionables &amp; Comunidad
-          </h1>
-
-          <div class="bg-surface border-4 border-on-surface p-5 sm:p-6 neo-shadow-sm leading-relaxed max-w-3xl">
-            <h2 class="font-label-mono text-xs font-black uppercase text-secondary mb-2 tracking-wider">
-              Resumen del Caso de Estudio
-            </h2>
-            <p class="font-body-md text-base sm:text-lg text-on-surface/95">
-              GoCards es una plataforma e-commerce orientada a móvil diseñada para resolver la fragmentación en la compra y venta de cartas coleccionables (TCG). Nacido de una investigación cualitativa con jugadores activos de <strong>Yu-Gi-Oh!</strong>, el producto unifica la búsqueda rápida de cartas específicas, la garantía de compras seguras entre usuarios y un espacio de aprendizaje y socialización comunitaria.
-            </p>
+          <!-- Caja contenedora del título H1 con el índigo de GoCards -->
+          <div class="bg-[#312783] text-white border-4 border-[#082A5C] p-5 sm:p-6 neo-shadow-secondary mb-6">
+            <h1 id="project-hero-title" class="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tight text-white leading-[1.1]">
+              GoCards: Marketplace TCG &amp; <span class="text-[#B2D4F5]">Comunidad</span>
+            </h1>
           </div>
+
+          <!-- Párrafo introductorio con surface tint de GoCards -->
+          <p class="font-body-md text-base sm:text-lg text-[#082A5C] bg-[#E4EDF8] border-4 border-[#312783] p-4 sm:p-5 neo-shadow-sm leading-relaxed max-w-2xl font-medium">
+            Plataforma e-commerce especializada en cartas coleccionables. Investigación cualitativa con jugadores de Yu-Gi-Oh!, arquitectura de filtros instantáneos y compra segura protegida entre usuarios.
+          </p>
         </div>
 
         <div class="lg:col-span-4 flex flex-col gap-3 justify-end items-start lg:items-end">
-          <a href="#prototype" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-secondary text-white font-label-mono text-sm font-bold uppercase px-6 py-3.5 border-4 border-on-surface neo-shadow neo-hover min-h-[48px]">
+          <a href="#prototype" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#4B98E0] text-[#082A5C] font-label-mono text-sm font-black uppercase px-6 py-3.5 border-4 border-[#082A5C] neo-shadow neo-hover min-h-[48px]">
             <span>Prototipo Interactivo ↓</span>
             <span class="material-symbols-outlined text-lg">play_arrow</span>
           </a>
-          <a href="https://www.behance.net/gallery/143308471/GoCards-Marketplace-TCG" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-primary-container text-on-surface font-label-mono text-sm font-bold uppercase px-6 py-3.5 border-4 border-on-surface neo-shadow neo-hover min-h-[48px]">
+          <a href="https://www.behance.net/gallery/143308471/GoCards-Marketplace-TCG" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#312783] text-white font-label-mono text-sm font-bold uppercase px-6 py-3.5 border-4 border-[#082A5C] neo-shadow neo-hover min-h-[48px]">
             <span>Ver en Behance</span>
             <span class="material-symbols-outlined text-lg">open_in_new</span>
           </a>
@@ -274,7 +275,7 @@
       </div>
 
       <!-- Imagen Mockup Principal: Propuesta de Valor -->
-      <figure class="border-4 md:border-6 border-on-surface neo-shadow-lg bg-surface overflow-hidden aspect-[16/9] w-full relative">
+      <figure class="border-4 md:border-6 border-[#312783] neo-shadow-lg bg-[#E4EDF8] overflow-hidden aspect-[16/9] w-full relative">
         <img 
           src="../assets/projects/gocards/07-propuesta-de-valor-hero-mobile.png" 
           alt="Vista de la propuesta de valor y catálogo móvil de GoCards Marketplace TCG" 
@@ -291,34 +292,34 @@
 
     <!-- 01 / FICHA TÉCNICA -->
     <section class="max-w-7xl mx-auto px-4 md:px-8 mb-16 md:mb-24" aria-labelledby="project-metadata-title">
-      <div class="border-4 border-on-surface bg-surface neo-shadow">
-        <div class="bg-on-surface text-white px-5 py-3 border-b-4 border-on-surface flex items-center justify-between">
+      <div class="border-4 border-[#082A5C] bg-white neo-shadow">
+        <div class="bg-[#082A5C] text-white px-5 py-3 border-b-4 border-[#082A5C] flex items-center justify-between">
           <h2 id="project-metadata-title" class="font-label-mono text-xs sm:text-sm font-black uppercase tracking-wider flex items-center gap-2">
-            <span class="material-symbols-outlined text-base text-tertiary">info</span>
+            <span class="material-symbols-outlined text-base text-[#4B98E0]">info</span>
             01 / Ficha Técnica del Proyecto
           </h2>
-          <span class="font-label-mono text-xs text-white/70">E-Commerce &amp; Community Architecture</span>
+          <span class="font-label-mono text-xs text-[#B2D4F5]">E-Commerce &amp; Community Architecture</span>
         </div>
 
-        <div class="grid grid-cols-2 md:grid-cols-4 divide-y-4 md:divide-y-0 md:divide-x-4 divide-on-surface bg-primary-container/30">
-          <div class="p-4 sm:p-6 bg-surface">
-            <span class="font-label-mono text-xs font-bold block mb-1 text-on-surface-variant uppercase">Rol</span>
-            <span class="font-display text-lg sm:text-xl font-black block text-on-surface">UX Researcher &amp; UI</span>
-            <span class="font-label-mono text-xs text-on-surface-variant">Diseño End-to-End</span>
+        <div class="grid grid-cols-2 md:grid-cols-4 divide-y-4 md:divide-y-0 md:divide-x-4 divide-[#082A5C] bg-[#D6DDF8]/40">
+          <div class="p-4 sm:p-6 bg-white">
+            <span class="font-label-mono text-xs font-bold block mb-1 text-[#204172] uppercase">Rol</span>
+            <span class="font-display text-lg sm:text-xl font-black block text-[#082A5C]">UX Researcher &amp; UI</span>
+            <span class="font-label-mono text-xs text-[#204172]">Diseño End-to-End</span>
           </div>
-          <div class="p-4 sm:p-6 bg-surface">
-            <span class="font-label-mono text-xs font-bold block mb-1 text-on-surface-variant uppercase">Producto</span>
-            <span class="font-display text-lg sm:text-xl font-black block text-on-surface">GoCards</span>
-            <span class="font-label-mono text-xs text-on-surface-variant">Marketplace TCG</span>
+          <div class="p-4 sm:p-6 bg-white">
+            <span class="font-label-mono text-xs font-bold block mb-1 text-[#204172] uppercase">Producto</span>
+            <span class="font-display text-lg sm:text-xl font-black block text-[#082A5C]">GoCards</span>
+            <span class="font-label-mono text-xs text-[#204172]">Marketplace TCG</span>
           </div>
-          <div class="p-4 sm:p-6 bg-surface">
-            <span class="font-label-mono text-xs font-bold block mb-1 text-on-surface-variant uppercase">Metodología</span>
-            <span class="font-display text-lg sm:text-xl font-black block text-on-surface">Mobile-First</span>
-            <span class="font-label-mono text-xs text-on-surface-variant">Benchmark + Persona</span>
+          <div class="p-4 sm:p-6 bg-white">
+            <span class="font-label-mono text-xs font-bold block mb-1 text-[#204172] uppercase">Metodología</span>
+            <span class="font-display text-lg sm:text-xl font-black block text-[#082A5C]">Mobile-First</span>
+            <span class="font-label-mono text-xs text-[#204172]">Benchmark + Persona</span>
           </div>
-          <div class="p-4 sm:p-6 bg-surface">
-            <span class="font-label-mono text-xs font-bold block mb-1 text-on-surface-variant uppercase">Servicios</span>
-            <span class="font-label-mono text-xs sm:text-sm font-bold block text-on-surface leading-tight">
+          <div class="p-4 sm:p-6 bg-white">
+            <span class="font-label-mono text-xs font-bold block mb-1 text-[#204172] uppercase">Servicios</span>
+            <span class="font-label-mono text-xs sm:text-sm font-bold block text-[#082A5C] leading-tight">
               Investigación, UI Kit, Guía de Estilos, Arquitectura de Compra Segura
             </span>
           </div>
@@ -326,54 +327,54 @@
       </div>
     </section>
 
-    <!-- 02 / INVESTIGACIÓN, PROBLEMA & BENCHMARK -->
+    <!-- 02 / INVESTIGACIÓN CUALITATIVA, BENCHMARK & USER PERSONA -->
     <section class="max-w-7xl mx-auto px-4 md:px-8 mb-16 md:mb-24" aria-labelledby="research-section-title">
-      <div class="border-4 border-on-surface bg-surface neo-shadow p-6 sm:p-10 mb-8">
+      <div class="border-4 border-[#082A5C] bg-white neo-shadow p-6 sm:p-10 mb-8">
         <div class="flex items-center gap-3 mb-4">
-          <span class="bg-secondary text-white font-label-mono text-xs font-black uppercase px-3 py-1 border-2 border-on-surface">
+          <span class="bg-[#4B98E0] text-[#082A5C] font-label-mono text-xs font-black uppercase px-3 py-1 border-2 border-[#082A5C]">
             02 / INVESTIGACIÓN CUALITATIVA
           </span>
         </div>
-        <h2 id="research-section-title" class="font-display text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-on-surface mb-6">
+        <h2 id="research-section-title" class="font-display text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-[#082A5C] mb-6">
           El Problema, el Mercado y el Arquetipo de Usuario
         </h2>
 
         <!-- Contexto del Problema -->
-        <div class="bg-tertiary/20 border-3 border-on-surface p-6 sm:p-8 mb-8 neo-shadow-sm">
-          <h3 class="font-display text-xl sm:text-2xl font-black uppercase text-on-surface mb-3 flex items-center gap-2">
-            <span class="material-symbols-outlined text-secondary text-2xl">help</span>
+        <div class="bg-[#E4EDF8] border-3 border-[#082A5C] p-6 sm:p-8 mb-8 neo-shadow-sm">
+          <h3 class="font-display text-xl sm:text-2xl font-black uppercase text-[#082A5C] mb-3 flex items-center gap-2">
+            <span class="material-symbols-outlined text-[#4B98E0] text-2xl">help</span>
             ¿Qué tan difícil es entrar en un juego de cartas coleccionables y mantenerse en él?
           </h3>
-          <p class="font-body-md text-base sm:text-lg text-on-surface/90 leading-relaxed mb-4">
+          <p class="font-body-md text-base sm:text-lg text-[#082A5C]/90 leading-relaxed">
             Muchas comunidades de juegos de cartas sufren de <strong>escasa comunicación y soporte fuera del entorno físico de juego</strong>. Al no existir un punto de encuentro digital confiable, los jugadores dependen de grupos dispersos de WhatsApp o Facebook, generando barreras para novatos y alto riesgo de estafas en transacciones informales.
           </p>
         </div>
 
         <!-- Benchmark Comparativo -->
         <div class="mb-8">
-          <h3 class="font-display text-xl sm:text-2xl font-black uppercase text-on-surface mb-4 flex items-center gap-2">
-            <span class="material-symbols-outlined text-brand-indigo text-2xl">compare</span>
+          <h3 class="font-display text-xl sm:text-2xl font-black uppercase text-[#082A5C] mb-4 flex items-center gap-2">
+            <span class="material-symbols-outlined text-[#312783] text-2xl">compare</span>
             Benchmark Competitivo: Análisis de 3 Referentes
           </h3>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="border-3 border-on-surface bg-surface p-5 neo-shadow-sm">
-              <span class="font-label-mono text-xs font-black uppercase text-brand-indigo block mb-1">Referente 01</span>
-              <h4 class="font-display text-lg font-black uppercase mb-2">YGOPRODeck</h4>
-              <p class="font-body-md text-sm text-on-surface/80 leading-relaxed">
+            <div class="border-3 border-[#082A5C] bg-[#F0F4FA] p-5 neo-shadow-sm">
+              <span class="font-label-mono text-xs font-black uppercase text-[#312783] block mb-1">Referente 01</span>
+              <h4 class="font-display text-lg font-black uppercase mb-2 text-[#082A5C]">YGOPRODeck</h4>
+              <p class="font-body-md text-sm text-[#082A5C]/80 leading-relaxed">
                 Gran base de datos de cartas y listas de mazos del meta, pero <strong>sin marketplace integrado</strong>; obliga a los jugadores a buscar vendedores externos sin protección.
               </p>
             </div>
-            <div class="border-3 border-on-surface bg-surface p-5 neo-shadow-sm">
-              <span class="font-label-mono text-xs font-black uppercase text-secondary block mb-1">Referente 02</span>
-              <h4 class="font-display text-lg font-black uppercase mb-2">Cardmarket</h4>
-              <p class="font-body-md text-sm text-on-surface/80 leading-relaxed">
+            <div class="border-3 border-[#082A5C] bg-[#F0F4FA] p-5 neo-shadow-sm">
+              <span class="font-label-mono text-xs font-black uppercase text-[#4B98E0] block mb-1">Referente 02</span>
+              <h4 class="font-display text-lg font-black uppercase mb-2 text-[#082A5C]">Cardmarket</h4>
+              <p class="font-body-md text-sm text-[#082A5C]/80 leading-relaxed">
                 Gigante europeo de transacciones, pero con <strong>interfaz fría tipo hoja de cálculo</strong>, escasa optimización mobile y nula integración comunitaria o de aprendizaje.
               </p>
             </div>
-            <div class="border-3 border-on-surface bg-surface p-5 neo-shadow-sm">
-              <span class="font-label-mono text-xs font-black uppercase text-primary block mb-1">Referente 03</span>
-              <h4 class="font-display text-lg font-black uppercase mb-2">Grupos de WhatsApp / FB</h4>
-              <p class="font-body-md text-sm text-on-surface/80 leading-relaxed">
+            <div class="border-3 border-[#082A5C] bg-[#F0F4FA] p-5 neo-shadow-sm">
+              <span class="font-label-mono text-xs font-black uppercase text-[#312783] block mb-1">Referente 03</span>
+              <h4 class="font-display text-lg font-black uppercase mb-2 text-[#082A5C]">Grupos de WhatsApp / FB</h4>
+              <p class="font-body-md text-sm text-[#082A5C]/80 leading-relaxed">
                 Interacción humana directa pero <strong>comercio de alto riesgo</strong>: sin verificación de vendedor, sin cálculo de envíos, sin protección de pago y búsqueda caótica.
               </p>
             </div>
@@ -381,46 +382,46 @@
         </div>
 
         <!-- Los 3 Pilares y User Persona -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch pt-4 border-t-3 border-on-surface">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch pt-4 border-t-3 border-[#082A5C]">
           <!-- 3 Pilares -->
           <div class="lg:col-span-6 space-y-4">
-            <h3 class="font-display text-xl font-black uppercase text-on-surface flex items-center gap-2">
-              <span class="material-symbols-outlined text-secondary">checklist</span>
+            <h3 class="font-display text-xl font-black uppercase text-[#082A5C] flex items-center gap-2">
+              <span class="material-symbols-outlined text-[#4B98E0]">checklist</span>
               Los 3 Pilares de GoCards
             </h3>
-            <div class="border-l-4 border-brand-indigo pl-4 py-2 space-y-3 font-body-md text-sm sm:text-base text-on-surface/90">
+            <div class="border-l-4 border-[#312783] pl-4 py-2 space-y-3 font-body-md text-sm sm:text-base text-[#082A5C]/90">
               <div>
-                <strong class="block text-brand-indigo uppercase font-black">1. Compra y Venta Segura</strong>
+                <strong class="block text-[#312783] uppercase font-black">1. Compra y Venta Segura</strong>
                 <span>Protección mutua entre jugadores, reputación de vendedor verificada y condición garantizada (Near Mint / Played).</span>
               </div>
               <div>
-                <strong class="block text-brand-indigo uppercase font-black">2. Búsqueda Completa y Eficiente</strong>
+                <strong class="block text-[#312783] uppercase font-black">2. Búsqueda Completa y Eficiente</strong>
                 <span>Filtros instantáneos por set, rareza y precio, con comparador de ofertas de distintos vendedores para la misma carta.</span>
               </div>
               <div>
-                <strong class="block text-brand-indigo uppercase font-black">3. Contenido Comunitario Integrado</strong>
+                <strong class="block text-[#312783] uppercase font-black">3. Contenido Comunitario Integrado</strong>
                 <span>Guías de estrategia de torneos, artículos del meta y venta cruzada de cartas directamente desde el contenido.</span>
               </div>
             </div>
           </div>
 
           <!-- User Persona Card UI -->
-          <div class="lg:col-span-6 border-3 border-on-surface bg-primary-container/20 p-6 neo-shadow-sm flex flex-col justify-between">
+          <div class="lg:col-span-6 border-3 border-[#082A5C] bg-[#D6DDF8]/40 p-6 neo-shadow-sm flex flex-col justify-between">
             <div>
-              <div class="flex items-center justify-between mb-3 border-b-2 border-on-surface pb-2">
-                <span class="font-label-mono text-xs font-black uppercase text-brand-indigo">User Persona Objetivo</span>
-                <span class="font-label-mono text-xs bg-brand-indigo text-white px-2 py-0.5">Yu-Gi-Oh! · MTG · MyL</span>
+              <div class="flex items-center justify-between mb-3 border-b-2 border-[#082A5C] pb-2">
+                <span class="font-label-mono text-xs font-black uppercase text-[#312783]">User Persona Objetivo</span>
+                <span class="font-label-mono text-xs bg-[#312783] text-white px-2 py-0.5">Yu-Gi-Oh! · MTG · MyL</span>
               </div>
-              <h4 class="font-display text-xl font-black uppercase text-on-surface mb-2">El Jugador Competitivo</h4>
-              <p class="font-body-md text-sm text-on-surface/85 leading-relaxed mb-4">
+              <h4 class="font-display text-xl font-black uppercase text-[#082A5C] mb-2">El Jugador Competitivo</h4>
+              <p class="font-body-md text-sm text-[#082A5C]/85 leading-relaxed mb-4">
                 Jugador activo que equilibra estudios o trabajo con torneos semanales. Investiga exhaustivamente listas de decks, necesita conseguir cartas clave en óptimo estado sin estafas y busca posicionarse en el Top de su formato.
               </p>
             </div>
-            <div class="flex flex-wrap gap-2 pt-3 border-t-2 border-on-surface/30 font-label-mono text-xs font-bold">
-              <span class="bg-surface border border-on-surface px-2.5 py-1">Paciente</span>
-              <span class="bg-surface border border-on-surface px-2.5 py-1">Competitivo</span>
-              <span class="bg-surface border border-on-surface px-2.5 py-1">Colaborador</span>
-              <span class="bg-surface border border-on-surface px-2.5 py-1">Pragmático</span>
+            <div class="flex flex-wrap gap-2 pt-3 border-t-2 border-[#082A5C]/30 font-label-mono text-xs font-bold">
+              <span class="bg-white border border-[#082A5C] px-2.5 py-1 text-[#082A5C]">Paciente</span>
+              <span class="bg-white border border-[#082A5C] px-2.5 py-1 text-[#082A5C]">Competitivo</span>
+              <span class="bg-white border border-[#082A5C] px-2.5 py-1 text-[#082A5C]">Colaborador</span>
+              <span class="bg-white border border-[#082A5C] px-2.5 py-1 text-[#082A5C]">Pragmático</span>
             </div>
           </div>
         </div>
@@ -429,17 +430,17 @@
 
     <!-- 03 / SISTEMA DE DISEÑO & GUÍA DE ESTILOS -->
     <section class="max-w-7xl mx-auto px-4 md:px-8 mb-16 md:mb-24" aria-labelledby="styles-section-title">
-      <div class="border-4 border-on-surface bg-surface neo-shadow p-6 sm:p-10 mb-8">
+      <div class="border-4 border-[#082A5C] bg-white neo-shadow p-6 sm:p-10 mb-8">
         <div class="flex items-center gap-3 mb-4">
-          <span class="bg-on-surface text-background font-label-mono text-xs font-black uppercase px-3 py-1 border-2 border-on-surface">
+          <span class="bg-[#082A5C] text-white font-label-mono text-xs font-black uppercase px-3 py-1 border-2 border-[#082A5C]">
             03 / DESIGN SYSTEM
           </span>
         </div>
-        <h2 id="styles-section-title" class="font-display text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-on-surface mb-6">
+        <h2 id="styles-section-title" class="font-display text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-[#082A5C] mb-6">
           Guía de Estilos: Colores &amp; Tipografía
         </h2>
 
-        <figure class="border-4 border-on-surface bg-surface-container neo-shadow-sm overflow-hidden mb-8">
+        <figure class="border-4 border-[#082A5C] bg-[#E4EDF8] neo-shadow-sm overflow-hidden mb-8">
           <img 
             src="../assets/projects/gocards/05-guia-de-estilos-colores-y-tipografia.png" 
             alt="Guía de estilos con paleta de colores hexadecimales y tipografía Roboto y Montserrat" 
@@ -449,37 +450,37 @@
             width="1400" 
             height="1657" 
           />
-          <figcaption class="p-3 bg-surface border-t-3 border-on-surface font-label-mono text-xs text-on-surface-variant">
+          <figcaption class="p-3 bg-white border-t-3 border-[#082A5C] font-label-mono text-xs text-[#204172]">
             Figura 2: Especificación de tokens de diseño cromáticos y jerarquía tipográfica oficial de GoCards.
           </figcaption>
         </figure>
 
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-4 text-center">
-          <div class="border-3 border-on-surface p-4 bg-[#082A5C] text-white neo-shadow-sm">
+          <div class="border-3 border-[#082A5C] p-4 bg-[#082A5C] text-white neo-shadow-sm">
             <span class="font-label-mono text-xs font-bold block">#082A5C</span>
             <span class="font-display text-xs uppercase font-black">Navy Brand</span>
           </div>
-          <div class="border-3 border-on-surface p-4 bg-[#312783] text-white neo-shadow-sm">
+          <div class="border-3 border-[#082A5C] p-4 bg-[#312783] text-white neo-shadow-sm">
             <span class="font-label-mono text-xs font-bold block">#312783</span>
             <span class="font-display text-xs uppercase font-black">Indigo Night</span>
           </div>
-          <div class="border-3 border-on-surface p-4 bg-[#4B98E0] text-on-surface neo-shadow-sm">
-            <span class="font-label-mono text-xs font-bold block">#4B98E0</span>
+          <div class="border-3 border-[#082A5C] p-4 bg-[#4B98E0] text-[#082A5C] neo-shadow-sm">
+            <span class="font-label-mono text-xs font-bold block font-black">#4B98E0</span>
             <span class="font-display text-xs uppercase font-black">Electric Blue</span>
           </div>
-          <div class="border-3 border-on-surface p-4 bg-[#FFFFFF] text-on-surface neo-shadow-sm">
+          <div class="border-3 border-[#082A5C] p-4 bg-[#FFFFFF] text-[#082A5C] neo-shadow-sm">
             <span class="font-label-mono text-xs font-bold block">#FFFFFF</span>
             <span class="font-display text-xs uppercase font-black">Pure White</span>
           </div>
-          <div class="border-3 border-on-surface p-4 bg-[#C4C4C4] text-on-surface neo-shadow-sm">
+          <div class="border-3 border-[#082A5C] p-4 bg-[#C4C4C4] text-[#082A5C] neo-shadow-sm">
             <span class="font-label-mono text-xs font-bold block">#C4C4C4</span>
             <span class="font-display text-xs uppercase font-black">Border Gray</span>
           </div>
-          <div class="border-3 border-on-surface p-4 bg-[#838383] text-white neo-shadow-sm">
+          <div class="border-3 border-[#082A5C] p-4 bg-[#838383] text-white neo-shadow-sm">
             <span class="font-label-mono text-xs font-bold block">#838383</span>
             <span class="font-display text-xs uppercase font-black">Muted Gray</span>
           </div>
-          <div class="border-3 border-on-surface p-4 bg-[#131313] text-white neo-shadow-sm">
+          <div class="border-3 border-[#082A5C] p-4 bg-[#131313] text-white neo-shadow-sm">
             <span class="font-label-mono text-xs font-bold block">#131313</span>
             <span class="font-display text-xs uppercase font-black">Dark Slate</span>
           </div>
@@ -489,20 +490,20 @@
 
     <!-- 04 / UI KIT & SISTEMA DE COMPONENTES -->
     <section class="max-w-7xl mx-auto px-4 md:px-8 mb-16 md:mb-24" aria-labelledby="uikit-section-title">
-      <div class="border-4 border-on-surface bg-surface neo-shadow p-6 sm:p-10 mb-8">
+      <div class="border-4 border-[#082A5C] bg-white neo-shadow p-6 sm:p-10 mb-8">
         <div class="flex items-center gap-3 mb-4">
-          <span class="bg-tertiary text-on-surface font-label-mono text-xs font-black uppercase px-3 py-1 border-2 border-on-surface">
+          <span class="bg-[#4B98E0] text-[#082A5C] font-label-mono text-xs font-black uppercase px-3 py-1 border-2 border-[#082A5C]">
             04 / COMPONENTES MODULARES
           </span>
         </div>
-        <h2 id="uikit-section-title" class="font-display text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-on-surface mb-6">
+        <h2 id="uikit-section-title" class="font-display text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-[#082A5C] mb-6">
           UI Kit: Sistema de Navegación &amp; Elementos Móviles
         </h2>
-        <p class="font-body-md text-base sm:text-lg text-on-surface/90 leading-relaxed max-w-4xl mb-8">
+        <p class="font-body-md text-base sm:text-lg text-[#082A5C]/90 leading-relaxed max-w-4xl mb-8">
           Arquitectura modular de componentes pensados para uso en dispositivos móviles: barra superior con buscador persistente, menú hamburguesa categorizado (*Inicio, Ventas, Ofertas Destacadas, Bases, Productos Sellados, Lo Nuevo, Lotes*), tarjetas de artículos comunitarios y selectores de compra.
         </p>
 
-        <figure class="border-4 border-on-surface bg-surface-container neo-shadow-sm overflow-hidden mb-8">
+        <figure class="border-4 border-[#082A5C] bg-[#E4EDF8] neo-shadow-sm overflow-hidden mb-8">
           <img 
             src="../assets/projects/gocards/06-ui-kit-componentes-y-navegacion.png" 
             alt="UI Kit de GoCards con Navbar, buscador, menú hamburguesa y botones" 
@@ -512,7 +513,7 @@
             width="1400" 
             height="1137" 
           />
-          <figcaption class="p-3 bg-surface border-t-3 border-on-surface font-label-mono text-xs text-on-surface-variant">
+          <figcaption class="p-3 bg-white border-t-3 border-[#082A5C] font-label-mono text-xs text-[#204172]">
             Figura 3: UI Kit con componentes móviles para navegación y consumo de artículos comunitarios.
           </figcaption>
         </figure>
@@ -521,20 +522,20 @@
 
     <!-- 05 / PROPUESTA DE VALOR & COMUNIDAD -->
     <section class="max-w-7xl mx-auto px-4 md:px-8 mb-16 md:mb-24" aria-labelledby="community-section-title">
-      <div class="border-4 border-on-surface bg-surface neo-shadow p-6 sm:p-10 mb-8">
+      <div class="border-4 border-[#082A5C] bg-white neo-shadow p-6 sm:p-10 mb-8">
         <div class="flex items-center gap-3 mb-4">
-          <span class="bg-secondary text-white font-label-mono text-xs font-black uppercase px-3 py-1 border-2 border-on-surface">
+          <span class="bg-[#312783] text-white font-label-mono text-xs font-black uppercase px-3 py-1 border-2 border-[#082A5C]">
             05 / EXPERIENCIA DE CONTENIDO
           </span>
         </div>
-        <h2 id="community-section-title" class="font-display text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-on-surface mb-6">
+        <h2 id="community-section-title" class="font-display text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-[#082A5C] mb-6">
           Propuesta de Valor &amp; Contenido Comunitario
         </h2>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-8">
           <!-- MOSTRAR PRIMERO LA IMAGEN -->
           <div class="lg:col-span-7">
-            <figure class="border-4 border-on-surface bg-surface-container neo-shadow-sm overflow-hidden">
+            <figure class="border-4 border-[#082A5C] bg-[#E4EDF8] neo-shadow-sm overflow-hidden">
               <img 
                 src="../assets/projects/gocards/08-experiencia-comunidad-articulos.png" 
                 alt="Pantalla mobile de inicio con carrusel de comunidad y sección lo más vendido" 
@@ -544,34 +545,34 @@
                 width="1400" 
                 height="1323" 
               />
-              <figcaption class="p-3 bg-surface border-t-3 border-on-surface font-label-mono text-xs text-on-surface-variant">
+              <figcaption class="p-3 bg-white border-t-3 border-[#082A5C] font-label-mono text-xs text-[#204172]">
                 Figura 4: Pantalla inicial mobile integrando artículos de estrategia competitiva y catálogo transaccional.
               </figcaption>
             </figure>
           </div>
 
           <!-- CONTENIDO EXPLICATIVO (SIN DUPLICAR EL TITULAR DE LA IMAGEN) -->
-          <div class="lg:col-span-5 space-y-4 font-body-md text-base sm:text-lg text-on-surface/90 leading-relaxed">
-            <span class="font-label-mono text-xs font-black uppercase text-brand-indigo block tracking-wider">
+          <div class="lg:col-span-5 space-y-4 font-body-md text-base sm:text-lg text-[#082A5C]/90 leading-relaxed">
+            <span class="font-label-mono text-xs font-black uppercase text-[#312783] block tracking-wider">
               Estrategia de Retención &amp; Fidelización
             </span>
-            <h3 class="font-display text-xl sm:text-2xl font-black uppercase text-on-surface leading-tight">
+            <h3 class="font-display text-xl sm:text-2xl font-black uppercase text-[#082A5C] leading-tight">
               Aprendizaje y Comercio en un Mismo Espacio
             </h3>
             <p>
               A diferencia de las plataformas tradicionales que reciben al usuario únicamente con un inventario frío de precios, la pantalla principal de GoCards prioriza contenido educativo redactado por jugadores experimentados.
             </p>
-            <ul class="space-y-2.5 text-sm sm:text-base border-t-2 border-on-surface/20 pt-3">
+            <ul class="space-y-2.5 text-sm sm:text-base border-t-2 border-[#082A5C]/20 pt-3">
               <li class="flex items-start gap-2">
-                <span class="text-secondary font-bold text-lg leading-none">▪</span>
+                <span class="text-[#4B98E0] font-bold text-lg leading-none">▪</span>
                 <span><strong>Onboarding orgánico:</strong> Guías de mazos competitivos que reducen la barrera de entrada para jugadores principiantes.</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-secondary font-bold text-lg leading-none">▪</span>
+                <span class="text-[#4B98E0] font-bold text-lg leading-none">▪</span>
                 <span><strong>Conversión contextual:</strong> Cada análisis enlaza directamente a la compra de las cartas clave necesarias para armar la baraja.</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-secondary font-bold text-lg leading-none">▪</span>
+                <span class="text-[#4B98E0] font-bold text-lg leading-none">▪</span>
                 <span><strong>Sentido de pertenencia:</strong> Fomenta la participación activa de la comunidad más allá de una simple transacción económica.</span>
               </li>
             </ul>
@@ -582,20 +583,20 @@
 
     <!-- 06 / FLUJO TRANSACCIONAL DE COMPRA SEGURA -->
     <section class="max-w-7xl mx-auto px-4 md:px-8 mb-16 md:mb-24" aria-labelledby="checkout-section-title">
-      <div class="border-4 border-on-surface bg-surface neo-shadow p-6 sm:p-10 mb-8">
+      <div class="border-4 border-[#082A5C] bg-white neo-shadow p-6 sm:p-10 mb-8">
         <div class="flex items-center gap-3 mb-4">
-          <span class="bg-primary-container text-on-surface font-label-mono text-xs font-black uppercase px-3 py-1 border-2 border-on-surface">
-            06 / EMBUSCADO DE COMPRA
+          <span class="bg-[#D6DDF8] text-[#082A5C] font-label-mono text-xs font-black uppercase px-3 py-1 border-2 border-[#082A5C]">
+            06 / EMBUDO DE COMPRA
           </span>
         </div>
-        <h2 id="checkout-section-title" class="font-display text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-on-surface mb-6">
+        <h2 id="checkout-section-title" class="font-display text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-[#082A5C] mb-6">
           Flujo Transaccional: Catálogo, Ficha &amp; Checkout en 3 Pasos
         </h2>
-        <p class="font-body-md text-base sm:text-lg text-on-surface/90 leading-relaxed max-w-4xl mb-8">
+        <p class="font-body-md text-base sm:text-lg text-[#082A5C]/90 leading-relaxed max-w-4xl mb-8">
           Una compra segura y correcta entre jugadores. Cada etapa del embudo de conversión fue diseñada para entregar certeza absoluta sobre el estado de la carta, la reputación del vendedor y los costos finales.
         </p>
 
-        <figure class="border-4 border-on-surface bg-surface-container neo-shadow-sm overflow-hidden mb-8">
+        <figure class="border-4 border-[#082A5C] bg-[#E4EDF8] neo-shadow-sm overflow-hidden mb-8">
           <img 
             src="../assets/projects/gocards/09-flujo-compra-segura-catalogo-detalle-checkout.png" 
             alt="Flujo completo de compra segura en 3 pantallas: Catálogo, Detalle de producto y Carrito de checkout" 
@@ -605,30 +606,30 @@
             width="1400" 
             height="1367" 
           />
-          <figcaption class="p-3 bg-surface border-t-3 border-on-surface font-label-mono text-xs text-on-surface-variant">
+          <figcaption class="p-3 bg-white border-t-3 border-[#082A5C] font-label-mono text-xs text-[#204172]">
             Figura 5: Pantalla 1 (Catálogo y más vendido), Pantalla 2 (Ficha con calificación de vendedor), Pantalla 3 (Checkout guiado con cross-selling).
           </figcaption>
         </figure>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div class="border-3 border-on-surface bg-surface p-5 neo-shadow-sm">
-            <span class="font-label-mono text-xs font-black uppercase text-secondary block mb-2">Paso 1 · Catálogo</span>
-            <h3 class="font-display text-lg font-black uppercase mb-2">Sección Lo Más Vendido</h3>
-            <p class="font-body-md text-sm text-on-surface/90 leading-relaxed">
+          <div class="border-3 border-[#082A5C] bg-[#F0F4FA] p-5 neo-shadow-sm">
+            <span class="font-label-mono text-xs font-black uppercase text-[#4B98E0] block mb-2">Paso 1 · Catálogo</span>
+            <h3 class="font-display text-lg font-black uppercase mb-2 text-[#082A5C]">Sección Lo Más Vendido</h3>
+            <p class="font-body-md text-sm text-[#082A5C]/90 leading-relaxed">
               Cartas clave en tendencia competitiva (<em>AA-ZEUS, Ice Dragon's Prison</em>) con badges de <em>Vendedor destacado</em>, <em>5 estrellas</em> y precios transparentes en pesos chilenos (CLP).
             </p>
           </div>
-          <div class="border-3 border-on-surface bg-surface p-5 neo-shadow-sm">
-            <span class="font-label-mono text-xs font-black uppercase text-brand-indigo block mb-2">Paso 2 · Ficha de Carta</span>
-            <h3 class="font-display text-lg font-black uppercase mb-2">Comparador de Vendedores</h3>
-            <p class="font-body-md text-sm text-on-surface/90 leading-relaxed">
+          <div class="border-3 border-[#082A5C] bg-[#F0F4FA] p-5 neo-shadow-sm">
+            <span class="font-label-mono text-xs font-black uppercase text-[#312783] block mb-2">Paso 2 · Ficha de Carta</span>
+            <h3 class="font-display text-lg font-black uppercase mb-2 text-[#082A5C]">Comparador de Vendedores</h3>
+            <p class="font-body-md text-sm text-[#082A5C]/90 leading-relaxed">
               Ficha para <em>Beetrooper Scout Buggy (Secret Rare)</em> que indica vendedor (Mauricio Ulato ★★★★★ 5/5), condición <em>Near Mint</em> y botones para <em>"Buscar otro vendedor"</em> o <em>"Buscar otra versión"</em>.
             </p>
           </div>
-          <div class="border-3 border-on-surface bg-surface p-5 neo-shadow-sm">
-            <span class="font-label-mono text-xs font-black uppercase text-primary block mb-2">Paso 3 · Checkout en 3 Pasos</span>
-            <h3 class="font-display text-lg font-black uppercase mb-2">Carro, Entrega &amp; Pago</h3>
-            <p class="font-body-md text-sm text-on-surface/90 leading-relaxed">
+          <div class="border-3 border-[#082A5C] bg-[#F0F4FA] p-5 neo-shadow-sm">
+            <span class="font-label-mono text-xs font-black uppercase text-[#312783] block mb-2">Paso 3 · Checkout en 3 Pasos</span>
+            <h3 class="font-display text-lg font-black uppercase mb-2 text-[#082A5C]">Carro, Entrega &amp; Pago</h3>
+            <p class="font-body-md text-sm text-[#082A5C]/90 leading-relaxed">
               Progreso visual claro (1. Carro → 2. Entrega → 3. Pago), control numérico de unidades y recomendación inteligente de cartas complementarias (<em>Joker's Knight, Lightning Storm, True Light</em>).
             </p>
           </div>
@@ -638,21 +639,21 @@
 
     <!-- 07 / PROTOTIPADO INTERACTIVO FIGMA & BEHANCE -->
     <section class="max-w-7xl mx-auto px-4 md:px-8 mb-16 md:mb-24" id="prototype" aria-labelledby="prototype-section-title">
-      <div class="border-4 border-on-surface bg-surface neo-shadow p-6 sm:p-10 mb-8">
+      <div class="border-4 border-[#082A5C] bg-white neo-shadow p-6 sm:p-10 mb-8">
         <div class="flex items-center gap-3 mb-4">
-          <span class="bg-tertiary text-on-surface font-label-mono text-xs font-black uppercase px-3 py-1 border-2 border-on-surface">
+          <span class="bg-[#4B98E0] text-[#082A5C] font-label-mono text-xs font-black uppercase px-3 py-1 border-2 border-[#082A5C]">
             07 / PROTOTIPO NAVEGABLE
           </span>
         </div>
-        <h2 id="prototype-section-title" class="font-display text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-on-surface mb-4">
+        <h2 id="prototype-section-title" class="font-display text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-[#082A5C] mb-4">
           Prototipo Interactivo en Figma
         </h2>
-        <p class="font-body-md text-base sm:text-lg text-on-surface/90 leading-relaxed max-w-3xl mb-8">
+        <p class="font-body-md text-base sm:text-lg text-[#082A5C]/90 leading-relaxed max-w-3xl mb-8">
           Interactúa directamente con el flujo de compra y navegación móvil diseñado para GoCards. Puedes navegar por la pantalla principal, consultar el menú hamburguesa y avanzar por el embudo de compra:
         </p>
 
-        <!-- Figma Iframe Container -->
-        <div class="border-4 border-on-surface bg-black neo-shadow overflow-hidden mb-8 flex justify-center items-center">
+        <!-- Figma Iframe Container con sombra neo-brutalista de GoCards -->
+        <div class="border-4 border-[#082A5C] bg-black neo-shadow overflow-hidden mb-8 flex justify-center items-center">
           <iframe 
             class="w-full h-[500px] sm:h-[650px] border-0" 
             src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2FO5uxOPnABkPl1l2TWLsM6P%2FUntitled%3Fpage-id%3D16%253A2%26node-id%3D16%253A2%26viewport%3D244%252C48%252C0.05%26scaling%3Dscale-down%26starting-point-node-id%3D16%253A4" 
@@ -662,11 +663,11 @@
           </iframe>
         </div>
 
-        <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t-3 border-on-surface">
-          <a href="https://www.figma.com/proto/O5uxOPnABkPl1l2TWLsM6P/Untitled?page-id=16%3A2&node-id=16%3A4&viewport=244%2C48%2C0.05&scaling=scale-down" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-secondary text-white font-label-mono text-xs sm:text-sm font-black uppercase px-6 py-3.5 border-3 border-on-surface neo-shadow-sm neo-hover">
+        <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t-3 border-[#082A5C]">
+          <a href="https://www.figma.com/proto/O5uxOPnABkPl1l2TWLsM6P/Untitled?page-id=16%3A2&node-id=16%3A4&viewport=244%2C48%2C0.05&scaling=scale-down" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-[#4B98E0] text-[#082A5C] font-label-mono text-xs sm:text-sm font-black uppercase px-6 py-3.5 border-3 border-[#082A5C] neo-shadow-sm neo-hover">
             <span>Abrir Prototipo en Figma ↗</span>
           </a>
-          <a href="https://www.behance.net/gallery/143308471/GoCards-Marketplace-TCG" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-primary-container text-on-surface font-label-mono text-xs sm:text-sm font-bold uppercase px-6 py-3.5 border-3 border-on-surface neo-shadow-sm neo-hover">
+          <a href="https://www.behance.net/gallery/143308471/GoCards-Marketplace-TCG" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-[#312783] text-white font-label-mono text-xs sm:text-sm font-bold uppercase px-6 py-3.5 border-3 border-[#082A5C] neo-shadow-sm neo-hover">
             <span>Ver Publicación en Behance ↗</span>
           </a>
         </div>
@@ -675,28 +676,28 @@
 
     <!-- 08 / SIGUIENTE CASO DE ESTUDIO (BUCLE REAL A SIGNIA) -->
     <section class="max-w-7xl mx-auto px-4 md:px-8 mb-16 md:mb-24" aria-labelledby="next-project-title">
-      <div class="border-4 border-on-surface bg-surface neo-shadow hover:bg-primary-container/20 transition-colors group">
+      <div class="border-4 border-[#312783] bg-[#D6DDF8] neo-shadow hover:bg-[#C7D4F5] transition-colors group">
         <a href="signia-seo-web-design.html" class="block p-8 sm:p-12 text-center" title="Avanzar al siguiente caso de estudio">
-          <span id="next-project-title" class="font-label-mono text-xs sm:text-sm font-black uppercase tracking-wider block mb-3 text-secondary">
+          <span id="next-project-title" class="font-label-mono text-xs sm:text-sm font-black uppercase tracking-wider inline-block mb-3 bg-[#4B98E0] text-[#082A5C] px-3 py-1 border-2 border-[#082A5C]">
             Siguiente Caso de Estudio
           </span>
-          <span class="font-display text-2xl sm:text-4xl md:text-5xl font-black uppercase tracking-tight text-on-surface flex items-center justify-center gap-3 group-hover:gap-5 transition-all">
+          <span class="font-display text-2xl sm:text-4xl md:text-5xl font-black uppercase tracking-tight text-[#312783] flex items-center justify-center gap-3 group-hover:gap-5 transition-all">
             <span>Signia — Web &amp; SEO</span>
             <span class="material-symbols-outlined text-3xl sm:text-4xl group-hover:translate-x-2 transition-transform" aria-hidden="true">arrow_forward</span>
           </span>
-          <span class="font-label-mono text-xs text-on-surface-variant block mt-3 uppercase">
+          <span class="font-label-mono text-xs text-[#082A5C] font-bold block mt-3 uppercase">
             Plataforma de Insignias Digitales · Trebol-IT · SEO &amp; Rediseño
           </span>
         </a>
       </div>
     </section>
 
-    <!-- SECCIÓN CTA -->
+    <!-- SECCIÓN CTA CON ÍNDIGO & ELECTRIC BLUE DE GOCARDS -->
     <section class="max-w-7xl mx-auto px-4 md:px-8 mb-16" aria-labelledby="cta-section-title">
-      <div class="bg-secondary text-white border-4 border-on-surface neo-shadow-lg p-8 sm:p-12 tilt-left">
+      <div class="bg-[#312783] text-white border-4 border-[#082A5C] neo-shadow-lg p-8 sm:p-12 tilt-left">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div class="lg:col-span-8">
-            <span class="font-label-mono text-xs font-black uppercase tracking-wider block mb-2 text-tertiary">¿Planeas construir o rediseñar un marketplace o e-commerce de nicho?</span>
+            <span class="font-label-mono text-xs font-black uppercase tracking-wider block mb-2 text-[#B2D4F5]">¿Planeas construir o rediseñar un marketplace o e-commerce de nicho?</span>
             <h2 id="cta-section-title" class="font-display text-3xl sm:text-4xl md:text-5xl font-black uppercase leading-tight mb-4 text-white">
               Diseñemos una experiencia centrada en tus usuarios
             </h2>
@@ -704,12 +705,12 @@
               Combino investigación cualitativa profunda, sistemas de diseño atómicos y arquitectura transaccional para maximizar la confianza y la conversión de tu producto digital.
             </p>
           </div>
-          <div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-4 justify-center items-stretch lg:items-end">
-            <a href="mailto:tbravopino@gmail.com" class="bg-tertiary text-on-surface font-label-mono text-sm font-black uppercase px-6 py-4 border-4 border-on-surface neo-shadow-sm neo-hover text-center inline-block">
+          <div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-4">
+            <a href="mailto:tbravopino@gmail.com" class="w-full bg-white text-[#082A5C] font-label-mono text-sm font-black uppercase px-6 py-4 border-3 border-[#082A5C] neo-shadow-sm neo-hover text-center min-h-[48px] flex items-center justify-center">
               Iniciar Conversación →
             </a>
-            <a href="https://wa.me/56961389870" target="_blank" rel="noopener noreferrer" class="bg-surface text-on-surface font-label-mono text-sm font-bold uppercase px-6 py-3.5 border-4 border-on-surface neo-shadow-sm neo-hover text-center inline-block">
-              WhatsApp Directo
+            <a href="https://wa.me/56961389870" target="_blank" rel="noopener noreferrer" class="w-full bg-[#4B98E0] text-[#082A5C] font-label-mono text-sm font-black uppercase px-6 py-4 border-3 border-white neo-shadow-sm neo-hover text-center min-h-[48px] flex items-center justify-center">
+              Hablemos por WhatsApp
             </a>
           </div>
         </div>
@@ -718,23 +719,38 @@
 
   </main>
 
-  <!-- FOOTER -->
-  <footer class="bg-on-surface text-surface py-12 border-t-6 border-on-surface">
-    <div class="max-w-7xl mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
-      <div class="flex items-center gap-3">
-        <a href="../index.html" class="font-display text-2xl font-black uppercase tracking-tighter text-surface hover:text-secondary transition-colors">
-          Bravo<span class="text-secondary">!</span>
-        </a>
-        <span class="font-label-mono text-xs text-surface/60">
-          © 2026 Tomás Bravo · Diseñador UX/UI &amp; Asesor Digital
-        </span>
+  <!-- FOOTER CON EL AZUL MARINO DE GOCARDS -->
+  <footer class="w-full border-t-4 border-[#082A5C] bg-[#082A5C] text-white mt-auto" id="contact" role="contentinfo">
+    <div class="max-w-7xl mx-auto px-4 md:px-8 py-12 md:py-16">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-10 pb-10 border-b-2 border-white/20">
+        <div class="md:col-span-6">
+          <div class="font-display text-3xl font-black uppercase tracking-tight text-white mb-2">
+            Tomás Bravo — BravoDesign
+          </div>
+          <p class="font-body-md text-sm sm:text-base text-white/80 max-w-md">
+            Diseñador UX/UI &amp; Asesor Digital enfocado en usabilidad, rendimiento y crecimiento orgánico. Santiago de Chile.
+          </p>
+        </div>
+
+        <div class="md:col-span-6 flex flex-wrap gap-4 md:justify-end items-center font-label-mono text-xs sm:text-sm font-bold">
+          <a href="https://www.linkedin.com/in/tomasbravopino/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 border-2 border-white text-white hover:bg-white hover:text-[#082A5C] transition-colors min-h-[44px] inline-flex items-center">
+            LinkedIn
+          </a>
+          <a href="mailto:tbravopino@gmail.com" class="px-4 py-2 border-2 border-white text-white hover:bg-white hover:text-[#082A5C] transition-colors min-h-[44px] inline-flex items-center">
+            Email
+          </a>
+          <a href="https://wa.me/56961389870" target="_blank" rel="noopener noreferrer" class="px-4 py-2 border-2 border-white text-white hover:bg-white hover:text-[#082A5C] transition-colors min-h-[44px] inline-flex items-center">
+            WhatsApp
+          </a>
+          <a href="https://www.behance.net/tbravopino" target="_blank" rel="noopener noreferrer" class="px-4 py-2 border-2 border-white text-white hover:bg-white hover:text-[#082A5C] transition-colors min-h-[44px] inline-flex items-center">
+            Behance
+          </a>
+        </div>
       </div>
 
-      <div class="flex items-center gap-6 font-label-mono text-xs uppercase font-bold text-surface/80">
-        <a href="../index.html#work" class="hover:text-secondary transition-colors">Proyectos</a>
-        <a href="../index.html#skills" class="hover:text-secondary transition-colors">Habilidades</a>
-        <a href="../index.html#contact" class="hover:text-secondary transition-colors">Contacto</a>
-        <a href="https://www.linkedin.com/in/tomasbravopino/" target="_blank" rel="noopener noreferrer" class="hover:text-secondary transition-colors">LinkedIn ↗</a>
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4 font-label-mono text-xs text-white/60">
+        <p>© 2026 Tomás Bravo — Todos los derechos reservados.</p>
+        <p>Diseño y Arquitectura Web con Enfoque Ético en Rendimiento, Accesibilidad y SEO.</p>
       </div>
     </div>
   </footer>

@@ -89,6 +89,12 @@
       "inLanguage": "es",
       "hasPart": [
         {
+          "@type": "CollectionPage",
+          "name": "Portafolio de Proyectos UX/UI, SEO & Diseño Web",
+          "url": "https://tbravop.github.io/bravodesign/proyectos/",
+          "creator": { "@id": "https://tbravop.github.io/bravodesign/#person" }
+        },
+        {
           "@type": "CreativeWork",
           "name": "Signia — Web & SEO",
           "url": "https://tbravop.github.io/bravodesign/proyectos/signia-seo-web-design.html",
@@ -218,7 +224,7 @@
 <nav class="hidden md:flex gap-lg items-center font-black italic">
 <a class="hover:bg-tertiary px-2 border-4 border-transparent hover:border-on-surface" href="#work">TRABAJO</a>
 <a class="hover:bg-primary-container px-2 border-4 border-transparent hover:border-on-surface" href="#skills">HABILIDADES</a>
-<a class="hover:bg-secondary px-2 hover:text-white border-4 border-transparent hover:border-on-surface" href="#contact">CONTACTO</a>
+<a class="hover:bg-secondary px-2 hover:text-white border-4 border-transparent hover:border-on-surface" href="proyectos/" data-local-href="proyectos/index.html">PROYECTOS</a>
 </nav>
 <a class="bg-secondary text-white font-black uppercase px-6 py-3 border-4 border-on-surface glitch-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all inline-block" href="#contact">
             CONTRÁTAME
@@ -343,6 +349,14 @@
 </div>
 </article>
 </div>
+
+<!-- CTA: Ver Todos los Proyectos (Despliega la vista independiente /proyectos) -->
+<div class="mt-20 flex justify-center">
+<a class="bg-primary-container text-on-surface text-xl sm:text-2xl md:text-3xl font-black uppercase px-8 py-5 sm:px-12 sm:py-6 border-8 border-on-surface glitch-shadow hover:bg-secondary hover:text-white hover:shadow-none hover:translate-x-2 hover:translate-y-2 transition-all inline-flex items-center gap-4 group tilt-left" href="proyectos/" data-local-href="proyectos/index.html" title="Explorar el portafolio completo de proyectos y casos de estudio UX/UI y SEO">
+<span>VER TODOS LOS PROYECTOS</span>
+<span class="material-symbols-outlined text-3xl sm:text-4xl group-hover:translate-x-2 transition-transform" aria-hidden="true">arrow_forward</span>
+</a>
+</div>
 </div>
 </section>
 <!-- Skills Section: Neo-Brutalist Hybrid Showcase -->
@@ -448,4 +462,11 @@
 </div>
 </div>
 </footer>
+<script>
+  if (window.location.protocol === 'file:') {
+    document.querySelectorAll('a[data-local-href]').forEach(function (link) {
+      link.setAttribute('href', link.getAttribute('data-local-href'));
+    });
+  }
+</script>
 </body></html>
