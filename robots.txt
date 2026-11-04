@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tbravop.github.io/bravodesign/sitemap.xml
+Sitemap: https://www.bravodesign.cl/sitemap.xml
